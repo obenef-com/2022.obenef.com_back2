@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/business.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="header" class="on">
+            <script>
+            $(function() {
+                $("#header").load("/header.html", function() { 
+                    $("#gnb li").eq(1).addClass("on").find("li").eq(0).addClass("on");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/sub/about/location.html"><i>&nbsp;</i><span>오시는길</span></a></div>
+            <div class="next"><a href="/sub/business/aiger.html"><i>&nbsp;</i><span>AIGER</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $("#fullpage").fullpage({
+                anchors: ['Page1', 'Page2'],
+                scrollOverflow: true,
+                navigation: true,
+                navigationPosition: 'right',
+                'afterLoad': function(origin, destination, direction){
+                    if(destination==1) {
+                    } else {
+                        console.log();
+                    }
+                }
+            });
+        });
+        </script>
+
+
+        <div id="fullpage" class="ci_wrap">
+            <!-- page 1 -->
+            <div class="section" id="section_1">
+                <div class="cWrap cWrap_1">
+                    <div class="sub_title on">
+                        <h3>GESTURE<span>토탈에듀케이션 플랫폼</span></h3>
+                        <div>
+                            단순히 동영상 중심으로 구성된 기존 LMS를 넘어, 다양한 온오프라인 교육과정을 &nbsp;
+                            <ul class="bold">
+                                <li>역량</li>
+                                <li>학습</li>
+                                <li>촉진</li>
+                                <li>자격</li>
+                            </ul>
+                            취업까지 연계하여 관리 및 운영할 수 있는 미래교육을 위한 한국토종 토탈 에듀케이션 플랫폼입니다.
+                        </div>
+
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 1 -->
+
+            <!-- page 2 -->
+            <div class="section" id="section_2">
+                <div class="cWrap cWrap_1">
+                </div>
+            </div>
+            <!-- // page 2 -->
+        </div>
+    </body>
+</html>

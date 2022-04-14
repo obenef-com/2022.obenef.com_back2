@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/aboutus.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="header">
+            <script>
+            $(function() {
+                $("#header").load("/header.html", function() { 
+                    $("#gnb li").eq(0).addClass("on").find("li").eq(5).addClass("on");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/sub/about/awards.html"><i>&nbsp;</i><span>수상경력</span></a></div>
+            <div class="next"><a href="/sub/business/gesture.html"><i>&nbsp;</i><span>GETSTURE</span></a></div>
+        </div>
+
+
+    </body>
+</html>
