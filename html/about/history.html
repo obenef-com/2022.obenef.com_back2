@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+
+        <link rel="stylesheet" href="../../css/jquery.fullpage.css">
+        <link rel="stylesheet" href="../../css/aboutus.css">
+
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+        <script src="../../js/jquery.fullpage.min.js"></script>
+        <script src="../../js/scrolloverflow.js"></script>
+        <script src="../../js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="cWrap cWrap_1">
+                <h1 id="logo"><a href="../main.html">obenef</a></h1>
+
+                <div class="m_nav_btn"><img src="../../img/common/m_nav_btn.svg" alt="모바일 메뉴 버튼"/></div>
+                <div class="m_location_btn"><img src="../../img/common/m_top_right.svg" alt="오시는길 바로가기"></div>
+
+                <!-- nav -->
+                <nav>
+                    <ul id="gnb">
+                        <li class="on">
+                            <a href="./vision.html">ABOUT US</a>
+                            <ul class="sub_menu">
+                                <li><a href="./vision.html">VISION</a></li>
+                                <li><a href="./ci.html">CI</a></li>
+                                <li><a href="./opeople.html">O.People</a></li>
+                                <li class="on"><a href="./history.html">HISTORY</a></li>
+                                <li><a href="./awards.html">수상경력</a></li>
+                                <li><a href="./location.html">오시는길</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <a href="../business/gesture.html">BUSINESS</a>
+                            <ul class="sub_menu">
+                                <li><a href="../business/gesture.html">GESTURE</a></li>
+                                <li><a href="../business/aiger.html">AIGER</a></li>
+                                <li><a href="../business/education.html">전문 교육 콘텐츠 개발 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../edutech/rd.html">Edu-TECH</a>
+                            <ul class="sub_menu">
+                                <li><a href="../edutech/rd.html">R&amp;D</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../pr/notice.html">PR</a>
+                            <ul class="sub_menu">
+                                <li><a href="../pr/notice.html">공지사항</a></li>
+                                <li><a href="../pr/report.html">보도자료</a></li>
+                                <li><a href="../pr/reference.html">PR자료실</a></li>
+                                <li><a href="../pr/customer.html">주요고객</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../careers/talent.html">CAREERS</a>
+                            <ul class="sub_menu">
+                                <li><a href="../careers/talent.html">채용정보 및 채용절차</a></li>
+                                <li><a href="../careers/organization.html">업무조직 및 인력구성 정보</a></li>
+                                <li><a href="../careers/employment.html">채용 정보 및 지원</a></li>
+                                <li><a href="../careers/inquire.html">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- // nav -->
+
+                <div id="lang_pack">
+                    <h6>kor</h6>
+                    <ul>
+                        <li><a href="#none">kor</a></li>
+                        <li><a href="#none">eng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="./opeople.html"><i>&nbsp;</i><span>O.People</span></a></div>
+            <div class="next"><a href="./awards.html"><i>&nbsp;</i><span>수상경력</span></a></div>
+        </div>
+
+
+        <script>
+        $(function() {
+            var second_top = $(".history_2").offset().top;
+            var first_top = $(".history_1").offset().top;
+
+            $(".history_3 .cont_wrap").addClass("on");
+
+
+            $(window).scroll(function() {
+                var scr_top = $(this).scrollTop();
+
+                if(scr_top > (second_top - 800)) {
+                    $(".history_2 .cont_wrap").addClass("on");
+                }
+
+                if(scr_top > (first_top - 800)) {
+                    $(".history_1 .cont_wrap").addClass("on");
+                }
+            });
+        });
+        </script>
+
+        <div class="subWrap history">
+            <div class="cWrap cWrap_1">
+                <div class="sub_title">
+                    <h3>HISTORY</h3>
+                    <div>
+                        <i>NEXT 2023 VISION</i> 을 기반으로 한 미래교육환경 리더기업의 성장스토리를 소개합니다.
+                    </div>
+                </div>
+            </div>
+
+            <!-- third -->
+            <div class="historyWrap history_3">
+                <div class="cont_wrap">
+                    <div class="title">
+                        <h5><span>Third</span>Generation</h5>
+                    </div>
+                    <div class="cont">
+                        <h4><span><i>NEXT 2023 Vision</i>을</span>기반으로 한 미래교육환경 리더기업</h4>
+                        <div>
+                            <h6>2021</h6>
+
+                            <dl>
+                                <dt>12월</dt>
+                                <dd>
+                                    <p>광주광역시 확장 이전</p>
+                                </dd>
+
+                                <dt>11월</dt>
+                                <dd>
+                                    <p>국가과학기술연구회 <span>Untact 실감형 OpenXR 플랫폼 기술 개발</span> 국가 주요 핵심 과제 참여 기업 선정</p>
+                                    <p>국가과학기술인재육성을 위한 온라인 과학데이터교육센터 전문교육 사이트 구축 <i>(한국과학기술정보연구원)</i></p>
+                                </dd>
+
+                                <dt>09월</dt>
+                                <dd>
+                                    <p>한국과학기술교육대학교 LINC+ 실습형 교육콘텐츠 개발 외 11개 대학 교육콘텐츠 개발</p>
+                                </dd>
+
+                                <dt>07월</dt>
+                                <dd>
+                                    <p>전국 대학원격교육센터 전국 10개 권역 중 <i>매우 우수</i>평가 <i>(광주·전남권역 대학원격교육지원센터)</i></p>
+                                </dd>
+
+                                <dt>06월</dt>
+                                <dd>
+                                    <p>광주전남권역센터 공동활용 LMS구축 외 광주교육대학교/서영대학교 LMS 구축</p>
+                                </dd>
+
+                                <dt>03월</dt>
+                                <dd>
+                                    <p>클라우드 기반의 토탈 에듀케이션 플랫폼 GESTURE 런칭</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+             </div> <!-- // third -->
+
+
+            <!-- second -->
+            <div class="historyWrap history_2">
+                <div class="cont_wrap">
+                    <div class="title">
+                        <h5><span>Second</span>Generation</h5>
+                        <p><span>교육 콘텐츠와</span>시스템 전문 개발 기업</p>
+                        <span>연 20억 내외의 독자적 매출 확보</span>
+                    </div>
+                    <div class="cont">
+                        <div>
+                            <h6>2020</h6>
+
+                            <dl>
+                                <dt>09월</dt>
+                                <dd>
+                                    <p>제5회 이러닝에듀테크 비즈니스모델 공모전 수상 <i>(산업통상자원부 장관상)</i></p>
+                                </dd>
+
+                                <dt>08월</dt>
+                                <dd>
+                                    <p>한국에듀테크산업협회 이사회 가입</p>
+                                </dd>
+
+                                <dt>05월</dt>
+                                <dd>
+                                    <p>대규모 온라인 가상 실험(컴퓨터)실 AIGER 제품화 <i>(프로토타입)</i></p>
+                                </dd>
+
+                                <dt>04월</dt>
+                                <dd>
+                                    <p>AI PaaS 플랫폼 국내 7개 주요 출연연 대상으로 오픈 <i>(국가과학기술연구망)</i></p>
+                                    <p>클라우드 기반 SaaS형 LMS (GETSTURE Cloud.io) 오픈 <i>(광주교육대학교, 서영대학교 등)</i></p>
+                                </dd>
+
+                                <dt>02월</dt>
+                                <dd>
+                                    <p>실시간 화상강의 시스템 및 스마트강의실 구축 <i>(전남대학교)</i></p>
+                                </dd>
+
+                                <dt>01월</dt>
+                                <dd>
+                                    <p>수요맞춤형 전문인력 양성사업-VR, AI <i>(전라남도정보문화산업진흥원)</i></p>
+                                    <p>GESTURE Insight (LRS-Learning Record Store) 신제품 개발 <i>(중소기업기술정보진흥원)</i></p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2019</h6>
+
+                            <dl>
+                                <dt>11월</dt>
+                                <dd>
+                                    <p>한국만화영상진흥원 온라인 교육 시스템 K-COMICS외 3개 기관 차세대 학습관리 플랫폼 구축</p>
+                                    <p>청년친화강소기업 고용안전 부문 선정 <i>(고용노동부 장관)</i></p>
+                                </dd>
+
+                                <dt>10월</dt>
+                                <dd>
+                                    <p>실습이 가능한 SW중심의 MOOC 콘텐츠 개발 <i>(원광대학교 SW중심사업단)</i></p>
+                                    <p>광운대학교 외 4개 기관 K-MOOC 콘텐츠 개발</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // second -->
+
+
+            <!-- first -->
+            <div class="historyWrap history_1">
+                <div class="cont_wrap">
+                    <div class="title">
+                        <h5><span>The first</span>Generation</h5>
+                        <p><span>핵심 기술과 노하우 확보를 위한</span>공격적인 투자 및 R&amp;D 중심 기업</p>
+                        <span>기술과 장비 개발에 15억원 자체 확보 및 투자</span>
+                    </div>
+                    <div class="cont">
+                        <div>
+                            <h6>2018</h6>
+
+                            <dl>
+                                <dt>10월</dt>
+                                <dd>
+                                    <p>전국 이케아(IKEA) 코리아 스토어 관리를 위한 페이지 빌더 기반의 스토어 사이트 저작도구 개발</p>
+                                </dd>
+
+                                <dt>09월</dt>
+                                <dd>
+                                    <p>EDISON 계산과학 교육콘텐츠 개발 외 3개 대학 교육 콘텐츠 개발</p>
+                                </dd>
+
+                                <dt>06월</dt>
+                                <dd>
+                                    <p>국가과학기술인력 육성을 위한 KISTI KACADEMY 교육시스템과 리파지토리 개발</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2017</h6>
+
+                            <dl>
+                                <dt>11월</dt>
+                                <dd>
+                                    <p>베트남 MOOC 플랫폼 수출을 위한 현지 대학 MOU 체결 <i>(Hoa sen College)</i></p>
+                                    <p>인도네시아 MOOC 플랫폼 수출을 위한 현지 교육재단 MOU 체결 <i>(Yayasa Tazakkaal)</i></p>
+                                    <p>2017 대학 이러닝 컨퍼런스 참가 <i>(전국대학이러닝협의회, KERIS)</i></p>
+                                    <p>2018 세계 기업가정신 주간 청년기업인상 표창 수상 <i>(중소벤처기업장관)</i></p>
+                                </dd>
+
+                                <dt>06월</dt>
+                                <dd>
+                                    <p>MOOC 플랫폼 구축 및 유지보수 <i>(단국대학교, 대구대학교, 대구한의대학교, 삼육대학교, 포항공과대학교)</i></p>
+                                    <p>LMS 플랫폼 구축 및 유지보수 <i>(부산외국어대학교, 중앙대학교)</i></p>
+                                    <p>자체 LMS 솔루션 GESTURE LMS 신제품 개발 <i>(중소기업기술정보진흥원)</i></p>
+                                </dd>
+
+                                <dt>01월</dt>
+                                <dd>
+                                    <p>한국형 MOOC 솔루션 GESTURE MOOC 신제품 개발 <i>(중소기업기술정보진흥원)</i></p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2016</h6>
+
+                            <dl>
+                                <dt>07월</dt>
+                                <dd>
+                                    <p>K-Ecohub 데이터 플랫폼 고도화 <i>(한국과학기술정보연구원)</i></p>
+                                </dd>
+
+                                <dt>06월</dt>
+                                <dd>
+                                    <p>전문 실험 지원용 웹 기반 계산과학 데이터 활용환경 구축 <i>(한국과학기술정보연구원)</i></p>
+                                    <p>MOOC 플랫폼 상호개발 및 공동사업 추진을 위한 MOU 체결 <i>(주식회사 자이닉스)</i></p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2015</h6>
+
+                            <dl>
+                                <dt>11월</dt>
+                                <dd>
+                                    <p>UNIST Open edX(MOOC)플랫폼 개발 <i>(울산과학기술대학교)</i></p>
+                                </dd>
+
+                                <dt>10월</dt>
+                                <dd>
+                                    <p>회사 법인 창업 및 설립</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2014</h6>
+
+                            <dl>
+                                <dt>02월</dt>
+                                <dd>
+                                    <p>콜롬비아 ICT 교육역량강화 프로젝트 E-Portal 부분 구축 <i>(콜롬비아 교육부)</i></p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // first -->
+
+
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="../css/jquery.fullpage.css">
+        <link rel="stylesheet" href="../css/main.css">
+    
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <script src="../js/jquery.fullpage.min.js"></script>
+        <script src="../js/scrolloverflow.js"></script>
+        <script src="../js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="on">
+            <div class="cWrap cWrap_1">
+                <h1 id="logo"><a href="./main.html">obenef</a></h1>
+
+                <div class="m_nav_btn"><img src="../img/common/m_nav_btn.svg" alt="모바일 메뉴 버튼"/></div>
+                <div class="m_location_btn"><img src="../img/common/m_top_right.svg" alt="오시는길 바로가기"></div>
+    
+                <!-- nav -->
+                <nav>
+                    <ul id="gnb">
+                        <li>
+                            <a href="./about/vision.html">ABOUT US</a>
+                            <ul class="sub_menu">
+                                <li><a href="./about/vision.html">VISION</a></li>
+                                <li><a href="./about/ci.html">CI</a></li>
+                                <li><a href="./about/opeople.html">O.People</a></li>
+                                <li><a href="./about/history.html">HISTORY</a></li>
+                                <li><a href="./about/awards.html">수상경력</a></li>
+                                <li><a href="./about/location.html">오시는길</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <a href="./business/gesture.html">BUSINESS</a>
+                            <ul class="sub_menu">
+                                <li><a href="./business/gesture.html">GESTURE</a></li>
+                                <li><a href="./business/aiger.html">AIGER</a></li>
+                                <li><a href="./business/education.html">전문 교육 콘텐츠 개발 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./edutech/rd.html">Edu-TECH</a>
+                            <ul class="sub_menu">
+                                <li><a href="./edutech/rd.html">R&amp;D</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./pr/notice.html">PR</a>
+                            <ul class="sub_menu">
+                                <li><a href="./pr/notice.html">공지사항</a></li>
+                                <li><a href="./pr/report.html">보도자료</a></li>
+                                <li><a href="./pr/reference.html">PR자료실</a></li>
+                                <li><a href="./pr/customer.html">주요고객</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./careers/talent.html">CAREERS</a>
+                            <ul class="sub_menu">
+                                <li><a href="./careers/talent.html">채용정보 및 채용절차</a></li>
+                                <li><a href="./careers/organization.html">업무조직 및 인력구성 정보</a></li>
+                                <li><a href="./careers/employment.html">채용 정보 및 지원</a></li>
+                                <li><a href="./careers/inquire.html">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- // nav -->
+    
+                <div id="lang_pack">
+                    <h6>kor</h6>
+                    <ul>
+                        <li><a href="#none">kor</a></li>
+                        <li><a href="#none">eng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+
+        <script>
+            $(function() {
+                $("#main .play_btn").on("click", function() {
+                    $("#main_pop").show();
+                });
+
+                $("#main_pop .close_btn").on("click", function() {
+                    $(this).parent().hide();
+                });
+            });
+        </script>
+
+        <div id="main">
+            <div class="wrap">
+                <div class="video"></div>
+
+                <h2><img src="../img/main/main_title.svg" alt="share benefit with you"></h2>
+                
+                <p><button class="play_btn">play</button>Watch Our Latest Project</p>
+            </div>
+           
+            <div class="pause_btn">
+                <button>pause</button>
+            </div>
+        </div>
+
+        <div id="main_pop">
+            <button class="close_btn">close</button>
+
+            <div class="video">
+
+            </div>
+        </div>
+
+    </body>
+</html>
