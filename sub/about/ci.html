@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>obenef</title>
     
@@ -9,18 +10,18 @@
         <link rel="stylesheet" href="/css/aboutus.css">
     
         <script src="/js/jquery-1.12.4.min.js"></script>
-        <script src="/js/jquery.fullpage.min.js"></script>
         <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
         <script src="/js/common.js"></script>
     </head>
 
     <body>
         <!-- header -->
-        <header id="header">
+        <header>
             <script>
             $(function() {
-                $("#header").load("/header.html", function() { 
-                    $("#gnb li").eq(0).addClass("on").find("li").eq(1).addClass("on");
+                $("header").load("/header.html", function() { 
+                    $("#gnb > li").eq(0).addClass("on").find("li").eq(1).addClass("on");
                 });
             });
             </script>
@@ -58,7 +59,7 @@
                     <div class="sub_title">
                         <h3>CI</h3>
                         <div>
-                            CI 속에 담겨 있는 오베네프만의 경영철학은 &nbsp;
+                            CI 속에 담겨 있는 오베네프만의 경영철학은 
                             <ul class="bold">
                                 <li>차세대기술</li>
                                 <li>새로운지평선</li>
@@ -96,7 +97,7 @@
                 <div class="cWrap cWrap_1">
                     <h4 class="cStyle">
                         <span>obenef</span>
-                        <p>name</p>
+                        name
                     </h4>
 
                     <h5 class="ci_logo">

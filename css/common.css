@@ -45,7 +45,7 @@ header .cWrap { position: relative; display: flex; align-items: center; justify-
 
 
 .m_nav_btn,
-.m_location_btn { display: none; }
+.m_location_btn { display: none; text-indent: -9999px; cursor: pointer; }
 
 /*### gnb ###*/
 #gnb { display: flex; align-items: center; justify-content: space-between; min-width: 800px; }
@@ -146,12 +146,13 @@ header.on #lang_pack h6 { color: #fff; background: url(../img/common/arrow_down_
 /*########## sub title ##########*/
 .sub_title { display: flex; align-items: center; margin: 0 0 35px; padding: 0 0 35px; border-bottom: 1px solid rgba(0, 0, 0, .1); }
 .sub_title h3 { margin: 0 40px 0 0; padding: 0 80px 0 0; line-height: 40px; font-size: 30px; color: #282828; font-weight: 600; background: url(../img/sub/title_x.svg) no-repeat right center; }
-.sub_title > div { display: flex; align-items: center; flex-wrap: wrap; line-height: 28px; font-size: 18px; color: #282828; }
-.sub_title > div ul { display: flex; align-items: center; margin: 0 5px 0 0;  }
-.sub_title > div li { position: relative; }
+.sub_title h3 span { display: block; font-size: 18px; font-weight: 500; }
+.sub_title > div { align-items: center; flex-wrap: wrap; line-height: 28px; font-size: 18px; color: #282828; }
+.sub_title > div ul { position: relative; top: -1px; display: inline; line-height: 1; align-items: center; vertical-align: middle; }
+.sub_title > div li { position: relative; display: inline; }
 .sub_title > div ul.bold li { font-weight: 600; }
 .sub_title > div li:first-child { margin: 0; }
-.sub_title > div li:before { content: ""; display: inline-block; margin: 0 15px; width: 14px; height: 2px; background: #282828; vertical-align: middle; }
+.sub_title > div li:before { content: ""; position: relative; top: -1px; display: inline-block; margin: 0 10px; width: 14px; height: 2px; background: #282828; vertical-align: middle; }
 .sub_title i { font-weight: 600; font-style: normal; }
 
 /* on */
@@ -165,8 +166,8 @@ header.on #lang_pack h6 { color: #fff; background: url(../img/common/arrow_down_
 /*########## h tag style ##########*/
 h4.cStyle { margin: 0 0 35px; font-size: 20px; color: #282828; font-weight: 500; text-transform: uppercase; }
 h4.cStyle ~ h4.cStyle { margin-top: 35px; }
-h4.cStyle span { position: relative; display: inline-block; }
-h4.cStyle span:after { content: ""; position: absolute; top: 50%; right: -35px; width: 24px; height: 2px; background: #282828; transform: translateY(-50%); } 
+h4.cStyle span { display: block; }
+h4.cStyle span:after { content: ""; position: relative; top: -2px; margin: 0 0 0 10px; display: inline-block; width: 24px; height: 2px; background: #282828; vertical-align: middle; } 
 
 /* on */
 h4.cStyle.on { color: #fff; }
@@ -187,6 +188,8 @@ h4.cStyle.on span:after { background: #fff; }
 #fp-nav li a { display: block; padding: 3px; }
 #fp-nav li a span { display: block; margin: 3px 0; width: 6px; height: 6px; background: #aaa; border-radius: 50%; opacity: 1; }
 #fp-nav li a.active span { width: 8px; height: 8px; background: #2C95BE; opacity: 1; transform: scale(1.2); }
+
+
 
 
 
@@ -225,7 +228,7 @@ h4.cStyle.on span:after { background: #fff; }
 
 
   /*########## header ##########*/
-  header { height: auto; border-bottom: 0; }
+  header { height: auto; }
   header .cWrap { display: block; max-width: 100%; padding: 20px 0 0; }
 
   /*### logo ###*/
@@ -233,11 +236,8 @@ h4.cStyle.on span:after { background: #fff; }
   #logo a { background: url(../img/common/m_logo.svg) no-repeat center; background-size: 100%; }
 
 
-
-  .m_location_btn { position: fixed; top: 27px; right: 30px; display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; cursor: pointer; }
-  .m_location_btn img { width: 100%; height: 100%; }
-
-  .m_nav_btn { position: fixed; top: 27px; left: 30px; display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; cursor: pointer; }
+  .m_nav_btn { position: fixed; top: 27px; left: 30px; display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; background: url(../img/common/m_nav_btn.svg) no-repeat center; background-size: 100%; }
+  .m_location_btn { position: fixed; top: 27px; right: 30px; display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; background: url(../img/common/m_top_right.svg) no-repeat center; background-size: 100% 100%; }
 
   /*### gnb ###*/
   #gnb { margin: 10px 0 0; min-width: 100%; }
@@ -254,12 +254,30 @@ h4.cStyle.on span:after { background: #fff; }
 
 
   /* on */
+  header.on .m_nav_btn { background-image: url(../img/common/m_nav_btn_w.svg); }
+  header.on .m_location_btn { background-image: url(../img/common/m_top_right_w.svg); }
+
+
+  header.on #gnb > li > a { color: rgba(255, 255, 255, .5); }
+  header.on #gnb > li > a:hover { color: #fff; }
+  header.on #gnb > li > a:after { background: #fff; }
+
+  header.on #gnb > li.on > a { color: #fff; }
+  header.on #gnb > li.on > a:after { background: #fff; }
+
+  header.on nav .sub_menu li a,
+  header.on nav .sub_menu li a:hover,
+  header.on nav .sub_menu li.on a { color: #fff; }
+
+  header.on #lang_pack h6 { color: #fff; background: url(../img/common/arrow_down_w.svg) no-repeat right center; }
+
   header.on nav .sub_menu { background: transparent; }
 
 
 
 
   /*########## page button ##########*/
+  #pageBtn { display: none; }
   #pageBtn div { top: 55%; transform: translateY(-50%); }
   #pageBtn a { min-width: 110px; height: 70px; }
   #pageBtn a:after { width: 40px; height: 40px; }
@@ -270,6 +288,7 @@ h4.cStyle.on span:after { background: #fff; }
   /*########## sub title ##########*/
   .sub_title { padding: 0 0 25px; }
   .sub_title h3 { margin: 0 30px 0 0; padding: 0 60px 0 0; line-height: 40px; font-size: 27px; background-size: 35px; }
+  .sub_title h3 span { font-size: 16px; }
   .sub_title > div { line-height: 24px; font-size: 16px; letter-spacing: -0.3px; }
 
 
@@ -282,7 +301,7 @@ h4.cStyle.on span:after { background: #fff; }
   /*########## fullpage ##########*/
   #fullpage .cWrap { padding: 200px 30px 120px; }
 
-  #fp-nav { top: auto; bottom: 50px; right: 20px; }
+  #fp-nav { right: 20px; }
   
 
 
