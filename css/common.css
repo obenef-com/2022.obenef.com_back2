@@ -155,6 +155,11 @@ header.on #lang_pack h6 { color: #fff; background: url(../img/common/arrow_down_
 .sub_title > div li:before { content: ""; position: relative; top: -1px; display: inline-block; margin: 0 10px; width: 14px; height: 2px; background: #282828; vertical-align: middle; }
 .sub_title i { font-weight: 600; font-style: normal; }
 
+.sub_title > div span { font-weight: 600; }
+.sub_title > div span:before { content: ""; position: relative; top: -1px; display: inline-block; margin: 0 5px 0 0; width: 13px; height: 2px; background: #282828; vertical-align: middle; }
+.sub_title > div span:after { content: ""; position: relative; top: -1px; display: inline-block; margin: 0 0 0 5px; width: 13px; height: 2px; background: #282828; vertical-align: middle; }
+
+
 /* on */
 .sub_title.on { border-bottom-color: rgba(255, 255, 255, .2); }
 .sub_title.on h3 { color: #fff; background: url(../img/sub/title_x_w.svg) no-repeat right center; }

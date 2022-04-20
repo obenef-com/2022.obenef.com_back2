@@ -150,10 +150,6 @@
 
 
 /*########## o.people ##########*/
-.opeople .sub_title span { font-weight: 600; }
-.opeople .sub_title span:before { content: ""; position: relative; top: -1px; display: inline-block; margin: 0 5px 0 0; width: 13px; height: 2px; background: #282828; vertical-align: middle; }
-.opeople .sub_title span:after { content: ""; position: relative; top: -1px; display: inline-block; margin: 0 0 0 5px; width: 13px; height: 2px; background: #282828; vertical-align: middle; }
-
 .opeople .cont img { max-width: 100%; }
 .opeople .cont p { margin: 30px 0 0; line-height: 23px; font-size: 16px; word-break: keep-all; }
 .opeople .cont p:first-child { margin: 0; }
@@ -428,3 +424,54 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
     /* page 1 */
     .awards_wrap .aw_cont .tit { height: 260px; background-size: 260px; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*########## location ##########*/
+.location {}
+.location .sub_title { border-bottom: 0; }
+.location .sub_title h3 { margin: 0; padding: 0; letter-spacing: 8px; background: 0; }
+
+.location .tabMenu { display: flex; }
+.location .tabMenu li { display: flex; align-items: center; justify-content: center; width: 25%; height: 60px; font-size: 16px; color: #313131; border: 1px solid #ccc; border-left: 0; transition: all .3s; cursor: pointer; }
+.location .tabMenu li:first-child { border-left: 1px solid #ccc; }
+.location .tabMenu li:hover { color: #fff; background: #7c9df1; border-color: #7c9df1; }
+.location .tabMenu li.on { color: #fff; font-weight: 600; background: #1443bc; border-color: #1443bc; }
+
+.location .tabCont { margin: 35px 0 0; }
+.location .tabCont > div { display: none; }
+.location .tabCont > div:first-child { display: block; }
+.location .tabCont h4 { display: flex; align-items: center; justify-content: end; font-size: 20px; color: #282828; font-weight: 500; text-transform: uppercase; }
+.location .tabCont h4:before { content: ""; display: block; margin: 0 13px 0 0; width: 24px; height: 2px; background: #282828; }
+
+.location .map { display: flex; }
+.location .map > div { height: 400px; }
+.location .map > div:first-child { overflow: hidden; }
+.location .root_daum_roughmap { width: 100% !important; }
+.location .wrap_map { height: 400px !important; }
+/* .location .wrap_controllers { display: none; } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
