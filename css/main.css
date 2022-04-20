@@ -9,8 +9,8 @@ header { background: #000 !important; }
 
 #main .wrap { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100vh; }
 #main .video { display: flex; justify-content: center; width: 100%; margin: 0; }
-#main video { width: 100vw; max-width: 500px; height: 100vh; max-height: 350px; }
-#main h2 { text-align: center; }
+#main video { max-width: 500px; max-height: 350px; }
+#main h2 { margin: 10px 0 0; text-align: center; }
 #main h2 img { max-width: 100%; }
 #main p { display: flex; align-items: center; justify-content: center; margin: 25px 0 0; font-size: 15px; color: #fff; }
 #main .play_btn { margin: 0 10px 0 0; width: 19px; height: 19px; background: url(../img/main/play_btn.svg) no-repeat center; background-size: 100%; text-indent: -9999px; }
@@ -30,11 +30,6 @@ header { background: #000 !important; }
 
 
 
-@media (max-width: 1100px) {
-    #main video { width: 80vh; height: 50vh; }
-}
-
-
 @media (max-width: 767px) {
     /* #main .wrap { padding: 80 } */
     #main video { margin: 0; padding: 0 20px; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
@@ -50,6 +45,6 @@ header { background: #000 !important; }
 
 
 @media (max-height: 700px) {
-    #main video { width: 80vh; height: 50vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main video { height: 40vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     #main h2 img { max-height: 15vh; }
 }
