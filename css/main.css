@@ -8,8 +8,8 @@ body { background: #000; }
 header { background: #000 !important; }
 
 #main .wrap { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100vh; }
-#main .video { display: flex; justify-content: center; width: 100%; margin: 0 0 -50px; }
-#main video { width: 100vw; max-width: 480px; height: 100vh; max-height: 480px; }
+#main .video { display: flex; justify-content: center; width: 100%; margin: 0; }
+#main video { width: 100vw; max-width: 500px; height: 100vh; max-height: 350px; }
 #main h2 { text-align: center; }
 #main h2 img { max-width: 100%; }
 #main p { display: flex; align-items: center; justify-content: center; margin: 25px 0 0; font-size: 15px; color: #fff; }
@@ -26,18 +26,18 @@ header { background: #000 !important; }
 #main_pop .close_btn { position: fixed; top: 30px; left: 30px; width: 35px; height: 35px; background: url(../img/sub/title_x_w.svg) no-repeat center; background-size: 100%; transition: all .3s; text-indent: -9999px; z-index: 999; }
 #main_pop .close_btn:hover { transform: rotate(90deg); }
 
-#main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 600px; height: 100vh; max-height: 600px; transform: translate(-50%, -50%); vertical-align: top; }
+#main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 350px; transform: translate(-50%, -50%); vertical-align: top; }
 
 
 
 @media (max-width: 1100px) {
-    #main video { width: 80vh; height: 70vh; }
+    #main video { width: 80vh; height: 60vh; }
 }
 
 
 @media (max-width: 767px) {
     /* #main .wrap { padding: 80 } */
-    #main video { margin: -30px 0; padding: 0 20px; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main video { margin: 0; padding: 0 20px; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     
     #main h2 { padding: 0 40px; }
     #main h2 img { max-height: 15vh; }
@@ -50,6 +50,6 @@ header { background: #000 !important; }
 
 
 @media (max-height: 700px) {
-    #main video { width: 80vh; height: 70vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main video { width: 80vh; height: 50vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     #main h2 img { max-height: 15vh; }
 }
