@@ -385,5 +385,5 @@ h4.cStyle.on span:after { background: #fff; }
 
 @media (max-width: 424px) {
     /*########## sub title ##########*/
-    .sub_title > div { font-size: 14px; }
+    .sub_title > div { line-height: 22px; font-size: 14px; }
 }
