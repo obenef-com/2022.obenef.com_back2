@@ -28,19 +28,45 @@
 
         <script>
             $(function() {
-                $("#main .play_btn").on("click", function() {
-                    $("#main_pop").show();
+                var video = $("#main .video video");
+                var video_pop = $("#main_pop video");
+
+                // main control
+                $("#main .pause_btn button").on("click", function() {
+
+                    if($(this).hasClass("off")) {
+                        $(this).removeClass();
+
+                        video.get(0).play();
+                    } else {
+                        $(this).addClass("off");
+
+                        video.get(0).pause();
+                    }
                 });
 
+                // popup
+                $("#main .play_btn").on("click", function() {
+                    $("#main_pop").show();
+
+                    video_pop.get(0).play();
+                    video_pop.get(0).currentTime = 0;
+                });
+                
                 $("#main_pop .close_btn").on("click", function() {
                     $(this).parent().hide();
+
+                    video_pop.get(0).pause();
+                    video_pop.get(0).currentTime = 0;
                 });
             });
         </script>
 
         <div id="main">
             <div class="wrap">
-                <div class="video"></div>
+                <div class="video">
+                    <video src="/img/main/obenef.mp4" muted loop="loop" autoplay playsinline></video>
+                </div>
 
                 <h2><img src="/img/main/main_title.svg" alt="share benefit with you"></h2>
                 
@@ -55,9 +81,7 @@
         <div id="main_pop">
             <button class="close_btn">close</button>
 
-            <div class="video">
-
-            </div>
+            <video src="/img/main/obenef.mp4" controls autoplay playsinline></video>
         </div>
 
     </body>
