@@ -1,5 +1,6 @@
 $(function() {
     var header = $("header").hasClass("on");
+    console.log(header);
 
     // language pack
     $("#lang_pack h6").on("click", function() {
@@ -8,29 +9,17 @@ $(function() {
         if(state == 'none') {
             $(this).next().slideDown();
 
-            if(header) {
-                $(this).css("background", "url(/img/common/arrow_up_w.svg) no-repeat right center");
-            } else {
-                $(this).css("background", "url(/img/common/arrow_up.svg) no-repeat right center");
-            }
+            $(this).find("span").css("transform", "rotate(180deg)");
         } else {
             $(this).next().slideUp();
-
-            if(header) {
-                $(this).css("background", "url(/img/common/arrow_down_w.svg) no-repeat right center");
-            } else {
-                $(this).css("background", "url(/img/common/arrow_down.svg) no-repeat right center");
-            }
+            
+            $(this).find("span").css("transform", "rotate(0deg)");
         }
     });
     $("#lang_pack ul li a").on("click", function() {
         $(this).parents("ul").slideUp();
 
-        if(header) {
-            $(this).parents("ul").prev().css("background", "url(/img/common/arrow_down_w.svg) no-repeat right center");
-        } else {
-            $(this).parents("ul").prev().css("background", "url(/img/common/arrow_down.svg) no-repeat right center");
-        }
+        $(this).parents("ul").prev().find("span").css("transform", "rotate(0deg)");
     });
 
 
