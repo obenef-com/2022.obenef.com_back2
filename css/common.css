@@ -63,7 +63,7 @@ nav .sub_menu li { margin: 0 0 0 30px; line-height: 30px; }
 nav .sub_menu li:first-child { margin: 0; }
 nav .sub_menu li a { font-size: 13px; color: #767676; font-weight: 300; transition: all .3s; }
 nav .sub_menu li a:hover { color: #656565; }
-nav .sub_menu li.on a { color: #656565; font-weight: 500; text-decoration: line-through; }
+nav .sub_menu li.on a { color: #656565; font-weight: 500; text-decoration: underline; }
 
 #gnb > li.on .sub_menu { display: flex; }
 

@@ -7,8 +7,7 @@
 /*########## ci ##########*/
 .ci_wrap .sub_title > div li:first-child:before { display: none; }
 
-/* page 1 */
-.about_ci { display: flex; justify-content: space-around; margin: 70px 0 0; }
+.about_ci { display: flex; justify-content: space-around; margin: 70px 0 100px; }
 .about_ci li { position: relative; padding: 180px 0 0; width: 300px; opacity: 0; transition: all 1s; }
 .about_ci li:nth-child(1) { left: -100px; background: url(../img/sub/about/ci_img_1.svg) no-repeat center top; }
 .about_ci li:nth-child(2) { top: 100px; background: url(../img/sub/about/ci_img_2.svg) no-repeat center 40px; }
@@ -29,10 +28,11 @@
 
 .about_ci li:last-child p { max-width: 200px; word-break: keep-all; } 
 
-/* page 2 */
-.ci_wrap .cWrap { position: relative; height: 100%; }
 
-.ci_logo { display: flex; align-items: center; justify-content: center; margin: 180px 0 0; }
+.ci_wrap .cont { position: relative; top: 100px; opacity: 0; transition: all .7s; }
+.ci_wrap .cont.on { top: 0; opacity: 1; }
+
+.ci_logo { display: flex; align-items: center; justify-content: center; margin: 100px 0 0; }
 .ci_logo img { width: 305px; }
 
 .ci_info { margin: 0 0 0 65px; line-height: 28px; font-size: 16px; }
@@ -40,7 +40,7 @@
 .ci_info dt { clear: both; float: left; width: 60px; font-weight: 600; letter-spacing: 0.5px; }
 .ci_info dd { float: left; }
 
-.ci_down { display: flex; justify-content: center; margin: 80px 0 100px; }
+.ci_down { display: flex; justify-content: center; margin: 60px 0 120px; }
 .ci_down li { margin: 0 0 0 10px; width: 320px; height: 55px; }
 .ci_down li:first-child { margin: 0; }
 .ci_down li a { display: block; line-height: 54px; font-size: 16px; color: #282828; border: 1px solid #282828; transition: all .3s; }
@@ -50,7 +50,7 @@
 .ci_down li a:hover { color: #fff; background: #282828; }
 .ci_down li a:hover span:after { background: url(../img/sub/download_icon_w.svg) no-repeat center; }
 
-.ci_color { position: absolute; bottom: 30px; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; text-transform: uppercase; }
+.ci_color { display: flex; align-items: center; justify-content: center; width: 100%; text-transform: uppercase; }
 .ci_color > li { display: flex; align-items: center; }
 .ci_color > li:first-child { margin: 0 20px 0 0; }
 .ci_color h6 { margin: 0 6px 0 0; font-size: 16px; color: #313131; font-weight: 400; }
@@ -63,7 +63,6 @@
 
 
 @media (max-width: 1100px) {
-    /* page 1 */
     .about_ci { margin: 50px 0 0; }
     .about_ci li { padding: 140px 0 0; width: 250px; }
     .about_ci li:nth-child(1) { background-size: 120px; }
@@ -76,7 +75,6 @@
     .about_ci p { margin: 25px auto 0; }
 
 
-    /* page 2 */
     .ci_logo { margin: 70px 0 0; }
     .ci_logo img { width: 280px; }
 
@@ -92,7 +90,6 @@
 }
 
 @media (max-width: 820px) {
-    /* page 1 */
     .about_ci { flex-wrap: wrap; justify-content: start; }
     .about_ci li { margin: 0 0 50px; padding: 110px 0 0; width: 50%; }
     .about_ci li:nth-child(1) { background-size: 100px; }
@@ -104,7 +101,6 @@
     .about_ci li:last-child p { width: 190px; }
 
 
-    /* page 2 */
     .ci_logo { display: block; margin: 70px 0 0; text-align: center; }
     .ci_logo img { width: 280px; }
 
@@ -119,7 +115,6 @@
 }
 
 @media (max-width: 767px) {
-    /* page 1 */
     .about_ci { justify-content: center; }
     .about_ci li { margin: 0 0 100px; padding: 110px 0 0; width: 100%; }
     .about_ci li:nth-child(2) { padding: 90px 0 0; background-position: center top; }
@@ -127,7 +122,6 @@
     .about_ci li:before { display: block; top: -70px; bottom: auto; left: 50%; transform: translateX(-50%); }
 
 
-    /* page 2 */
     .ci_down { display: block; margin: 80px 0 0; }
     .ci_down li { margin: 0 auto; height: 45px; }
     .ci_down li:first-child { margin: 0 auto 10px; }
@@ -157,12 +151,12 @@
 .opeople .cont p b { font-weight: 600; }
 .opeople .cont p i { display: block; font-style: normal; }
 
-.opeople .cont_1 { display: flex; align-items: center; justify-content: end; position: relative; padding: 0 0 175px; }
+.opeople .cont_1 { position: relative; padding: 0 0 175px; text-align: right; }
 .opeople .cont_1:after { content: ""; position: absolute; bottom: 0; left: 50%; width: 2px; height: 130px; background: #919191; transform: translateX(-50%); }
-.opeople .cont_1 .img { position: relative; }
+.opeople .cont_1 .img { position: relative; display: inline-block; vertical-align: top; }
 .opeople .cont_1 .img div { position: absolute; bottom: -130px; left: -240px; opacity: 0; transition: all 2s; }
 .opeople .cont_1 .img div.on { bottom: -30px; left: -240px; opacity: 1; }
-.opeople .cont_1 .txt { margin: 0 0 0 20px; width: 400px; }
+.opeople .cont_1 .txt { display: inline-block; margin: 15px 0 0 20px; width: 400px; text-align: left; vertical-align: top; }
 .opeople .cont_1 p { margin: 25px 0 0; }
 
 .opeople .cont_2 { margin: 40px 0 30px; }
@@ -170,15 +164,17 @@
 .opeople .cont_2 .quot_txt:before { content: ""; position: absolute; top: -5px; left: -20px; width: 12px; height: 8px; background: url(../img/sub/about/quotation_marks_1.svg) no-repeat center; background-size: 100%; }
 .opeople .cont_2 .quot_txt:after { content: ""; display: inline-block; margin: 0 0 0 5px; width: 12px; height: 8px; background: url(../img/sub/about/quotation_marks_2.svg) no-repeat center; background-size: 100%; vertical-align: bottom; }
 
-.opeople .name { display: flex; justify-content: end; } 
+.opeople .name { text-align: right; } 
 
 
 
 @media (max-width: 1100px) {
-    .opeople .cont_1 { justify-content: center; padding: 0 0 175px; }
+    .opeople .cont_1 { padding: 0 0 175px; text-align: center; }
     .opeople .cont_1:after { display: none; }
+    .opeople .cont_1 .img { width: 340px; }
     .opeople .cont_1 .img div { position: absolute; bottom: -240px; left: 0; }
     .opeople .cont_1 .img div.on { bottom: -140px; left: 0; }
+    .opeople .cont_1 .txt { margin: 15px 0 0 10px; }
 
     .opeople .cont_2 .quot_txt { padding: 0 0 0 20px; line-height: 28px; font-size: 18px; }
     .opeople .cont_2 .quot_txt:before { left: 0; }
@@ -474,7 +470,8 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 .location .info p { margin: 5px 0 0; line-height: 22px; font-size: 14px; color: #313131; font-weight :500; }
 
 
-
+/* popup */
+.location_pop {}
 
 
 
