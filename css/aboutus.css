@@ -455,7 +455,7 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
 .location .map { display: flex; }
 .location .map > div { height: 400px; }
-.location .map > div:first-child { overflow: hidden; }
+.location .map > div:first-child { width: 60%; overflow: hidden; }
 .location .root_daum_roughmap { width: 100% !important; }
 .location .wrap_map { height: 400px !important; }
 /* .location .wrap_controllers { display: none; } */

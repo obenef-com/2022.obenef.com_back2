@@ -23,6 +23,7 @@
             $(function() {
                 $("header").load("/header.html", function() { 
                     $("#gnb > li").eq(1).addClass("on").find("li").eq(0).addClass("on");
+                    $.getScript("/js/common.js");
                 });
             });
             </script>

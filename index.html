@@ -20,7 +20,9 @@
         <header id="header" class="on">
             <script>
             $(function() {
-                $("#header").load("/header.html");
+                $("#header").load("/header.html", function() {
+                    $.getScript("/js/common.js");
+                });
             });
             </script>
         </header>
