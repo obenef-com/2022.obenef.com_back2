@@ -443,7 +443,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap #section_2 .cont_1 li { position: relative; text-align: center; color: #313131; font-weight: 500; }
 .aiger_wrap #section_2 .cont_1 li:nth-child(1) { width: 200px; padding: 0 0 210px; background: url(../img/sub/business/aiger_2_a.svg) no-repeat center bottom; }
 .aiger_wrap #section_2 .cont_1 li:nth-child(1):after { content: ""; position: absolute; top: 80px; right: -70px; width: 30px; height: 30px; background: url(../img/sub/title_x.svg) no-repeat center; background-size: 100%; transform: rotate(45deg); z-index: 9; }
-.aiger_wrap #section_2 .cont_1 li:nth-child(2) { margin: 40px 0 0; padding: 25px 50px; background: linear-gradient(150deg, #CEDBEF, #F4F7FC); border-radius: 300px; }
+.aiger_wrap #section_2 .cont_1 li:nth-child(2) { margin: 40px 0 0; padding: 25px 50px; height: 105px; background: linear-gradient(150deg, #CEDBEF, #F4F7FC); border-radius: 300px; }
 .aiger_wrap #section_2 .cont_1 li:nth-child(3) { width: 200px; padding: 0 0 200px; background: url(../img/sub/business/aiger_2_b.svg) no-repeat center bottom; }
 .aiger_wrap #section_2 .cont_1 li:nth-child(3):before { content: ""; position: absolute; top: 80px; left: -70px; width: 30px; height: 30px; background: url(../img/sub/title_x.svg) no-repeat center; background-size: 100%; transform: rotate(45deg); }
 .aiger_wrap #section_2 .cont_1 span { display: block; font-size: 14px; color: #939393; }
@@ -570,7 +570,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .aiger_wrap #section_2 .cont_1 ul { position: relative; display: block; margin: 0 0 370px; text-align: center; }
     .aiger_wrap #section_2 .cont_1 li:nth-child(1) { position: absolute; top: 160px; left: 50%; transform: translateX(-300px); }
     .aiger_wrap #section_2 .cont_1 li:nth-child(1):after { top: -50px; left: 50%; right: auto; transform: rotate(45deg) translateX(-50%); }
-    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { margin: 0; display: inline-block; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { margin: 0; display: inline-block; height: 101px; }
     .aiger_wrap #section_2 .cont_1 li:nth-child(3) { position: absolute; top: 160px; right: 50%; transform: translateX(290px); }
     .aiger_wrap #section_2 .cont_1 li:nth-child(3):before { top: -50px; left: 50%; transform: rotate(45deg) translateX(-50%); }
     .aiger_wrap #section_2 .cont_1 h4 { font-size: 20px; }
@@ -703,7 +703,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .aiger_wrap #section_2 .cont_1 ul { margin: 0 0 350px; }
     .aiger_wrap #section_2 .cont_1 li:nth-child(1) { padding: 0 0 190px; width: 130px; left: 0; background-size: 100%; transform: none; }
     .aiger_wrap #section_2 .cont_1 li:nth-child(1):after { top: -40px; width: 25px; height: 25px; }
-    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { padding: 20px 40px; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { padding: 20px 40px; height: 88px; }
     .aiger_wrap #section_2 .cont_1 li:nth-child(3) { padding: 0 0 170px; width: 130px; right: 0; background-size: 100%; transform: none; }
     .aiger_wrap #section_2 .cont_1 li:nth-child(3):before { top: -40px; width: 25px; height: 25px; }
     .aiger_wrap #section_2 .cont_1 h4 { font-size: 18px; }
