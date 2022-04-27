@@ -474,7 +474,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap .footer_2 h6 i { margin: 0 0 0 4px; font-size: 12px; color: #939393; font-style: normal; text-transform: uppercase; }
 .aiger_wrap .footer_2 div { width: calc(100% - 260px); }
 .aiger_wrap .footer_2 div p { line-height: 24px; font-size: 15px; color: #313131; }
-.aiger_wrap .footer_2 div span { background: rgba(167, 207, 255, .3); }
+.aiger_wrap .footer_2 div span { background: rgba(167, 207, 255, .3); word-break: keep-all; }
 .aiger_wrap .footer_2 div i { font-weight: 600; font-style: normal; }
 .aiger_wrap .footer_2 div u { font-size: 12px; text-decoration: none; }
 
