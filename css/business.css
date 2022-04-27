@@ -128,8 +128,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_5 .left p { margin: 25px 0 0; line-height: 28px; font-size: 16px; color: #313131; }
 
 .gest_wrap #section_2 .cont_5 .right { position: relative; width: calc(54% - 65px); background: #146bbc; }
-.gest_wrap #section_2 .cont_5 .right:before { content: ""; position: absolute; top: -81px; left: -81px; border: 81px solid transparent; border-right-color: #146bbc; transform: rotate(135deg); }
-.gest_wrap #section_2 .cont_5 .right:after { content: ""; position: absolute; bottom: -81px; left: -81px; border: 81px solid transparent; border-left-color: #146bbc; transform: rotate(45deg); }
+.gest_wrap #section_2 .cont_5 .right:before { content: ""; position: absolute; top: -81px; left: -80px; border: 81px solid transparent; border-right-color: #146bbc; transform: rotate(135deg); }
+.gest_wrap #section_2 .cont_5 .right:after { content: ""; position: absolute; bottom: -81px; left: -80px; border: 81px solid transparent; border-left-color: #146bbc; transform: rotate(45deg); }
 .gest_wrap #section_2 .cont_5 .right h4 { color: #fff; }
 .gest_wrap #section_2 .cont_5 .right ul { display: flex; justify-content: space-between; margin: 20px 0 0; }
 .gest_wrap #section_2 .cont_5 .right li { width: 220px; color: #fff; text-align: center; }
