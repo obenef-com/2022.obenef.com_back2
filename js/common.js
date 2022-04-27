@@ -50,20 +50,4 @@ $(function() {
     $(".etc_service").load("/service.html");
 
 
-
-    function obenef() {
-        var w = $(window).innerWidth() || window.innerWidth;
-
-        if(w < 1100) {
-
-        } else {
-
-        }
-    }
-
-    $(window).resize(function() {
-        obenef();
-    });
-
-    obenef();
 });
