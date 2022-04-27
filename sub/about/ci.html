@@ -37,16 +37,7 @@
         <script>
         $(function() {
             $(".about_ci li").addClass("on");
-
-            var ci_logo_top = $(".ci_logo").offset().top;
-
-            $(window).scroll(function() {
-                var scr_top = $(this).scrollTop();
-                
-                if(scr_top > (ci_logo_top - 800)) {
-                    $(".ci_wrap .cont").addClass("on");
-                }
-            });
+            $(".ci_wrap .cont").addClass("on");
         });
         </script>
 
