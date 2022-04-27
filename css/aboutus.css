@@ -549,7 +549,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 .history_1 { background: #E2E6F0; }
 .history_1 .title:before { content: "1"; top: -70px; opacity: .5; }
 
-.history_1 .cont > div:last-child h6 { background: linear-gradient(#fff, transparent); }
+.history_1 .cont > div:last-child h6 { background: linear-gradient(#fff, rgba(255, 255, 255, 0)); }
 .history_1 .cont > div:last-child dl { padding-bottom: 200px; }
 
 
