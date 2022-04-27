@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/business.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/header.html", function() { 
+                    $("#gnb > li").eq(1).addClass("on").find("li").eq(2).addClass("on");
+                    $.getScript("/js/common.js");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/sub/business/aiger.html"><i>&nbsp;</i><span>AIGER</span></a></div>
+            <div class="next"><a href="/sub/edutech/rd.html"><i>&nbsp;</i><span>R&amp;D</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $("#fullpage").fullpage({
+                anchors: ['Page1', 'Page2'],
+                scrollOverflow: true,
+                navigation: true,
+                navigationPosition: 'right',
+            });
+
+            var btn = $(".edu_wrap #section_2 .slide_btn li button");
+            var cont_wrap = $(".edu_wrap #section_2 .cont");
+            var cont = $(".edu_wrap #section_2 .cont div").eq(0);
+
+            $(window).resize(function() {
+                if($(".edu_wrap #section_2 .slide_btn li").eq(1).hasClass("on") && $(".edu_wrap #section_2 .slide_btn li").eq(1).hasClass("right")) {
+                    cont_wrap.stop().animate({right: cont.width() + 32}, 0);
+                }
+            });
+
+            btn.on("click", function() {
+                var idx = $(this).parent().index();
+
+                btn.parent().removeClass("on");
+                btn.parent().eq(idx).addClass("on");
+
+                if($(this).parent().hasClass("on") && $(this).parent().hasClass("left")) {
+                    cont_wrap.stop().animate({right: 0});
+                }
+                if($(this).parent().hasClass("on") && $(this).parent().hasClass("right")) {
+                    cont_wrap.stop().animate({right: cont.width() + 32});
+                }
+            });
+        });
+        </script>
+
+
+        <div id="fullpage" class="edu_wrap">
+            <!-- page 1 -->
+            <div class="section" id="section_1">
+                <div class="cWrap cWrap_1">
+                    <div class="sub_title">
+                        <h3>전문교육<span>콘텐츠 개발 서비스</span></h3>
+                        <div>
+                            <div>코로나19로 급변한 환경에서 기존 오프라인 교육을 온라인 콘텐츠로 어떻게 제공해야 할까요?</div>
+                            <div>
+                                기존 온라인 교육 서비스의 학습자들이 가지고 있는 다양한 불만을 어떻게 해결하고 학습 집중도와 성취도를 개선 할 수 있을까요? 우리가 생각하는 <span>전문교육콘텐츠 개발을 위한 핵심적인 고민</span> 입니다.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cont_wrap cont">
+                        <h4>전문 교육 콘텐츠 상품 종류 안내</h4>
+
+                        <ul>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_1.jpg" alt="교안 중심 이론 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>교안 중심 이론 수업형</h6>
+                                    <p>멀티미디어 자료와 원고를 활용하여 교안 중심으로 동영상 수업 진행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_2.jpg" alt="교구 이용 실습 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>교구 이용 실습 수업형</h6>
+                                    <p>교안 중심 이론 수업과 더불어 교구를 이용한 실습 수업을 병행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_3.jpg" alt="교수-학습자 상호작용 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>교수-학습자 상호작용 수업형<span>과제 해결 중심</span></h6>
+                                    <p>교안 중심 이론 수업과 함께 교수자-학습자가 스튜디오에서 교구를 이용하거나, 토론을 통해 과제 해결 중심으로 수업을 진행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_4.jpg" alt="소프트웨어 이용 화면 녹화 실습 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>소프트웨어 이용 화면 녹화 실습 수업형</h6>
+                                    <p>교안 중심 이론 수업과 함께 PC나 스마트기기 화면을 녹화하는 실습 수업 진행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_5.jpg" alt="전자칠판 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>전자칠판 수업형</h6>
+                                    <p>
+                                        교수자가 촬영할 교안(PPT)를 지참하고 광주 동명동 스튜디오에 내방하여 교수자와 전자칠판 내용을 동시 촬영 및 편집 교안 
+                                        <span>교안 내용에 대한 저작권, 윤문 처리에 대한 작업 불가능</span>
+                                        <i>광주 동명동 스튜디오에서 전자칠판으로 진행</i>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 1 -->
+
+            <!-- page 2 -->
+            <div class="section" id="section_2">
+                <div class="cWrap cWrap_3">
+                    <div class="cont_wrap">
+                        <h4>오베네프만의 특장점</h4>
+
+                        <ul class="info">
+                            <li>참여교수</li>
+                            <li>오베네프</li>
+                        </ul>
+                        
+                        <!-- mobile button -->
+                        <ul class="slide_btn">
+                            <li class="on left"><button>참여교수</button><span>클릭하면 이동됩니다.</span></li>
+                            <li class="right"><button>오베네프</button><span>클릭하면 이동됩니다.</span></li>
+                        </ul> <!-- // mobile button -->
+
+                        <ul class="cont">
+                            <!-- 착수 -->
+                            <li>
+                                <div>&nbsp;</div>
+                                <div>착수</div>
+                                <div>
+                                    <p>기초 제안 및 계약</p>
+                                </div>
+                            </li> <!-- // 착수 -->
+
+                            <!-- 분석 -->
+                            <li>
+                                <div>&nbsp;</div>
+                                <div>분석</div>
+                                <div>
+                                    <p>개발할 과목에 대한 교육과정 분석</p>
+                                    <p>아이디어 정리</p>
+                                </div>
+                            </li> <!-- // 분석 -->
+
+                            <!-- 설계 -->
+                            <li>
+                                <div>
+                                    <p>분석 결과를 기초로 초도 회의 및 오리엔테이션 <span><i>(교구 관련 협의)</i></span></p>
+                                    <p>원고 전달 및 촬영용 원고 승인</p>
+                                    <p>의상, 메이크업, 안내 자료 수령</p>
+                                </div>
+                                <div>설계</div>
+                                <div>
+                                    <p>교육 콘텐츠 개발 유형 선정 및 원고 작성 가이드 개발</p>
+                                    <p>촬영을 위한 최소 원고 수정</p>
+                                </div>
+                            </li> <!-- // 설계 -->
+
+                            <!-- 프로토타입 제작 -->
+                            <li>
+                                <div>
+                                    <p>의상과 메이크업 후 원고로 영상 촬영</p>
+                                    <p>스토리보드 <i>(교안+자막)</i>을 PPT형태로 확인 및 승인</p>
+                                    <p>영상 / 저작권관리대장 / 약어표 / 강의노트 승인</p>
+                                </div>
+                                <div><span>프로토</span>타입 제작</div>
+                                <div>
+                                    <p>프로토타입 <i>(1회차 분량)</i> 영상 촬영</p>
+                                    <p>프로토타입 <i>(1회차 분량)</i> 스토리보드 개발</p>
+                                    <p>프로토타입 <i>(1회차 분량)</i> 영상 개발 / 저작권 관리 대장, 약어표, 강의노트 개발</p>
+                                </div>
+                            </li> <!-- // 프로토타입 제작 -->
+
+                            <!-- 양산 및 중간 검수 -->
+                            <li>
+                                <div>
+                                    <p>의상과 메이크업 후 원고로 영상 촬영</p>
+                                    <p>스토리보드 <i>(교안+자막)</i>을 PPT형태로 확인 및 승인</p>
+                                    <p>영상 / 저작권관리대장 / 약어표 / 강의노트 승인</p>
+                                    <p>* 1, 2차 상동</p>
+                                </div>
+                                <div>양산 및 <span>중간</span> 검수</div>
+                                <div>
+                                    <p>1차 영상 촬영</p>
+                                    <p>1차 스토리보드 제작</p>
+                                    <p>1차 영상 개발 / 저작권관리대장, 약어표, 강의노트 개발</p>
+                                    <p>2차 영상 촬영</p>
+                                    <p>2차 스토리보드 제작</p>
+                                    <p>2차 영상 개발 / 저작권관리대장, 약어표, 강의노트 개발</p>
+                                </div>
+                            </li> <!-- // 양산 및 중간 검수 -->
+                            
+                            <!-- 분석 -->
+                            <li>
+                                <div>
+                                    <p>최종검수</p>
+                                </div>
+                                <div>분석</div>
+                                <div>
+                                    <p>산출물 최종 검수</p>
+                                    <p>LMS 포팅 및 서비스 최종 검수</p>
+                                    <p>모니터 및 시범운영</p>
+                                </div>
+                            </li> <!-- // 분석 -->
+
+                            <!-- 종료 -->
+                            <li>
+                                <div>
+                                    <p>승인 및 종료</p>
+                                </div>
+                                <div>종료</div>
+                                <div>
+                                    <p>승인 및 종료</p>
+                                </div>
+                            </li> <!-- // 종료 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 2 -->
+        </div>
+    </body>
+</html>

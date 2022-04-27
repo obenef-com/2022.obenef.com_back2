@@ -17,7 +17,7 @@
 
     <body>
         <!-- header -->
-        <header>
+        <header class="on">
             <script>
             $(function() {
                 $("header").load("/header.html", function() { 
@@ -29,21 +29,38 @@
         </header>
         <!-- // header -->
 
-        <div id="pageBtn">
-            <div class="prev"><a href="/sub/careers/inquire.html"><i>&nbsp;</i><span>문의하기</span></a></div>
+        <div id="pageBtn" class="on">
+            <div class="prev"><a href="https://docs.google.com/forms/d/1NZ-i3MlvWPNgyTVmSrEG73946jJwGqVd2505cvAI4Ys/edit" target="_blank"><i>&nbsp;</i><span>문의하기</span></a></div>
             <div class="next"><a href="/sub/about/ci.html"><i>&nbsp;</i><span>CI</span></a></div>
         </div>
 
         <script>
         $(function() {
             $("#fullpage").fullpage({
-                anchors: ['Page1', 'Page2'],
+                anchors: ['Page1', 'Page2', 'Page3'],
                 scrollOverflow: true,
                 navigation: true,
                 navigationPosition: 'right',
                 'afterLoad': function(origin, destination, direction){
                     if(destination==1) {
-                    } else {
+                        $("header").removeClass("vision_2 vision_3").addClass("vision_1");
+                    }
+                    if(destination==2) {
+                        $("header").removeClass("vision_1 vision_3").addClass("vision_2");
+                    }
+                    if(destination==3) {
+                        $("header").removeClass("vision_1 vision_2").addClass("vision_3");
+                    }
+                },
+                'onLeave': function(origin, destination, direction) {
+                    if(destination==1) {
+                        $("header").removeClass("vision_2 vision_3").addClass("vision_1");
+                    }
+                    if(destination==2) {
+                        $("header").removeClass("vision_1 vision_3").addClass("vision_2");
+                    }
+                    if(destination==3) {
+                        $("header").removeClass("vision_1 vision_2").addClass("vision_3");
                     }
                 }
             });
@@ -51,10 +68,75 @@
         </script>
 
 
-        <div id="fullpage" class="ci_wrap">
+        <div id="fullpage" class="vision_wrap">
             <!-- page 1 -->
             <div class="section" id="section_1">
                 <div class="cWrap cWrap_1">
+                    <div class="sub_title on">
+                        <h3>VISION</h3>
+                        <div>
+                            <div>
+                                에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하겠습니다.
+                            </div>
+                            <div>
+                                기업의 이념인 <i>Open Benefit</i> 을 기반으로 <span>울타리기업</span> 모델을 완성하겠습니다.
+                                <p>울타리기업 : 풍족한 삶의 질을 영위해 나갈 수 있는 소득수준을 보장하고 사회적인 안정망을 제공해주는 기업</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="cStyle on">
+                        <span>obenef</span>
+                        purpose &amp; values
+                    </h4>
+
+                    <div class="v_cont vision1">
+                         <h4>
+                             <span>open</span>
+                             오픈 이노베이션 기업
+                        </h4>
+
+                        <!-- <video src="/img/sub/about/vision1_1.webm" muted loop="loop" autoplay playsinline></video> -->
+                        <div class="img"><img src="/img/sub/about/vision1.svg"></div>
+
+                        <h4>
+                            <span>benefit</span>
+                            사회·사업·사람에 이득이 되는 기업
+                       </h4>
+                    </div>
+                </div>
+
+                <div class="cont_2">
+                    <div>
+                        <h4 class="cStyle on">
+                            <span>our</span>
+                            performance
+                        </h4>
+
+                        <ul>
+                            <li><span>2014</span>콜롬비아 ICT 교육역량 강화사업 참여</li>
+                            <li><span>2018</span>MOOC 솔루션 국산화</li>
+                            <li><span>2019</span>AI 플랫폼 개발</li>
+                            <li><span>2020</span>미래교육환경 설계 및 프로토타입 개발</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <h4 class="cStyle on">
+                        <span>our</span>
+                        technologies
+                    </h4>
+
+                    <div class="cont_3">
+                        <ul>
+                            <li><h5>플랫폼 기술</h5>토탈 에듀케이션 플랫폼</li>
+                            <li><h5>클라우드 컴퓨팅 기술</h5>온라인 가상 컴퓨터실</li>
+                            <li><h5>콘텐츠 기술</h5><span>온오프라인</span> 미래형 교육과정과 인력개발</li>
+                        </ul>
+
+                        <p><span>시스템 + 콘텐츠 기술의 융합! &amp; 미래교육환경 글로벌 표준 정립과 글로벌 에듀테크 SNS 플랫폼 구축</span></p>
+                    </div>
                 </div>
             </div>
             <!-- // page 1 -->
@@ -62,9 +144,75 @@
             <!-- page 2 -->
             <div class="section" id="section_2">
                 <div class="cWrap cWrap_1">
+                    <h4 class="cStyle on">
+                        <span>obenef</span>
+                        innovation
+                    </h4>
+
+                    <div class="v_cont vision2">
+                        <div class="img_1"><img src="/img/sub/about/vision2_1.svg"></div>
+                        
+                        <h4>
+                            <span>open</span>
+                            오픈 이노베이션 기업
+                        </h4>
+                        
+                        <div class="img_2"><img src="/img/sub/about/vision2_2.svg"></div>
+                    </div>
+
+                    <ul class="vision_list">
+                        <li>
+                            <h5><span>present</span>2020</h5>
+                            <div>
+                                <p>인스타그램 등 소비 위주 SNS 쇠퇴 예상 <span>(구매능력 저하, 반사회성 증가, IT 친숙 감독자 증가)</span></p>
+                                <p>SNS의 능력/학력/인력 등 교육기능 요구</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h5><span>future</span>2023</h5>
+                            <div>
+                                <p>미래교육환경 글로벌 표준 정립과 SNS 구축</p>
+                                <p>매출 1,000억, 300명 규모로 확대</p>
+                                <p>기업경제가치 0.5조, 사회적가치 1조</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- // page 2 -->
+            
+            <!-- page 3 -->
+            <div class="section" id="section_3">
+                <div class="cWrap cWrap_1">
+                    <h4 class="cStyle on">
+                        <span>benefit</span>
+                    </h4>
+
+                    <div class="v_cont vision3">
+                        <div class="img_1"><img src="/img/sub/about/vision3_1.svg"></div>
+                        
+                        <h4>
+                            <span>benefit</span>
+                            사회·사업·사람에 이득이 되는 기업
+                       </h4>
+                        
+                        <div class="img_2"><img src="/img/sub/about/vision3_2.svg"></div>
+                    </div>
+
+                    <ul class="vision_list">
+                        <li>&nbsp;</li>
+                        <li>
+                            <h5><span>future</span>2023</h5>
+                            <div>
+                                <p>회사 전 구성원 적금/퇴직/연금 제공</p>
+                                <p>공정하고 투명한 운영시스템 구축</p>
+                                <p>능력 우선주의, 구성원들의 정년 보장</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // page 3 -->
         </div>
     </body>
 </html>

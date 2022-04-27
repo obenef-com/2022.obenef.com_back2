@@ -13,11 +13,16 @@ header { background: #000 !important; }
 #main h2 { margin: 10px 0 0; text-align: center; }
 #main h2 img { max-width: 100%; }
 #main p { display: flex; align-items: center; justify-content: center; margin: 25px 0 0; font-size: 15px; color: #fff; }
-#main .play_btn { margin: 0 10px 0 0; width: 19px; height: 19px; background: url(../img/main/play_btn.svg) no-repeat center; background-size: 100%; text-indent: -9999px; }
+#main .play_btn { margin: 0 10px 0 0; width: 19px; height: 19px; background: url(../img/main/pop_play_btn.svg) no-repeat center; background-size: 100%; text-indent: -9999px; }
 
-#main .pause_btn { position: fixed; bottom: 30px; right: 30px; width: 28px; height: 28px; background-size: 100%; }
-#main .pause_btn button { width: 100%; height: 100%; background: url(../img/main/pause_btn.svg) no-repeat center; background-size: 100%; text-indent: -9999px; }
-#main .pause_btn button.off { background: url(../img/main/play_btn.svg) no-repeat center; background-size: 100%; }
+#main .btn_group { position: fixed; bottom: 30px; right: 30px; display: flex; }
+#main .btn_group li { width: 40px; height: 40px; border: 2px solid #fff; border-left: 0; }
+#main .btn_group li:first-child { border-left: 2px solid #fff; }
+#main .btn_group button { display: block; width: 100%; height: 100%; text-indent: -9999px; }
+#main .btn_group .sound { background: url(../img/main/muted_btn.svg) no-repeat center; background-size: 20px; }
+#main .btn_group .pause { background: url(../img/main/pause_btn.svg) no-repeat center; background-size: 15px; }
+#main .btn_group .sound.on { background: url(../img/main/volume_btn.svg) no-repeat center 10px; background-size: 20px; }
+#main .btn_group .pause.on { background: url(../img/main/play_btn.svg) no-repeat center; background-size: 15px; }
 
 
 

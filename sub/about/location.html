@@ -22,6 +22,7 @@
             $(function() {
                 $("header").load("/header.html", function() { 
                     $("#gnb > li").eq(0).addClass("on").find("li").eq(5).addClass("on");
+                    $.getScript("/js/common.js");
                 });
             });
             </script>
@@ -40,10 +41,11 @@
         $(function() {
             $(".location .tabMenu li").on("click", function() {
                 var idx = $(this).index();
+                var tabmenu = $(".location .tabMenu li");
                 var tabcont = $(".location .tabCont > div");
 
-                $(this).removeClass("on");
-                $(this).eq(idx).addClass("on");
+                $(tabmenu).removeClass();
+                $(tabmenu).eq(idx).addClass("on");
                 $(tabcont).hide();
                 $(tabcont).eq(idx).show();
 
@@ -81,7 +83,22 @@
                 "mapHeight" : "360"
             }).render();
 
+
+            $(".location_pop button, .location_pop .pop_bg").on("click", function() {
+                $(".location_pop").fadeOut();
+                $("html, body").css("overflow-y", "auto");
+            });
         });
+
+        function view_gallery(num) {
+            $(".location_pop").fadeIn();
+            $("html, body").css("overflow", "hidden");
+
+            var cont = $(".location_pop .cont");
+
+            cont.hide();
+            cont.eq(num).show();
+        }
 
         </script>
 
@@ -100,23 +117,26 @@
                     <li>정자 스튜디오</li>
                 </ul> <!-- // tab menu -->
 
-                <!-- tab contents -->
+                <!-- tab contents --> 
                 <div class="tabCont">
                     <!-- 광주 사무실 -->
                     <div>
                         <h4>obenef office</h4>
 
-                        <div class="map">
+                        <div class="map_wrap">
                             <div>
                                 <div id="daumRoughmapContainer1650443993446" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                             </div>
-                            <div></div>
+                            <div onclick="view_gallery(0);">
+                                <img src="/img/sub/about/location_1_main.jpg" alt="광주 사무실">
+                            </div>
                         </div>
 
                         <div class="info">
-                            <h6>obenef 9<button>view</button></h6>
-                            <address>(61228) 광주광역시 북구 무등로 239, 한국시멘트빌딩 9층<a href="">지도보기</a></address>
-                            <p>000-0000-0000</p>
+                            <h6>obenef 9</h6>
+                            <address><span>(61228) 광주광역시 북구 무등로 239,</span> 한국시멘트빌딩 9층<a href="http://kko.to/PcTc9JxA8" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(0);">view</button>
                         </div>
                     </div> <!-- // 광주 사무실 -->
 
@@ -124,17 +144,20 @@
                     <div>
                         <h4>obenef office</h4>
 
-                        <div class="map">
+                        <div class="map_wrap">
                             <div>
                                 <div id="daumRoughmapContainer1650442444683" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                             </div>
-                            <div></div>
+                            <div onclick="view_gallery(1);">
+                                <img src="/img/sub/about/location_2_main.jpg" alt="수내 사무실">
+                            </div>
                         </div>
 
                         <div class="info">
-                            <h6>obenef 601<button>view</button></h6>
-                            <address>(13595) 경기도 성남시 분당구 황새울로 258번길 31, 601호 (수내동, 예미지빌딩)<a href="">지도보기</a></address>
-                            <p>000-0000-0000</p>
+                            <h6>obenef 601</h6>
+                            <address><span>(13595) 경기도 성남시 분당구 황새울로 258번길 31,</span> 601호 (수내동, 예미지빌딩)<a href="http://kko.to/1PKhM9wRs" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(1);">view</button>
                         </div>
                     </div> <!-- // 수내 사무실 -->
 
@@ -142,17 +165,20 @@
                     <div>
                         <h4>obenef office</h4>
 
-                        <div class="map">
+                        <div class="map_wrap">
                             <div>
                                 <div id="daumRoughmapContainer1650443853815" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                             </div>
-                            <div></div>
+                            <div onclick="view_gallery(2);">
+                                <img src="/img/sub/about/location_3_main.jpg" alt="광주 스튜디오">
+                            </div>
                         </div>
 
                         <div class="info">
-                            <h6>obenef 905<button>view</button></h6>
-                            <address>(61429) 광주광역시 동구 동계천로 81, 3층<a href="">지도보기</a></address>
-                            <p>000-0000-0000</p>
+                            <h6>obenef 3</h6>
+                            <address><span>(61429) 광주광역시 동구 동계천로 81,</span> 3층<a href="http://kko.to/4LUz9RScz" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(2);">view</button>
                         </div>
                     </div> <!-- // 광주 스튜디오 -->
                     
@@ -160,21 +186,130 @@
                     <div>
                         <h4>obenef office</h4>
                         
-                        <div class="map">
+                        <div class="map_wrap">
                             <div>
                                 <div id="daumRoughmapContainer1650444336591" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                             </div>
-                            <div></div>
+                            <div onclick="view_gallery(3);">
+                                <img src="/img/sub/about/location_4_main.jpg" alt="정자 스튜디오">
+                            </div>
                         </div>
                         
                         <div class="info">
-                            <h6>obenef 3<button>view</button></h6>
-                            <address>(13558) 경기도 성남시 분당구 느티로 16, 905호 (정자동, 젤존타워 1)<a href="">지도보기</a></address>
-                            <p>000-0000-0000</p>
+                            <h6>obenef 905</h6>
+                            <address><span>(13558) 경기도 성남시 분당구 느티로 16,</span> 905호 (정자동, 젤존타워 1)<a href="http://kko.to/KnnnG5O6o" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(3);">view</button>
                         </div>
                     </div> <!-- // 정자 스튜디오 -->
                 </div> <!-- // tab contents -->
             </div>
         </div>
+
+
+
+        <!-- popup image -->
+        <div class="location_pop">
+            <div class="pop_bg">&nbsp;</div>
+            <div class="cont_wrap">
+                <button>close</button>
+
+                <!-- 광주 사무실 -->
+                <div class="cont cont_1">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>gwangju obenef 9</p>
+                    </div>
+    
+                    <address><span>(61228) 광주광역시 북구 무등로 239,</span> 한국시멘트빌딩 9층<a href="http://kko.to/PcTc9JxA8" target="_blank">&nbsp;</a></address>
+    
+                    <ul>
+                        <li><img src="/img/sub/about/location_1_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_9.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_10.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_11.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_12.jpg"></li>
+                    </ul>
+                </div> <!-- // 광주 사무실 -->
+
+                <!-- 수내 사무실 -->
+                <div class="cont cont_2">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>sunae obenef 601</p>
+                    </div>
+    
+                    <address><span>(13595) 경기도 성남시 분당구 황새울로 258번길 31,</span> 601호 (수내동, 예미지빌딩)<a href="http://kko.to/1PKhM9wRs" target="_blank">&nbsp;</a></address>
+    
+                    <ul>
+                        <li><img src="/img/sub/about/location_2_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_9.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_10.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_11.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_12.jpg"></li>
+                    </ul>
+                </div> <!-- // 수내 사무실 -->
+                
+                <!-- 광주 스튜디오 -->
+                <div class="cont cont_3">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>gwangju obenef 3</p>
+                    </div>
+                    
+                    <address><span>(61429) 광주광역시 동구 동계천로 81,</span> 3층<a href="http://kko.to/4LUz9RScz" target="_blank">&nbsp;</a></address>
+                    
+                    <ul>
+                        <li><img src="/img/sub/about/location_3_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_9.jpg"></li>
+                    </ul>
+                </div> <!-- // 광주 스튜디오 -->
+                
+                <!-- 정자 스튜디오 -->
+                <div class="cont cont_4">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>jeong-ja obenef 905</p>
+                    </div>
+    
+                    <address><span>(13558) 경기도 성남시 분당구 느티로 16,</span> 905호 (정자동, 젤존타워 1)<a href="http://kko.to/KnnnG5O6o" target="_blank">&nbsp;</a></address>
+
+                    <ul>
+                        <li><img src="/img/sub/about/location_4_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_9.jpg"></li>
+                    </ul>
+                </div> <!-- // 정자 스튜디오 -->
+            </div> 
+            
+        </div> <!-- // popup image -->
+
     </body>
 </html>

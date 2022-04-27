@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/careers.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/header.html", function() { 
+                    $("#gnb > li").eq(4).addClass("on").find("li").eq(1).addClass("on");
+                    $.getScript("/js/common.js");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/sub/careers/talent.html"><i>&nbsp;</i><span>채용정보 및 채용절차</span></a></div>
+            <div class="next"><a href="/sub/careers/recruit.html"><i>&nbsp;</i><span>채용 정보 및 지원</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $(".org_wrap .cont_wrap").addClass("on");
+        });
+        </script>
+
+
+        <div class="subWrap org_wrap">
+            <div class="cWrap cWrap_1">
+                <div class="careers_tit">
+                    <h4>
+                        <span>업무조직 및 인력구성 정보</span>
+                        work organization
+                    </h4>
+                </div>
+
+                <div class="cont_wrap">
+                    <h4>ceo</h4>
+
+                    <div class="cont">
+                        <!-- 경영전략실 -->
+                        <div>
+                            <h5>경영전략실<span>경영전략 파트</span></h5>
+                            <ul>
+                                <li>
+                                    <h6>경영지원팀</h6>
+                                    <p>회계|세무</p>
+                                    <p>인사|노무</p>
+                                    <p>총무|인증</p>
+                                    <p>계약|R&amp;D 행정</p>
+                                </li>
+                                <li>
+                                    <h6>영업마케팅팀</h6>
+                                    <p>디지털 마케팅</p>
+                                    <p>프로젝트기획 및 제안</p>
+                                </li>
+                            </ul>
+                        </div> <!-- // 경영전략실 -->
+
+                        <!-- 솔루션파트 -->
+                        <div>
+                            <h5>솔루션파트</h5>
+                            <ul>
+                                <li>
+                                    <h6>신규개발팀</h6>
+                                    <p>Front End 개발</p>
+                                    <p>Back End 개발</p>
+                                    <p>FullStack 개발</p>
+                                    <p>웹 디자인</p>
+                                </li>
+                                <li>
+                                    <h6>K8S&amp;DevOps팀</h6>
+                                    <p>K8S 개발</p>
+                                    <p>DevOps 개발</p>
+                                    <p>도커이미지 개발</p>
+                                </li>
+                                <li>
+                                    <h6>기술지원팀</h6>
+                                    <p>기술지원</p>
+                                    <p>고객관리 및 데이터 분석</p>
+                                    <p>신규고객 플랫폼 구축 및 면담</p>
+                                    <p>유지보수</p>
+                                </li>
+                            </ul>
+                        </div> <!-- // 솔루션파트 -->
+
+                        <!-- 차세대 교육 서비스부 -->
+                        <div>
+                            <h5>차세대 교육 서비스부</h5>
+                            <ul>
+                                <li>
+                                    <h6>교수설계 파트</h6>
+                                    <p>교육콘텐츠 연구개발</p>
+                                </li>
+                                <li>
+                                    <h6>미디어 파트</h6>
+                                    <p>콘텐츠 설계 및 디자인</p>
+                                    <p>콘텐츠 촬영 및 편집</p>
+                                    <p>스튜디오 환경 구축</p>
+                                    
+                                    <h6>XR 팀</h6>
+                                    <p>XR 콘텐츠 및 플랫폼 연구개발</p>
+                                </li>
+                            </ul>
+                        </div> <!-- // 차세대 교육 서비스부 -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>

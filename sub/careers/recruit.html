@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/careers.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/isotope.pkgd.min.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/header.html", function() { 
+                    $("#gnb > li").eq(4).addClass("on").find("li").eq(2).addClass("on");
+                    $.getScript("/js/common.js");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/sub/careers/organization.html"><i>&nbsp;</i><span>업무조직 및 인력구성 정보</span></a></div>
+            <div class="next"><a href="https://docs.google.com/forms/d/1NZ-i3MlvWPNgyTVmSrEG73946jJwGqVd2505cvAI4Ys/edit" target="_blank"><i>&nbsp;</i><span>문의하기</span></a></div>
+        </div>
+
+        <script>
+        function recruitGrid(){
+            var $grid = $(".recruit_wrap .grid").isotope({
+                itemSelector: "li",
+                layoutMode: 'fitRows'
+            });
+            $(".recruit_wrap .tab_btn button").on("click", function() {
+                $(this).siblings().removeClass("on");
+                $(this).addClass("on");
+
+                var filterValue = $(this).attr("data-filter");
+                $grid.isotope({ filter: filterValue });
+            });
+        }
+
+        $(function() {
+            $(".org_wrap .cont_wrap").addClass("on");
+
+            $(".recruit_wrap .grid li").each(function() {
+                if($(this).hasClass("on")) {
+                    $(this).find("div").text("채용중");
+                } else {
+                    $(this).find("div").text("채용종료");
+                    
+                    $(this).find("a").on("click",function(e) {
+                        e.preventDefault();
+                    });
+                }
+            });
+
+            recruitGrid();
+        });
+        </script>
+
+
+        <div class="subWrap recruit_wrap">
+            <div class="cWrap cWrap_1">
+                <div class="careers_tit">
+                    <h4>
+                        <span>채용 정보 및 지원</span>
+                        post a job opening
+                    </h4>
+                </div>
+
+                <div class="tab_btn">
+                    <button class="on" data-filter="*"><span>전체</span></button>
+                    <button data-filter=".new"><span>신입</span></button>
+                    <button data-filter=".career"><span>경력</span></button>
+                    <button data-filter=".part"><span>파트타임</span></button>
+                </div>
+
+                <ul class="grid">
+                    <li class="part on">
+                        <div>&nbsp;</div>
+                        <h5><a href="#none">PPT 제작 사무보조<span>교수학습자료 제작(PPT 제작)</span></a></h5>
+                        <span>2022.04.01 - 2022.12.31</span>
+                        <a href="#none">입사지원</a>
+                    </li>
+                    <li class="new career">
+                        <div>&nbsp;</div>
+                        <h5><a href="#none">Graphic Designer<span>이러닝 콘텐츠 디자이너 신입/경력 채용</span></a></h5>
+                        <span>2021.12.12 - 2021.12.31</span>
+                        <a href="#none">입사지원</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

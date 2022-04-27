@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/careers.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/header.html", function() { 
+                    $("#gnb > li").eq(4).addClass("on").find("li").eq(0).addClass("on");
+                    $.getScript("/js/common.js");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/sub/pr/client.html"><i>&nbsp;</i><span>주요고객</span></a></div>
+            <div class="next"><a href="/sub/careers/organization.html"><i>&nbsp;</i><span>업무조직 및 인력구성 정보</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $(".talent_wrap ul").addClass("on");
+        });
+        </script>
+
+
+        <div class="subWrap talent_wrap">
+            <div class="cWrap cWrap_1">
+                <div class="sub_title">
+                    <h3>인재상</h3>
+                    <p>채용정보 및 채용절차</p>
+                </div>
+
+                <div class="careers_tit">
+                    <h4>
+                        <span>인재상 및 지원분야</span>
+                        employment information
+                    </h4>
+                    <div>우리회사는 성장을 지향하는 기업입니다. 도전적이고 열정적인 마음가짐으로 전문지식을 습득하고 동료들과 소통 및 상호협력을 통해 창의성이 돋보이는 차세대 교육 기업을 만들어갈 여러분들을 기다립니다.</div>
+                </div>
+
+                <ul class="list">
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_1.svg" alt="도전"></div>
+                        <h5>도전</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_2.svg" alt="열정"></div>
+                        <h5>열정</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_3.svg" alt="전문지식"></div>
+                        <h5>전문지식</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_4.svg" alt="창의성"></div>
+                        <h5>창의성</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_5.svg" alt="상호협력"></div>
+                        <h5>상호협력</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_6.svg" alt="소통"></div>
+                        <h5>소통</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

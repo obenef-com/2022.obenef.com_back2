@@ -29,41 +29,49 @@
         <!-- // header -->
 
         <script>
-            $(function() {
-                var video = $("#main .video video");
-                var video_pop = $("#main_pop video");
+        $(function() {
+            var video = $("#main .video video");
+            var video_pop = $("#main_pop video");
+
+            video_pop.get(0).pause();
+
+            // main control
+            $("#main .pause").on("click", function() {
+                if($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+
+                    video.get(0).play();
+                } else {
+                    $(this).addClass("on");
+
+                    video.get(0).pause();
+                }
+            });
+            $("#main .sound").on("click", function() {
+                if($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+                    video.prop("muted", true);
+                } else {
+                    $(this).addClass("on");
+                    video.prop("muted", false);
+                }
+            });
+
+            // popup
+            $("#main .play_btn").on("click", function() {
+                $("#main_pop").show();
+
+                video_pop.get(0).play();
+                video_pop.get(0).currentTime = 0;
+            });
+            
+            $("#main_pop .close_btn").on("click", function() {
+                $(this).parent().hide();
 
                 video_pop.get(0).pause();
-
-                // main control
-                $("#main .pause_btn button").on("click", function() {
-
-                    if($(this).hasClass("off")) {
-                        $(this).removeClass();
-
-                        video.get(0).play();
-                    } else {
-                        $(this).addClass("off");
-
-                        video.get(0).pause();
-                    }
-                });
-
-                // popup
-                $("#main .play_btn").on("click", function() {
-                    $("#main_pop").show();
-
-                    video_pop.get(0).play();
-                    video_pop.get(0).currentTime = 0;
-                });
-                
-                $("#main_pop .close_btn").on("click", function() {
-                    $(this).parent().hide();
-
-                    video_pop.get(0).pause();
-                    video_pop.get(0).currentTime = 0;
-                });
+                video_pop.get(0).currentTime = 0;
             });
+        });
         </script>
 
         <div id="main">
@@ -77,9 +85,10 @@
                 <p><button class="play_btn">play</button>Watch Our Latest Project</p>
             </div>
            
-            <div class="pause_btn">
-                <button>pause</button>
-            </div>
+            <ul class="btn_group">
+                <li><button class="sound">sound</button></li>
+                <li><button class="pause">pause</button></li>
+            </ul>
         </div>
 
         <div id="main_pop">
