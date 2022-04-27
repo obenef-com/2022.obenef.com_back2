@@ -343,7 +343,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 
 
 @media (max-width: 1100px) {
-    .about_ci { margin: 50px 0 0; }
+    .about_ci { margin: 50px 0 80px; }
     .about_ci li { padding: 140px 0 0; width: 250px; }
     .about_ci li:nth-child(1) { background-size: 120px; }
     .about_ci li:nth-child(2) { background-size: 140px; background-position: center 30px; }
