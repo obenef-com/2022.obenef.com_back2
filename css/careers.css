@@ -85,7 +85,7 @@
 .org_wrap .cont_wrap h4:before { content: ""; position: absolute; bottom: -30px; left: 50%; height: 55px; border-left: 1px dashed #5c77bf; }
 
 .org_wrap .cont { display: flex; justify-content: space-between; position: relative; margin: 20px 0 0; }
-.org_wrap .cont:before { content: ""; position: absolute; top: 27px; left: 0; width: 100%; border-top: 1px dashed #5c77bf; }
+.org_wrap .cont:before { content: ""; position: absolute; top: 27px; left: 5%; width: 90%; border-top: 1px dashed #5c77bf; }
 .org_wrap .cont > div { position: relative; width: 24%; z-index: 9; }
 .org_wrap .cont > div:nth-child(2) { width: 45%; }
 .org_wrap .cont h5 { margin: 0 auto; max-width: 255px; height: 55px; line-height: 55px; font-size: 18px; color: #fff; font-weight: 500; background: #5567d1; border-radius: 300px; }
