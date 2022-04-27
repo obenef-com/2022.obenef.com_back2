@@ -522,7 +522,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 .historyWrap .cont dd span { font-weight: 600; }
 .historyWrap .cont dd i { font-weight: 500; font-style: normal; }
 
-.historyWrap .cont h4 + div h6 { position: relative; background: linear-gradient(transparent, #fff) }
+.historyWrap .cont h4 + div h6 { position: relative; background: linear-gradient(rgba(255, 255, 255, 0), #fff) }
 .historyWrap .cont h4 + div h6:before { content: ""; position: absolute; top: -60px; left: 20px; width: 35px; height: 27px; animation: bounce 2s infinite; background: url(../img/sub/about/history_arrow_1.svg) no-repeat center; background-size: 100%; }
 .historyWrap .cont h4 + div h6:after { content: ""; position: absolute; top: -30px; left: 20px; width: 35px; height: 27px; animation: bounce 2s infinite; background: url(../img/sub/about/history_arrow_2.svg) no-repeat center; background-size: 100%; }
 .historyWrap .cont h4 + div dl { border-top: 0; } 
