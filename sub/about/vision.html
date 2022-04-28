@@ -36,6 +36,12 @@
 
         <script>
         $(function() {
+            var video1 = $(".vision_wrap .vision1 video");
+            var video2_1 = $(".vision_wrap .vision2 .video_1 video");
+            var video2_2 = $(".vision_wrap .vision2 .video_2 video");
+            var video3_1 = $(".vision_wrap .vision3 .video_1 video");
+            var video3_2 = $(".vision_wrap .vision3 .video_2 video");
+
             $("#fullpage").fullpage({
                 anchors: ['Page1', 'Page2', 'Page3'],
                 scrollOverflow: true,
@@ -44,26 +50,44 @@
                 'afterLoad': function(origin, destination, direction){
                     if(destination==1) {
                         $("header").removeClass("vision_2 vision_3").addClass("vision_1");
+                        video1.get(0).play();
                     }
                     if(destination==2) {
                         $("header").removeClass("vision_1 vision_3").addClass("vision_2");
+                        video2_1.get(0).play();
+                        video2_2.get(0).play();
                     }
                     if(destination==3) {
                         $("header").removeClass("vision_1 vision_2").addClass("vision_3");
+                        video3_1.get(0).play();
+                        video3_2.get(0).play();
                     }
                 },
                 'onLeave': function(origin, destination, direction) {
                     if(destination==1) {
                         $("header").removeClass("vision_2 vision_3").addClass("vision_1");
+                        video1.get(0).currentTime = 0;
                     }
                     if(destination==2) {
                         $("header").removeClass("vision_1 vision_3").addClass("vision_2");
+                        video2_1.get(0).currentTime = 0;
+                        video2_2.get(0).currentTime = 0;
                     }
                     if(destination==3) {
                         $("header").removeClass("vision_1 vision_2").addClass("vision_3");
+                        video3_1.get(0).currentTime = 0;
+                        video3_2.get(0).currentTime = 0;
                     }
                 }
             });
+
+            var agent = navigator.userAgent.toLowerCase();
+
+            if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                $(".video_cont").hide();
+            } else {
+                $(".img_cont").hide();
+            }
         });
         </script>
 
@@ -96,8 +120,8 @@
                              오픈 이노베이션 기업
                         </h4>
 
-                        <video src="/img/sub/about/vision1.webm" muted loop="loop" autoplay playsinline></video>
-                        <!-- <div class="img"><img src="/img/sub/about/vision1.svg"></div> -->
+                        <div class="video_cont"><video src="/img/sub/about/vision1.webm" muted loop="loop" autoplay playsinline></video></div>
+                        <div class="img_cont img"><img src="/img/sub/about/vision1.svg"></div>
 
                         <h4>
                             <span>benefit</span>
@@ -150,14 +174,16 @@
                     </h4>
 
                     <div class="v_cont vision2">
-                        <div class="img_1"><img src="/img/sub/about/vision2_1.svg"></div>
+                        <div class="video_cont video_1"><video src="/img/sub/about/vision2_1.webm" muted loop="loop" autoplay playsinline></video></div>
+                        <div class="img_cont img_1"><img src="/img/sub/about/vision2_1.svg"></div>
                         
                         <h4>
                             <span>open</span>
                             오픈 이노베이션 기업
                         </h4>
                         
-                        <div class="img_2"><img src="/img/sub/about/vision2_2.svg"></div>
+                        <div class="video_cont video_2"><video src="/img/sub/about/vision2_2.webm" muted loop="loop" autoplay playsinline></video></div>
+                        <div class="img_cont img_2"><img src="/img/sub/about/vision2_2.svg"></div>
                     </div>
 
                     <ul class="vision_list">
@@ -189,14 +215,16 @@
                     </h4>
 
                     <div class="v_cont vision3">
-                        <div class="img_1"><img src="/img/sub/about/vision3_1.svg"></div>
+                        <div class="video_cont video_1"><video src="/img/sub/about/vision3_1.webm" muted loop="loop" autoplay playsinline></video></div>
+                        <div class="img_cont img_1"><img src="/img/sub/about/vision3_1.svg"></div>
                         
                         <h4>
                             <span>benefit</span>
                             사회·사업·사람에 이득이 되는 기업
                        </h4>
                         
-                        <div class="img_2"><img src="/img/sub/about/vision3_2.svg"></div>
+                       <div class="video_cont video_2"><video src="/img/sub/about/vision3_2.webm" muted loop="loop" autoplay playsinline></video></div>
+                        <div class="img_cont img_2"><img src="/img/sub/about/vision3_2.svg"></div>
                     </div>
 
                     <ul class="vision_list">
