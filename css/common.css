@@ -462,6 +462,7 @@ h4.cStyle.on span:after { background: #fff; }
   
   /*########## sub title ##########*/
   .sub_title h3 { line-height: 35px; font-size: 25px; }
+  .sub_title > div { font-size: 15px; }
   
 
 

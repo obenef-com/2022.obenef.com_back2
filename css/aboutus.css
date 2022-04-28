@@ -191,7 +191,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
     .vision_wrap .sub_title > div { font-size: 15px; }
     .vision_wrap .sub_title p { font-size: 14px; }
 
-    .vision_wrap .vision_list { display: block; }
+    .vision_wrap .vision_list { display: block; margin: 10vh 0 0; }
     .vision_wrap .vision_list li { margin: 20px auto 0; width: auto; max-width: 400px; }
     .vision_wrap .vision_list li:first-child { margin: 0 auto; }
 
@@ -218,7 +218,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 
     /*### page 2 ###*/
     /* cont 1 */
-    .vision_wrap #section_2 .vision2 { max-height: 350px; }
+    .vision_wrap #section_2 .vision2 { margin-top: 10vh; max-height: 350px; }
     .vision_wrap #section_2 .vision2 .img_1 { left: 0; width: 200px; }
 
 
@@ -690,7 +690,7 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
     /* page 2 */
     .awards_wrap .aw_cert { display: block; padding: 0; }
-    .awards_wrap .aw_cert li { margin: 0 auto 50px; width: 100%; max-width: 300px; }
+    .awards_wrap .aw_cert li { margin: 0 auto 40px; width: 100%; max-width: 300px; }
     .awards_wrap .aw_cert li:last-child { margin-bottom: 0; }
     .awards_wrap .aw_cert .logo { height: 100px; }
     .awards_wrap .aw_cert .logo img { max-height: 50px; }

@@ -18,7 +18,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_1 { background: url(../img/sub/business/gesture_bg_1.jpg) no-repeat center; background-size: cover; }
 .gest_wrap #section_1 .cWrap { padding-bottom: 0; min-height: 80vh; }
 
-.gest_wrap #section_1 .cont_1 { position: relative; display: flex; flex-wrap: wrap; }
+.gest_wrap #section_1 .cont_1 { position: relative; display: flex; flex-wrap: wrap; margin: 7vh 0 0; }
 .gest_wrap #section_1 .cont_1:after { content: "gesture"; position: absolute; top: 50%; left: 50%; padding: 0 25px 0 0; font-size: 40px; color: #fff; font-weight: 700; text-transform: uppercase; background: url(../img/sub/business/comma_img.svg) no-repeat right 20px; transform: translate(-50%, -50%); }
 .gest_wrap #section_1 .cont_1 > li { position: relative; padding: 35px 0 0; width: 50%; height: 275px; color: #fff; }
 .gest_wrap #section_1 .cont_1 > li:before,
@@ -43,7 +43,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_1 .wrap { margin: 0 auto; width: 100%; max-width: 1000px; }
 
 /* logo image */
-.gest_wrap #section_1 .gesture_logo { margin: 30px 0 0; background: rgba(0, 0, 0, .4); }
+.gest_wrap #section_1 .gesture_logo { margin: 5vh 0 0; background: rgba(0, 0, 0, .4); }
 .gest_wrap #section_1 .gesture_logo ul { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
 .gest_wrap #section_1 .gesture_logo li { display: inline-flex; align-items: center; }
 .gest_wrap #section_1 .gesture_logo li img { transition: all .3s; }
@@ -884,7 +884,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .edu_wrap #section_2 .info { position: relative; top: 0; margin: 40px 0 0; }
 
     /* contents */
-    .edu_wrap #section_2 .cont { display: block; margin: 15px 0 0; }
+    .edu_wrap #section_2 .cont { position: relative; display: block; margin: 15px 0 0; }
+    .edu_wrap #section_2 .cont:before { content: ""; position: absolute; top: 0; left: 50%; width: 64px; height: 100%; background: #2a66c5; transform :translateX(-50%); }
     .edu_wrap #section_2 .cont li { display: flex; }
     .edu_wrap #section_2 .cont li:nth-child(1),
     .edu_wrap #section_2 .cont li:nth-child(2),
