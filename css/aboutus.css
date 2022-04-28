@@ -460,7 +460,8 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 
 
 /*########## o.people ##########*/
-.opeople .cont img { max-width: 100%; }
+.opeople .cont img { position: relative; top: 100px; max-width: 100%; opacity: 0; transition: all .7s; }
+.opeople .cont img.on { top: 0; opacity: 1; }
 .opeople .cont p { margin: 30px 0 0; line-height: 23px; font-size: 16px; word-break: keep-all; }
 .opeople .cont p:first-child { margin: 0; }
 .opeople .cont p span { font-size: 22px; font-weight: 500; }
@@ -501,7 +502,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
     .opeople .cont_1 .img { display: block; margin: 0 auto; text-align: center; }
     .opeople .cont_1 .img div { position: relative; bottom: -120px; }
     .opeople .cont_1 .img div.on { bottom: -20px; }
-    .opeople .cont_1 .txt { margin: 70px auto 0; width: 100%; max-width: 400px; }
+    .opeople .cont_1 .txt { margin: 70px auto 0; width: 100%; /* max-width: 400px; */ }
 }
 
 @media (max-width: 767px) {
