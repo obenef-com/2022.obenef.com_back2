@@ -432,7 +432,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 .opeople .cont p i { display: block; font-style: normal; }
 
 .opeople .cont_1 { position: relative; padding: 0 0 175px; text-align: right; }
-.opeople .cont_1:after { content: ""; position: absolute; bottom: 0; left: 50%; width: 2px; height: 130px; background: #919191; transform: translateX(-50%); }
+.opeople .cont_1:after { content: ""; position: absolute; bottom: 0; left: 50%; width: 1px; height: 130px; background: #919191; transform: translateX(-50%); }
 .opeople .cont_1 .img { position: relative; display: inline-block; vertical-align: top; }
 .opeople .cont_1 .img div { position: absolute; bottom: -130px; left: -240px; opacity: 0; transition: all 2s; }
 .opeople .cont_1 .img div.on { bottom: -30px; left: -240px; opacity: 1; }
