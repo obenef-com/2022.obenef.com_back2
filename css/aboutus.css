@@ -107,7 +107,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 .vision_wrap #section_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat center top; background-size: cover; }
 
 /* cont 1 */
-.vision_wrap #section_3 .vision3 h4 { position: static; }
+.vision_wrap #section_3 .vision3 h4 { position: static; } 
 .vision_wrap #section_3 .vision3 .img_1 { position: absolute; top: 0; left: -120px; width: 250px; }
 .vision_wrap #section_3 .vision3 .img_2 { position: absolute; bottom: 0; right: 0; width: 120px; }
 
