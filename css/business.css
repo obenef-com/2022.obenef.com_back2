@@ -295,6 +295,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     /* cont 1 */
     .gest_wrap #section_2 .cont_1 { display: block; padding: 20px 0 17px; border-radius: 0; }
     .gest_wrap #section_2 .cont_1 ul { justify-content: start; flex-wrap: wrap; margin: 20px auto 0;  width: 100%; max-width: 330px; }
+    .gest_wrap #section_2 .cont_1 ul:first-child { margin: 0 auto; }
     .gest_wrap #section_2 .cont_1 ul:before { position: static; display: flex; align-items: center; padding: 0 0 0 20px; width: 80px; font-size: 16px; transform: none; }
 
     /* cont 2 */
