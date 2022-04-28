@@ -397,7 +397,7 @@ h4.cStyle.on span:after { background: #fff; }
   /*### gnb ###*/
   /* nav { overflow-x: scroll; } */
   /* #gnb { display: block; white-space: nowrap; } */
-  #gnb > li { /* display: inline-block; */ height: 45px; line-height: 45px; }
+  #gnb > li { /* display: inline-block; */ height: 45px; line-height: 44px; }
 
   nav .sub_menu { top: 121px; right: 0; }
 
@@ -425,7 +425,7 @@ h4.cStyle.on span:after { background: #fff; }
   .subWrap .cWrap { padding: 160px 20px 80px; }
 
   /*### gnb ###*/
-  nav { overflow-x: scroll; }
+  nav { overflow-x: scroll; overflow-y: hidden; }
   #gnb { display: block; min-width: 460px; white-space: nowrap; }
   #gnb > li { display: inline-block; width: 22%; max-width: 100%; }
   #gnb > li:nth-child(4) { width: 12%; }
