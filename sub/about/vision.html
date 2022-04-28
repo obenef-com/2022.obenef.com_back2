@@ -36,11 +36,20 @@
 
         <script>
         $(function() {
+            var agent = navigator.userAgent.toLowerCase();
+
+            if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                $(".video_cont").hide();
+            } else {
+                $(".img_cont").hide();
+            }
+            
             var video1 = $(".vision_wrap .vision1 video");
             var video2_1 = $(".vision_wrap .vision2 .video_1 video");
             var video2_2 = $(".vision_wrap .vision2 .video_2 video");
             var video3_1 = $(".vision_wrap .vision3 .video_1 video");
             var video3_2 = $(".vision_wrap .vision3 .video_2 video");
+
 
             $("#fullpage").fullpage({
                 anchors: ['Page1', 'Page2', 'Page3'],
@@ -50,44 +59,56 @@
                 'afterLoad': function(origin, destination, direction){
                     if(destination==1) {
                         $("header").removeClass("vision_2 vision_3").addClass("vision_1");
-                        video1.get(0).play();
+                        if ( (navigator.appName != 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                        } else {
+                            video1.get(0).play();
+                        }
                     }
                     if(destination==2) {
                         $("header").removeClass("vision_1 vision_3").addClass("vision_2");
-                        video2_1.get(0).play();
-                        video2_2.get(0).play();
+                        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                        } else {
+                            video2_1.get(0).play();
+                            video2_2.get(0).play();
+                        }
                     }
                     if(destination==3) {
                         $("header").removeClass("vision_1 vision_2").addClass("vision_3");
-                        video3_1.get(0).play();
-                        video3_2.get(0).play();
+                        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                        } else {
+                            video3_1.get(0).play();
+                            video3_2.get(0).play();
+                        }
                     }
                 },
                 'onLeave': function(origin, destination, direction) {
                     if(destination==1) {
                         $("header").removeClass("vision_2 vision_3").addClass("vision_1");
-                        video1.get(0).currentTime = 0;
+                        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                        } else {
+                            video1.get(0).currentTime = 0;
+                        }
                     }
                     if(destination==2) {
                         $("header").removeClass("vision_1 vision_3").addClass("vision_2");
-                        video2_1.get(0).currentTime = 0;
-                        video2_2.get(0).currentTime = 0;
+                        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                        } else {
+                            video2_1.get(0).currentTime = 0;
+                            video2_2.get(0).currentTime = 0;
+                        }
                     }
                     if(destination==3) {
                         $("header").removeClass("vision_1 vision_2").addClass("vision_3");
-                        video3_1.get(0).currentTime = 0;
-                        video3_2.get(0).currentTime = 0;
+                        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                        } else {
+                            video3_1.get(0).currentTime = 0;
+                            video3_2.get(0).currentTime = 0;
+                        }
                     }
                 }
             });
 
-            var agent = navigator.userAgent.toLowerCase();
-
-            if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
-                $(".video_cont").hide();
-            } else {
-                $(".img_cont").hide();
-            }
+            
         });
         </script>
 
