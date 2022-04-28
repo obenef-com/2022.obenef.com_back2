@@ -31,7 +31,7 @@ header { background: #000 !important; }
 #main_pop .close_btn { position: fixed; top: 30px; left: 30px; width: 35px; height: 35px; background: url(../img/sub/title_x_w.svg) no-repeat center; background-size: 100%; transition: all .3s; text-indent: -9999px; z-index: 999; }
 #main_pop .close_btn:hover { transform: rotate(90deg); }
 
-#main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 350px; transform: translate(-50%, -50%); vertical-align: top; }
+#main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 500px; transform: translate(-50%, -50%); vertical-align: top; }
 
 
 
