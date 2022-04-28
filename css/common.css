@@ -8,22 +8,10 @@ a { color: #000; text-decoration: none; }
 table { width: 100%; border-collapse: collapse; border-spacing: 0; }
 img { vertical-align: top; }
 
-/*
-input { padding: 0 10px; border: 1px solid #ddd; }
-select { padding: 0 35px 0 10px; border: 1px solid #ddd; appearance: none; -webkit-appearance: none; -moz-appearance: none; background: url(../img/select_down.png) no-repeat 90% center; background-size: 10px; } 
-select::-ms-expand { display: none; }
-*/
 input[type="submit"],
 input[type="button"], 
 button { cursor: pointer; } 
 
-/*
-input[type="checkbox"] { display: none; }
-input[type="checkbox"] + label { display: block; padding: 0 0 0 29px; height: 19px; line-height: 19px; font-size: 13px; color: #555; background: url(../img/chk_btn.png) no-repeat; cursor: pointer; }
-input[type="checkbox"]:checked + label { background: url(../img/chk_btn_on.png) no-repeat; }
-
-table input[type="checkbox"] { display: inline-block; cursor: pointer; }
-*/
 
 
 .cWrap { margin: 0 auto; width: 100%; }
@@ -395,9 +383,7 @@ h4.cStyle.on span:after { background: #fff; }
   .m_nav_btn { left: 25px; width: 30px; height: 30px; }
 
   /*### gnb ###*/
-  /* nav { overflow-x: scroll; } */
-  /* #gnb { display: block; white-space: nowrap; } */
-  #gnb > li { /* display: inline-block; */ height: 45px; line-height: 44px; }
+  #gnb > li { height: 45px; line-height: 44px; }
 
   nav .sub_menu { top: 121px; right: 0; }
 
