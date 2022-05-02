@@ -65,6 +65,20 @@ header { background: #000 !important; }
 }
 
 @media (max-width: 767px) {
+    #gnb > li { display: inline-block; width: 22%; max-width: 100%; }
+    #gnb > li:nth-child(4) { width: 12%; }
+    #gnb > li > a { display: inline-block; font-size: 15px; }
+    #gnb > li:nth-child(4) a { max-width: 100%; }
+
+    #gnb > li.on .sub_menu { display: none; }
+
+
+
+
+
+
+
+
     /* #main .wrap { padding: 80 } */
     #main video { margin: 0; padding: 0 20px; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     

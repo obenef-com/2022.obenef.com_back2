@@ -428,7 +428,6 @@ h4.cStyle.on span:after { background: #fff; }
   nav { overflow-x: scroll; overflow-y: hidden; }
   #gnb { display: block; white-space: nowrap; }
   #gnb > li { display: none; }
-  #gnb > li:nth-child(4) { width: 12%; }
   #gnb > li > a { display: none; font-size: 15px; }
   #gnb > li:nth-child(4) a { max-width: 100%; }
 
@@ -480,7 +479,7 @@ h4.cStyle.on span:after { background: #fff; }
 
 @media (max-width: 424px) {
   /*### gnb ###*/
-  #gnb { min-width: 400px; }
+  /* #gnb { min-width: 400px; } */
 
 
   /*########## sub title ##########*/
