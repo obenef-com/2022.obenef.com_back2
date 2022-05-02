@@ -20,7 +20,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
 .gest_wrap #section_1 .cont_1 { position: relative; display: flex; flex-wrap: wrap; margin: 7vh 0 0; }
 .gest_wrap #section_1 .cont_1:after { content: "gesture"; position: absolute; top: 50%; left: 50%; padding: 0 25px 0 0; font-size: 40px; color: #fff; font-weight: 700; text-transform: uppercase; background: url(../img/sub/business/comma_img.svg) no-repeat right 20px; transform: translate(-50%, -50%); }
-.gest_wrap #section_1 .cont_1 > li { position: relative; padding: 35px 0 0; width: 50%; height: 275px; color: #fff; }
+.gest_wrap #section_1 .cont_1 > li { position: relative; top: 100px; padding: 35px 0 0; width: 50%; height: 275px; color: #fff; opacity: 0; transition: all .7s; }
 .gest_wrap #section_1 .cont_1 > li:before,
 .gest_wrap #section_1 .cont_1 > li:after { content: ""; position: absolute; background: rgba(255, 255, 255, .2); }
 .gest_wrap #section_1 .cont_1 > li:first-child:before { top: 0; right: 0; width: 1px; height: 80%; }
@@ -29,6 +29,12 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_1 .cont_1 > li:last-child:after { bottom: 0; left: 0; width: 1px; height: 80%; }
 .gest_wrap #section_1 .cont_1 > li:nth-child(2),
 .gest_wrap #section_1 .cont_1 > li:nth-child(4) { text-align: right; }
+
+.gest_wrap #section_1 .cont_1 > li.on { top: 0; opacity: 1; }
+.gest_wrap #section_1 .cont_1 > li.on:nth-child(2) { transition-delay: .2s; }
+.gest_wrap #section_1 .cont_1 > li.on:nth-child(3) { transition-delay: .5s; }
+.gest_wrap #section_1 .cont_1 > li.on:nth-child(4) { transition-delay: .75s; }
+
 .gest_wrap #section_1 .cont_1 h4 { margin: 0 0 10px; font-size: 25px; }
 .gest_wrap #section_1 .cont_1 p { line-height: 26px; font-size: 18px; }
 .gest_wrap #section_1 .cont_1 span { display: inline-block; padding: 0 3px; line-height: 19px; font-weight: 600; background: #5c8fd1; }
@@ -620,6 +626,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .aiger_wrap #section_4 .tit h3 { font-size: 18px; }
     .aiger_wrap #section_4 .tit li { margin: 6px 0 0; font-size: 15px; }
 
+    .aiger_wrap .table { padding: 0 15px 0 0; }
     .aiger_wrap table { margin: 50px 0 0; }
     .aiger_wrap table:after { right: 10px; width: 130px; }
     .aiger_wrap thead tr { border-bottom-width: 8px; }
@@ -819,11 +826,11 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 /*### page 1 ###*/
 .edu_wrap #section_1 .sub_title h3 { line-height: 30px; letter-spacing: 4px; }
 .edu_wrap #section_1 .sub_title h3 span { width: 135px; letter-spacing: 0; }
-.edu_wrap #section_1 .sub_title > div { font-size: 17px; }
+.edu_wrap #section_1 .sub_title > div { padding: 0 10px 0 0; font-size: 17px; word-break: keep-all; }
 
 
 .edu_wrap #section_1 .cont ul { display: flex; flex-wrap: wrap; margin: 35px 0 0; }
-.edu_wrap #section_1 .cont li { margin: 0 0 25px 2%; width: 32%; }
+.edu_wrap #section_1 .cont li { margin: 0 0 7vh 2%; width: 32%; }
 .edu_wrap #section_1 .cont li:nth-child(3n+1) { margin-left: 0; }
 .edu_wrap #section_1 .cont .img { overflow: hidden; }
 .edu_wrap #section_1 .cont .img img { width: 100%; transition: all .3s; }
@@ -831,7 +838,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .edu_wrap #section_1 .cont .txt { margin: 20px 0 0; padding: 0 15px; }
 .edu_wrap #section_1 .cont h6 { font-size: 18px; color: #313131; font-weight: 500; text-align: center;  }
 .edu_wrap #section_1 .cont h6 span { margin: 0 0 0 6px; font-size: 13px; color: #939393; font-weight: 400; }
-.edu_wrap #section_1 .cont p { margin: 15px 0 0; line-height: 22px; font-size: 16px; color: #313131; }
+.edu_wrap #section_1 .cont p { margin: 15px 0 0; line-height: 22px; font-size: 16px; color: #313131; word-break: keep-all; }
+.edu_wrap #section_1 .cont li:nth-child(5) p { padding: 0 15px 0 0; }
 .edu_wrap #section_1 .cont p span { font-size: 13px; }
 .edu_wrap #section_1 .cont p i { display: block; font-size: 12px; color: #939393; font-weight: 500; font-style: normal; }
 
@@ -924,7 +932,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     /*### page 1 ###*/
     .edu_wrap #section_1 .sub_title > div { font-size: 15px; letter-spacing: -1.1px; }
 
-    .edu_wrap #section_1 .cont li { margin: 0 0 25px 4%; width: 48%; }
+    .edu_wrap #section_1 .cont li { margin: 0 0 5vh 4%; width: 48%; }
     .edu_wrap #section_1 .cont li:nth-child(3n+1) { margin-left: 4%; }
     .edu_wrap #section_1 .cont li:nth-child(2n+1) { margin-left: 0; }
     .edu_wrap #section_1 .cont .txt { padding: 0; }

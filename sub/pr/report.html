@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>obenef</title>
     
-        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/swiper.css">
         <link rel="stylesheet" href="/css/pr.css">
+        <link rel="stylesheet" href="/css/border.css">
     
         <script src="/js/jquery-1.12.4.min.js"></script>
-        <script src="/js/scrolloverflow.js"></script>
-        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/swiper.min.js"></script>
         <script src="/js/common.js"></script>
     </head>
 
@@ -34,8 +34,86 @@
             <div class="next"><a href="/sub/pr/reference.html"><i>&nbsp;</i><span>PR 자료실</span></a></div>
         </div>
 
-        <!-- 서비스 준비중 입니다. -->
-        <div class="etc_service">&nbsp;</div>
 
+        <script>
+        $(function() {
+            var swiper = new Swiper(".reportSwiper", {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    // hide: true,
+                },
+                breakpoints: {
+                    767: {
+                        slidesPerView: 2,
+                        centeredSlides: true,
+                    },
+                    820: {
+                        slidesPerView: 2,
+                    },
+                    1100: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+        });
+        </script>
+
+        <div class="bo_wrap report_wrap">
+            <div class="bo_cont">
+                <div class="sub_title"><h3>보도자료</h3></div>
+
+                <div class="bo_total"><span>OUR PRESS RELEASE</span></div>
+
+                <div class="swiper-container reportSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/sub/pr/report_content.html">
+                                <h5>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h5>
+                                <p>출시 2년 만에 글로벌 다운로 500만 다운로드를 기록한 인터넷 라디오 앱 ‘스푼’을 서비스하고 있는 마이쿤은 누적 매출 10억 원을 돌파했으며 테스트 지원을 받은 중고거래앱 ‘번개장터’ 거래액은 지난해 1분기 178억 원에서 올해 3분기 623억 원으로 급증했다.</p>
+                                <span>2018.12.05</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/sub/pr/report_content.html">
+                                <h5>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h5>
+                                <p>출시 2년 만에 글로벌 다운로 500만 다운로드를 기록한 인터넷 라디오 앱 ‘스푼’을 서비스하고 있는 마이쿤은 누적 매출 10억 원을 돌파했으며 테스트 지원을 받은 중고거래앱 ‘번개장터’ 거래액은 지난해 1분기 178억 원에서 올해 3분기 623억 원으로 급증했다.</p>
+                                <span>2018.12.05</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/sub/pr/report_content.html">
+                                <h5>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h5>
+                                <p>출시 2년 만에 글로벌 다운로 500만 다운로드를 기록한 인터넷 라디오 앱 ‘스푼’을 서비스하고 있는 마이쿤은 누적 매출 10억 원을 돌파했으며 테스트 지원을 받은 중고거래앱 ‘번개장터’ 거래액은 지난해 1분기 178억 원에서 올해 3분기 623억 원으로 급증했다.</p>
+                                <span>2018.12.05</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/sub/pr/report_content.html">
+                                <h5>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h5>
+                                <p>출시 2년 만에 글로벌 다운로 500만 다운로드를 기록한 인터넷 라디오 앱 ‘스푼’을 서비스하고 있는 마이쿤은 누적 매출 10억 원을 돌파했으며 테스트 지원을 받은 중고거래앱 ‘번개장터’ 거래액은 지난해 1분기 178억 원에서 올해 3분기 623억 원으로 급증했다.</p>
+                                <span>2018.12.05</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/sub/pr/report_content.html">
+                                <h5>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h5>
+                                <p>출시 2년 만에 글로벌 다운로 500만 다운로드를 기록한 인터넷 라디오 앱 ‘스푼’을 서비스하고 있는 마이쿤은 누적 매출 10억 원을 돌파했으며 테스트 지원을 받은 중고거래앱 ‘번개장터’ 거래액은 지난해 1분기 178억 원에서 올해 3분기 623억 원으로 급증했다.</p>
+                                <span>2018.12.05</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+
+                <div class="more_btn">
+                    <a href="/sub/pr/report_list.html">more</a>
+                </div>
+
+            </div>
+        </div>
     </body>
 </html>

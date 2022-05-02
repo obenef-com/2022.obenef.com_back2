@@ -8,7 +8,7 @@ body { background: #000; }
 header { background: #000 !important; }
 
 #main .wrap { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100vh; }
-#main .video { display: flex; justify-content: center; width: 100%; margin: 0; }
+#main .video { display: flex; justify-content: center; width: 100%; margin: -8vh 0 0; }
 #main video { max-width: 500px; max-height: 350px; }
 #main h2 { margin: 10px 0 0; text-align: center; }
 #main h2 img { max-width: 100%; }
@@ -34,6 +34,10 @@ header { background: #000 !important; }
 #main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 500px; transform: translate(-50%, -50%); vertical-align: top; }
 
 
+
+@media (max-width: 1100px) {
+    #main .video { margin: 0; }
+}
 
 @media (max-width: 767px) {
     /* #main .wrap { padding: 80 } */

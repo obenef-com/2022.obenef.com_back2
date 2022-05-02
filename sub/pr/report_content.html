@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>obenef</title>
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/pr.css">
+        <link rel="stylesheet" href="/css/border.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/header.html", function() { 
+                    $("#gnb > li").eq(3).addClass("on").find("li").eq(1).addClass("on");
+                    $.getScript("/js/common.js");
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <script>
+        $(function() {
+            $(window).scroll(function() {
+                var scr_top = $(this).scrollTop();
+
+                if(scr_top > 110) {
+                    $("#pageBtn").removeClass("on");
+                } else {
+                    $("#pageBtn").addClass("on");
+                }
+            });
+        });
+        </script>
+
+        <div id="pageBtn" class="on">
+            <div class="prev"><a href="/sub/pr/notice.html"><i>&nbsp;</i><span>공지사항</span></a></div>
+            <div class="next"><a href="/sub/pr/reference.html"><i>&nbsp;</i><span>PR 자료실</span></a></div>
+        </div>
+
+        <div class="bo_wrap report_content">
+            <div class="bo_cont">
+                <div class="sub_title on"><h3>보도자료</h3></div>
+
+                <div class="contents">
+                    <div class="tit">
+                        <h4>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h4>
+                        <span>2018.12.05</span>
+                    </div>
+
+                    <div class="cont">
+                        <h5>오베네프 스마트콘텐츠 테스트 플랫폼 선정 및 지원성과</h5>
+
+                        <div class="img">
+                            <img src="/img/sub/pr/report_img_1.jpg" alt="the 3rd next startup awards">
+                        </div>
+                        
+                        <p>과학기술정보통신부(장관 유영민, 이하 과기정통부)와 정보통신산업진흥원(원장 김창용, 이하 NIPA)은 ‘스마트콘텐츠 테스트 플랫폼 지원사업’ 선정 기업들의 테스트 지원 성과가 확대되고 있다고 29일 밝혔다.</p>
+                        <p>본 사업은 국내 중소 스마트콘텐츠 기업이 개발하는 제품의 품질을 향상시키고 이용자 요구에 맞춰 적기에 출시할 수 있도록 업체별로 콘텐츠 분야에 맞게 희망하는 맞춤형 테스트 및 개발 컨설팅을 지원하는 개발 테스트 지원 분야와 온라인 서비스 기술을 지원하는 개발 인프라 지원 분야로 구성돼있다.</p>
+                        <p>올해는 글로벌 강소기업으로서의 성장 가능성이 높은 개발 테스트 지원 분야 50개, 개발 인프라 지원 분야 31개의 총 81개사를 선정 및 지원했으며 2016년 사업이 시작된 이후 본 사업에 선정된 기업들이 글로벌 진출, 투자 유치, 대회 수상 등의 다양한 실적을 거두며 성공적인 진출 소식을 전해주고 있다.</p>
+                        <p>출시 2년 만에 글로벌 다운로 500만 다운로드를 기록한 인터넷 라디오 앱 ‘스푼’을 서비스하고 있는 마이쿤은 누적 매출 10억 원을 돌파했으며 테스트 지원을 받은 중고거래앱 ‘번개장터’ 거래액은 지난해 1분기 178억 원에서 올해 3분기 623억 원으로 급증했다. 이외에도 개발 인프라 지원 선정 업체인 오베네프는 인도네시아 바이어와 약 100만 달러 수출 상담을 위한 양해각서(MOU)를 체결했다.</p>
+                        
+                        <div class="img">
+                            <img src="/img/sub/pr/report_img_2.jpg" alt="the 3rd next startup awards">
+                            <p>- 2018 넥스트 스타트업 어워드 최우수상 -</p>
+                        </div>
+                    </div>
+                    
+                    <div class="link">
+                        <p>출처 바로가기</p>
+                        <a href="https://m.etnews.com/20181205000055?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D" target="_blank">https://m.etnews.com/20181205000055?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D</a>
+                    </div>
+
+                    <div class="file">&nbsp;</div>
+                </div>
+
+                <ul class="bo_btn">
+                    <li class="prev"><a href="#none"><span>prev</span><h6>&nbsp;</h6></a></li>
+                    <li class="list"><a href="/sub/pr/report_list.html ">목록으로</a></li>
+                    <li class="next"><a href="#none"><h6>&nbsp;</h6><span>next</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>

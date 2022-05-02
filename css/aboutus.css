@@ -471,7 +471,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 .opeople .cont_1.on { top: 0; opacity: 1; }
 .opeople .cont_1:after { content: ""; position: absolute; bottom: 0; left: 50%; width: 1px; height: 130px; background: #919191; transform: translateX(-50%); }
 .opeople .cont_1 .img { position: relative; display: inline-block; vertical-align: top; }
-.opeople .cont_1 .img div { position: absolute; bottom: -130px; left: -240px; opacity: 0; transition: all 2s; }
+.opeople .cont_1 .img div { position: absolute; bottom: -130px; left: -240px; opacity: 0; transition: all 2s 1s; }
 .opeople .cont_1 .img div.on { bottom: -30px; left: -240px; opacity: 1; }
 .opeople .cont_1 .txt { display: inline-block; margin: 15px 0 0 20px; width: 400px; text-align: left; vertical-align: top; }
 .opeople .cont_1 p { margin: 25px 0 0; }
@@ -556,7 +556,7 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
 .historyWrap .cont dl:after { content: ""; display: block; clear: both; }
 .historyWrap .cont dt { clear: both; float: left; margin: 0 0 20px; width: 50px; font-size: 15px; color: #313131; font-weight: 500; }
 .historyWrap .cont dd { float: left; margin: 0 0 20px; width: calc(100% - 50px); font-size: 15px; color: #313131; letter-spacing: -0.5px; word-break: keep-all; }
-.historyWrap .cont dd p { margin: 20px 0 0; }
+.historyWrap .cont dd p { margin: 20px 0 0; word-break: keep-all; }
 .historyWrap .cont dd p:first-child { margin: 0; }
 .historyWrap .cont dd span { font-weight: 600; }
 .historyWrap .cont dd i { font-weight: 500; font-style: normal; }
@@ -614,7 +614,8 @@ header.vision_3 { background: url(../img/sub/about/vision_bg_3.jpg) no-repeat ce
     .historyWrap .cont { width: 100%; }
     .historyWrap .cont > div:first-child dl:before { position: relative; left: -10px; display: block; margin: 0 0 25px; line-height: 22px; font-size: 17px; color: #1443bc; font-weight: 600; }
     .historyWrap .cont dl { padding-left: 20px; }
-
+    .historyWrap .cont dd i.block { display: block; }
+    
     .historyWrap .cont h4 + div dl:before { content: "Third Generation"; position: relative; left: -10px; display: block; margin: 0 0 25px; line-height: 22px; font-size: 17px; color: #1443bc; font-weight: 600; }
 
 
@@ -656,11 +657,11 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
 
 .awards_wrap .aw_cont .tit { display: flex; align-items: center; justify-content: center; height: 260px; background: url(../img/sub/about/awards_tit_bg.svg) no-repeat center; background-size: 100%; }
-.awards_wrap .aw_cont .tit:hover { animation: bounceOnce .5s; }
+.awards_wrap .aw_cont .tit:hover { animation: bounce .5s; }
 .awards_wrap .aw_cont h5 { position: relative; top: -5px; font-size: 30px; color: #6c95ff; font-weight: 600; text-align: center; }
 .awards_wrap .aw_cont h5 p { margin: 10px 0 0; line-height: 23px; font-size: 18px; color: #c6d6ff; font-weight: 500; }
 .awards_wrap .aw_cont .sub { margin: 0 auto; width: 240px; }
-.awards_wrap .aw_cont .sub li { margin: 20px 0 0; padding: 0 0 0 25px; line-height: 22px; font-size: 16px; color: #fff; text-align: justify; letter-spacing: -0.3px; word-break: break-all; background: url(../img/sub/about/awards_dot.svg) no-repeat left 1px; }
+.awards_wrap .aw_cont .sub li { margin: 20px 0 0; padding: 0 0 0 25px; line-height: 22px; font-size: 16px; color: #fff; letter-spacing: -0.3px; word-break: keep-all; background: url(../img/sub/about/awards_dot.svg) no-repeat left 1px; }
 .awards_wrap .aw_cont .sub li:first-child { margin: 45px 0 0; }
 .awards_wrap .aw_cont .sub p { margin: 5px 0 0; font-size: 14px; font-weight: 600; text-align: right; }
 .awards_wrap .aw_cont .sub i { font-weight: 600; font-style: normal; }
@@ -673,11 +674,11 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 .awards_wrap #section_2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat center top; background-size: cover; }
 .awards_wrap .aw_cert { display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; top: 100px; opacity: 0; transition: all .7s; }
 .awards_wrap .aw_cert.on { top: 0; opacity: 1; }
-.awards_wrap .aw_cert li { margin: 0 0 30px; width: 32%; text-align: center; }
+.awards_wrap .aw_cert li { margin: 0 0 7vh; width: 32%; text-align: center; }
 .awards_wrap .aw_cert .logo { display: flex; align-items: center; justify-content: center; padding: 0 20px; height: 120px; background: #fff; }
 .awards_wrap .aw_cert .logo img { max-width: 100%; }
 .awards_wrap .aw_cert h6 { display: inline-block; margin: 18px 0 0; font-size: 17px; color: #313131; font-weight: 500; letter-spacing: -0.2px; text-align: left; }
-.awards_wrap .aw_cert h6 span { display: block; font-size: 14px; font-weight: 400; }
+.awards_wrap .aw_cert h6 span { display: block; font-size: 14px; font-weight: 600; }
 
 
 
@@ -785,11 +786,13 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 .location .info h6 { font-size: 22px; color: #1443bc; font-weight: 600; text-transform: uppercase; }
 .location .info address { margin: 10px 0 0; line-height: 25px; font-size: 16px; color: #313131; font-weight: 500; font-style: normal; }
 .location .info address span { font-weight: 400; }
-.location .info address a { display: inline-block; margin: 0 0 0 12px; width: 25px; height: 25px; background: url(../img/sub/about/location_icon.svg) no-repeat center; background-size: 100%; text-indent: -9999px; }
+.location .info address a { display: inline-block; margin: 0 0 0 12px; width: 25px; height: 25px; background: url(../img/sub/about/location_icon.svg) no-repeat center; background-size: 100%; transition: all .3s; text-indent: -9999px; }
+.location .info address a:hover { opacity: .7; }
 .location .info p { margin: 5px 0 0; line-height: 22px; font-size: 14px; color: #313131; font-weight :500; }
-.location .info button { position: absolute; bottom: 80px; right: 0; padding: 0 13px 0 6px; line-height: 25px; font-size: 14px; color: #656565; background: none; text-transform: uppercase; }
+.location .info button { position: absolute; bottom: 80px; right: 0; padding: 0 13px 0 6px; line-height: 25px; font-size: 14px; color: #656565; background: none; transition: all .3s; text-transform: uppercase; }
 .location .info button:before { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #656565; transition: left .3s; }
 .location .info button:after { content: ""; position: absolute; bottom: 3px; right: 0; width: 8px; height: 2px; background: #656565; transform: rotate(45deg); transition: right .3s; }
+.location .info button:hover { opacity: .7; }
 
 
 /*### popup ###*/
@@ -802,7 +805,8 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 .location_pop .tit h4:after { content: ""; display: block; margin: 0 0 0 12px; width: 24px; height: 2px; background: #282828; }
 .location_pop .tit p { margin: 5px 0 0; font-size: 14px; color: rgba(0, 0, 0, .5); font-weight: 500; text-transform: uppercase; }
 .location_pop address { margin: 25px 0 0; line-height: 25px; font-size: 14px; color: #313131; font-weight: 500; text-align: right; font-style: normal; }
-.location_pop address a { display: inline-block; margin: 0 0 0 12px; width: 25px; height: 25px; background: url(../img/sub/about/location_icon.svg) no-repeat center; background-size: 100%; }
+.location_pop address a { display: inline-block; margin: 0 0 0 12px; width: 25px; height: 25px; background: url(../img/sub/about/location_icon.svg) no-repeat center; background-size: 100%; transition: all .3s; }
+.location_pop address a:hover { opacity: .7; }
 
 .location_pop ul { display: flex; flex-wrap: wrap; margin: 0 0 55px; }
 .location_pop ul li { margin: 15px 0 0 2%; width: 32%; height: 250px; overflow: hidden; }
