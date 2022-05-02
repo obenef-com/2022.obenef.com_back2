@@ -31,7 +31,15 @@ header { background: #000 !important; }
 #main_pop .close_btn { position: fixed; top: 30px; left: 30px; width: 35px; height: 35px; background: url(../img/sub/title_x_w.svg) no-repeat center; background-size: 100%; transition: all .3s; text-indent: -9999px; z-index: 999; }
 #main_pop .close_btn:hover { transform: rotate(90deg); }
 
-#main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 500px; transform: translate(-50%, -50%); vertical-align: top; }
+#main_pop .video_wrap { position: absolute; top: 50%; left: 50%; width: 500px; height: 500px; transform: translate(-50%, -50%); }
+#main_pop .videoSwiper { position: static; }
+#main_pop .videoSwiper .swiper-button-prev,
+#main_pop .videoSwiper .swiper-button-next { width: 20px; height: 33px; background-size: 20px; }
+#main_pop .videoSwiper .swiper-button-prev { top: -20px; left: auto; right: 50%; transform: translateX(200px); }
+#main_pop .videoSwiper .swiper-button-next { top: -20px; right: 50%; transform: translateX(240px); }
+
+/* #main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 500px; transform: translate(-50%, -50%); vertical-align: top; } */
+
 
 
 
@@ -50,10 +58,26 @@ header { background: #000 !important; }
  
     #main .pause_btn { bottom: 20px; right: 20px; width: 30px; height: 30px; }
 
+    
+}
+
+@media (max-width: 500px) {
+    /* popup */
+    #main_pop .video_wrap { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: auto; }
+    #main_pop .videoSwiper video { max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main_pop .videoSwiper .swiper-button-prev { right: 60px; transform: translateX(0); }
+    #main_pop .videoSwiper .swiper-button-next { right: 10px; transform: translateX(0); }
 }
 
 
 @media (max-height: 700px) {
     #main video { height: 40vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     #main h2 img { max-height: 15vh; }
+}
+
+@media (max-height: 500px) {
+    #main_pop .video_wrap { position: relative; top: 0; left: 0; width: 100%; height: 100%; transform: translate(0); }
+    #main_pop .videoSwiper video { display: block; margin: 0 auto; max-width: -webkit-fill-available; height: 100vh; max-height: -webkit-fill-available }
+    #main_pop .videoSwiper .swiper-button-prev { top: 60%; right: auto; left: 20px; transform: translate(0, -50%); }
+    #main_pop .videoSwiper .swiper-button-next { top: 60%; right: 10px; transform: translate(0, -50%); }
 }

@@ -7,11 +7,13 @@
         <title>obenef</title>
     
         <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/swiper.css">
         <link rel="stylesheet" href="/css/main.css">
     
         <script src="/js/jquery-1.12.4.min.js"></script>
         <script src="/js/jquery.fullpage.min.js"></script>
         <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/swiper.min.js"></script>
         <script src="/js/common.js"></script>
     </head>
 
@@ -33,7 +35,19 @@
             var video = $("#main .video video");
             var video_pop = $("#main_pop video");
 
-            video_pop.get(0).pause();
+            var swiper = new Swiper(".videoSwiper", {
+                // loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            var video_len = $(".videoSwiper .swiper-slide").length;
+
+            for(var i=0; i<(video_len); i++) {
+                video_pop.get(i).pause();
+            }
 
             // main control
             $("#main .pause").on("click", function() {
@@ -63,17 +77,36 @@
 
                 $("#main .sound").removeClass("on");
                 video.prop("muted", true);
+               
+                swiper.update();
 
-                video_pop.get(0).play();
-                video_pop.get(0).currentTime = 0;
+                // video_pop.get(0).play();
+                // video_pop.get(0).currentTime = 0;
             });
             
             $("#main_pop .close_btn").on("click", function() {
                 $(this).parent().hide();
+                swiper.slideTo(0);
 
-                video_pop.get(0).pause();
-                video_pop.get(0).currentTime = 0;
+                // video_pop.get(0).pause();
+                // video_pop.get(0).currentTime = 0;
+
+                for(var i=0; i<(video_len); i++) {
+                    video_pop.get(i).pause();
+                    video_pop.get(i).currentTime = 0;
+                }
             });
+
+
+            swiper.on('slideChangeTransitionEnd', function() {
+                for(var i=0; i<(video_len); i++) {
+                    video_pop.get(i).pause();
+                    video_pop.get(i).currentTime = 0;
+                }
+            });
+
+
+            
         });
         </script>
 
@@ -97,7 +130,21 @@
         <div id="main_pop">
             <button class="close_btn">close</button>
 
-            <video src="/img/main/pop_video.mp4" controls autoplay playsinline></video>
+            <div class="video_wrap">
+                <div class="swiper-container videoSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="/img/main/pop_video.mp4" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="/img/main/pop_video.mp4" controls></video>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
 
     </body>
