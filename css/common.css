@@ -438,7 +438,7 @@ h4.cStyle.on span:after { background: #fff; }
   nav .sub_menu li a { display: block; padding: 0 15px; font-size: 13px; }
 
   #gnb > li.on { display: block; width: 100%; max-width: 100%; }
-  #gnb > li.on .sub_menu { display: block; }
+  #gnb > li.on .sub_menu { display: block; padding: 0; }
 
   header.on #gnb > li.on .sub_menu { background: none; }
 
