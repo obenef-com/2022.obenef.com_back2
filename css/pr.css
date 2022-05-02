@@ -31,6 +31,7 @@
 
 
 /*########## reference ##########*/
+.pr_wrap .sub_title h3 { letter-spacing: 8px; }
 .pr_wrap .sub_title > div span { font-weight: 400; }
 
 .pr_wrap .list { display: flex; flex-wrap: wrap; }
