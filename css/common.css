@@ -426,20 +426,21 @@ h4.cStyle.on span:after { background: #fff; }
 
   /*### gnb ###*/
   nav { overflow-x: scroll; overflow-y: hidden; }
-  #gnb { display: block; min-width: 460px; white-space: nowrap; }
-  #gnb > li { display: inline-block; width: 22%; max-width: 100%; }
+  #gnb { display: block; white-space: nowrap; }
+  #gnb > li { display: none; }
   #gnb > li:nth-child(4) { width: 12%; }
-  #gnb > li > a { font-size: 15px; }
+  #gnb > li > a { display: none; font-size: 15px; }
   #gnb > li:nth-child(4) a { max-width: 100%; }
 
 
-  nav .sub_menu { right: 0; padding: 0; }
+  nav .sub_menu { position: static; right: 0; padding: 0; }
   nav .sub_menu li { display: inline-block; margin: 0; }
-  nav .sub_menu li a { display: block; padding: 0 20px; font-size: 13px; }
+  nav .sub_menu li a { display: block; padding: 0 15px; font-size: 13px; }
 
-  #gnb > li.on .sub_menu { display: none; white-space: nowrap; overflow-x: scroll; }
+  #gnb > li.on { display: block; width: 100%; max-width: 100%; }
+  #gnb > li.on .sub_menu { display: block; }
 
-
+  header.on #gnb > li.on .sub_menu { background: none; }
 
   /*### mobile nav ###*/
   /* language */
