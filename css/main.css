@@ -35,10 +35,12 @@ header { background: #000 !important; }
 
 /* #main_pop video { position: absolute; top: 50%; left: 50%; width: 100vw; max-width: 500px; height: 100vh; max-height: 500px; transform: translate(-50%, -50%); vertical-align: top; } */
 
-#main_pop .slide_btn { position: absolute; top: -25px; right: 0; display: flex; align-items: center; z-index: 99; }  
-#main_pop .slide_btn .prev { margin: 0 10px 0 0; }
-#main_pop .slide_btn a { color: #fff; cursor: pointer; }  
-#main_pop .slide_btn img { width: 15px; }  
+#main_pop .slide_btn { position: absolute; top: 50%; right: 0; width: 100%; transform: translateY(-50%); z-index: 99; }  
+#main_pop .slide_btn > div { position: absolute; }
+#main_pop .slide_btn .prev { left: -25px; }
+#main_pop .slide_btn .next { right: -25px; }
+#main_pop .slide_btn a { cursor: pointer; }  
+#main_pop .slide_btn img { width: 20px; }  
 
 #main_pop .slide_cont { animation: fade 1.5s; }
 #main_pop .slide_cont video { width: 100%; height: 100%; }
@@ -76,31 +78,18 @@ header { background: #000 !important; }
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-height: 500px) {
     /* popup */
     #main_pop .video_wrap { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: auto; }
     
-    #main_pop .slide_btn { top: -35px; right: 20px; }  
-    #main_pop .slide_btn img { width: 20px; } 
+    #main_pop .slide_btn .prev { left: 20px; }
+    #main_pop .slide_btn .next { right: 20px; } 
     
-    #main_pop .slide_cont video { max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main_pop .slide_cont video { display: block; margin: 0 auto; max-width: -webkit-fill-available; height: 100vh; max-height: -webkit-fill-available }
 }
 
 
 @media (max-height: 700px) {
     #main video { height: 40vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     #main h2 img { max-height: 15vh; }
-}
-
-@media (max-height: 500px) {
-    #main_pop .video_wrap { position: relative; top: 0; left: 0; width: 100%; height: 100%; transform: translate(0); }
-    
-    #main_pop .slide_btn { width: 100%; display: block; top: 50%; right: 0; transform: translateY(-50%); }
-    #main_pop .slide_btn > div { position: absolute; }
-    #main_pop .slide_btn .prev { left: 20px; }
-    #main_pop .slide_btn .next { right: 20px; }
-    #main_pop .slide_btn img { width: 20px; }
-
-    #main_pop .slide_cont video { display: block; margin: 0 auto; max-width: -webkit-fill-available; height: 100vh; max-height: -webkit-fill-available }
-
 }
