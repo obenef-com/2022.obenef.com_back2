@@ -34,20 +34,7 @@
         $(function() {
             var video = $("#main .video video");
             var video_pop = $("#main_pop video");
-
-            var swiper = new Swiper(".videoSwiper", {
-                // loop: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            var video_len = $(".videoSwiper .swiper-slide").length;
-
-            for(var i=0; i<(video_len); i++) {
-                video_pop.get(i).pause();
-            }
+            var slide_video = $(".slide_cont video");
 
             // main control
             $("#main .pause").on("click", function() {
@@ -78,35 +65,21 @@
                 $("#main .sound").removeClass("on");
                 video.prop("muted", true);
                
-                swiper.update();
-
                 // video_pop.get(0).play();
                 // video_pop.get(0).currentTime = 0;
             });
             
             $("#main_pop .close_btn").on("click", function() {
                 $(this).parent().hide();
-                swiper.slideTo(0);
+
+                for(var j=0; j<slide_video.length; j++) {
+                    slide_video.get(j).pause();
+                    slide_video.get(j).currentTime = 0;
+                }
 
                 // video_pop.get(0).pause();
                 // video_pop.get(0).currentTime = 0;
-
-                for(var i=0; i<(video_len); i++) {
-                    video_pop.get(i).pause();
-                    video_pop.get(i).currentTime = 0;
-                }
             });
-
-
-            swiper.on('slideChangeTransitionEnd', function() {
-                for(var i=0; i<(video_len); i++) {
-                    video_pop.get(i).pause();
-                    video_pop.get(i).currentTime = 0;
-                }
-            });
-
-
-            
         });
         </script>
 
@@ -131,21 +104,50 @@
             <button class="close_btn">close</button>
 
             <div class="video_wrap">
-                <div class="swiper-container videoSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <video src="/img/main/pop_video.mp4" controls></video>
-                        </div>
-                        <div class="swiper-slide">
-                            <video src="/img/main/pop_video.mp4" controls></video>
-                        </div>
-                    </div>
-    
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                <div class="slide_btn">
+                    <div class="prev"><a onclick="plusSlides(-1)"><img src="/img/main/prev_arrow.svg"></a></div>
+                    <div class="next"><a onclick="plusSlides(1)"><img src="/img/main/next_arrow.svg"></a></div>
+                </div>
+
+                <div class="slide_cont">
+                    <video src="/img/main/pop_video.mp4" controls>
+                        <source  type="video/mp4">
+                    </video> 
+                </div>
+                <div class="slide_cont">
+                    <video src="/img/main/pop_video.mp4" controls>
+                        <source  type="video/mp4">
+                    </video> 
                 </div>
             </div>
         </div>
 
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var slides = $(".slide_cont");
+            var slide_video = $(".slide_cont video");
+
+            if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                        
+                        for(var j=0; j<slide_video.length; j++) {
+                            slide_video.get(j).pause();
+                            slide_video.get(j).currentTime = 0;
+                        }
+                    } 
+ 
+            slides[slideIndex-1].style.display = "block";
+        } 
+        </script>
     </body>
 </html>
