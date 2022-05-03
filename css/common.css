@@ -424,11 +424,16 @@ h4.cStyle.on span:after { background: #fff; }
 
 
 @media (max-width: 767px) {
-  .subWrap .cWrap { padding: 160px 20px 80px; }
+  header .cWrap { padding: 15px 0 0; }
+
+  .subWrap .cWrap { padding: 130px 20px 80px; }
+
+  .m_nav_btn { top: 22px; }
+  .m_location_btn { top: 22px; }
 
   /*### gnb ###*/
   nav { overflow-x: scroll; overflow-y: hidden; }
-  #gnb { display: block; white-space: nowrap; }
+  #gnb { display: block; margin: 0; white-space: nowrap; }
   #gnb > li { display: none; }
   #gnb > li > a { display: none; font-size: 15px; }
   #gnb > li:nth-child(4) a { max-width: 100%; }
@@ -469,7 +474,7 @@ h4.cStyle.on span:after { background: #fff; }
 
 
   /*########## fullpage ##########*/
-  #fullpage .cWrap { padding: 160px 20px 80px; }
+  #fullpage .cWrap { padding: 130px 20px 80px; }
 
   #fp-nav { right: 10px; }
 }
