@@ -15,7 +15,7 @@
         <script src="/js/common.js"></script>
     </head>
 
-    <body>
+    <body class="education">
         <!-- header -->
         <header>
             <script>
@@ -41,6 +41,19 @@
                 scrollOverflow: true,
                 navigation: true,
                 navigationPosition: 'right',
+                'afterLoad': function(origin, destination, direction){
+                    if(destination==2) {
+                        $("#fp-nav").css("transform", "translate(650px, 60px)");
+                    }
+                },
+                'onLeave': function(origin, destination, direction) {
+                    if(destination==1) {
+                        $("#fp-nav").css("transform", "translate(550px, 60px)");
+                    }
+                    if(destination==2) {
+                        $("#fp-nav").css("transform", "translate(650px, 60px)");
+                    }
+                }
             });
 
             var btn = $(".edu_wrap #section_2 .slide_btn li button");

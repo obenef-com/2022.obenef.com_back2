@@ -702,7 +702,6 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
     .awards_wrap .aw_cont h5 p { font-size: 18px; }
     .awards_wrap .aw_cont .sub { width: 100%; max-width: 590px; }
     .awards_wrap .aw_cont .sub li { margin: 35px 0 0; padding: 0 0 0 28px; background-size: 20px; }
-    .awards_wrap .aw_cont .sub li:first-child { margin: 55px 0 0; }
 
 
     /* page 2 */
@@ -715,12 +714,12 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
 @media (max-width: 767px) {
     /* page 1 */
-    .awards_wrap .aw_cont .tit { height: 280px; background-size: 280px; }
+    .awards_wrap .aw_cont .tit { height: 260px; background-size: 260px; }
     .awards_wrap .aw_cont h5 { font-size: 28px; }
     .awards_wrap .aw_cont h5 p { font-size: 17px; }
     .awards_wrap .aw_cont .sub { padding: 0 20px; }
-    .awards_wrap .aw_cont .sub li { text-align: left; word-break: keep-all; }
-    .awards_wrap .aw_cont .sub p { font-size: 15px; }
+    .awards_wrap .aw_cont .sub li { margin: 15px 0 0; padding: 0 0 0 26px; line-height: 20px; font-size: 14px; letter-spacing: -0.5px; text-align: left; word-break: keep-all; background-size: 18px; }
+    .awards_wrap .aw_cont .sub p { font-size: 13px; }
 
 
     /* page 2 */

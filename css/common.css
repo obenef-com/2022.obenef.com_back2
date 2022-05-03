@@ -229,7 +229,7 @@ h4.cStyle.on span:after { background: #fff; }
 #fullpage .fp-tableCell { vertical-align: top; }
 #fullpage .cWrap { padding: 140px 0 120px; }
 
-#fp-nav { position: fixed; top: 50%; right: 40px; margin-top: 0 !important; transform: translateY(60px); z-index: 999; }
+#fp-nav { position: fixed; top: 50%; right: 50%; margin-top: 0 !important; transform: translate(550px, 60px); z-index: 999; }
 #fp-nav li { display: flex; justify-content: center; }
 #fp-nav li a { display: block; padding: 3px; }
 #fp-nav li a span { display: block; margin: 3px 0; width: 13px; height: 13px; background: #aaa; border-radius: 50%; opacity: 1; }
@@ -280,6 +280,10 @@ h4.cStyle.on span:after { background: #fff; }
 @media (max-width: 1250px) {
   /*########## page button ##########*/
   #pageBtn { display: none; }
+  
+  
+  /*########## fullpage ##########*/
+  #fp-nav { right: 20px; transform: translateY(-50%); }
 }
 
 
@@ -372,8 +376,6 @@ h4.cStyle.on span:after { background: #fff; }
   /*########## fullpage ##########*/
   #fullpage .cWrap { padding: 210px 30px 120px; }
 
-  #fp-nav { right: 20px; }
-  
 
 
 }
