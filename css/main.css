@@ -12,16 +12,16 @@ header { background: #000 !important; }
 #main video { max-width: 500px; max-height: 350px; }
 #main h2 { margin: 10px 0 0; text-align: center; }
 #main h2 img { max-width: 100%; }
-#main p { display: flex; align-items: center; justify-content: center; margin: 25px 0 0; font-size: 15px; color: #fff; }
+#main p { display: flex; align-items: center; justify-content: center; margin: 15px 0 0; font-size: 15px; color: #fff; }
 #main .play_btn { margin: 0 10px 0 0; width: 19px; height: 19px; background: url(../img/main/pop_play_btn.svg) no-repeat center; background-size: 100%; text-indent: -9999px; }
 
-#main .btn_group { position: fixed; bottom: 30px; right: 30px; display: flex; }
-#main .btn_group li { width: 40px; height: 40px; border: 2px solid #fff; border-left: 0; }
+#main .btn_group { position: fixed; bottom: 25px; right: 30px; display: flex; }
+#main .btn_group li { width: 37px; height: 37px; border: 2px solid #fff; border-left: 0; }
 #main .btn_group li:first-child { border-left: 2px solid #fff; }
 #main .btn_group button { display: block; width: 100%; height: 100%; text-indent: -9999px; }
-#main .btn_group .sound { background: url(../img/main/muted_btn.svg) no-repeat center; background-size: 20px; }
+#main .btn_group .sound { background: url(../img/main/muted_btn.svg) no-repeat center; background-size: 19px; }
 #main .btn_group .pause { background: url(../img/main/pause_btn.svg) no-repeat center; background-size: 15px; }
-#main .btn_group .sound.on { background: url(../img/main/volume_btn.svg) no-repeat center 10px; background-size: 20px; }
+#main .btn_group .sound.on { background: url(../img/main/volume_btn.svg) no-repeat center 10px; background-size: 19px; }
 #main .btn_group .pause.on { background: url(../img/main/play_btn.svg) no-repeat center; background-size: 15px; }
 
 
@@ -61,7 +61,7 @@ header { background: #000 !important; }
 
 
 @media (max-width: 1100px) {
-    #main .video { margin: 0; }
+    #main .video { margin: -4vh 0 0; }
 }
 
 @media (max-width: 767px) {
@@ -83,7 +83,7 @@ header { background: #000 !important; }
     #main video { margin: 0; padding: 0 20px; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
     
     #main h2 { padding: 0 40px; }
-    #main h2 img { max-height: 15vh; }
+    #main h2 img { max-height: 14vh; }
     #main p { font-size: 16px; }
     #main .play_btn { width: 25px; height: 25px; }
  
@@ -104,6 +104,6 @@ header { background: #000 !important; }
 
 
 @media (max-height: 700px) {
-    #main video { height: 40vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
-    #main h2 img { max-height: 15vh; }
+    #main video { height: 38vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main h2 img { max-height: 14vh; }
 }

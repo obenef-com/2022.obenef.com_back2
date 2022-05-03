@@ -31,9 +31,6 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_1 .cont_1 > li:nth-child(4) { text-align: right; }
 
 .gest_wrap #section_1 .cont_1 > li.on { top: 0; opacity: 1; }
-.gest_wrap #section_1 .cont_1 > li.on:nth-child(2) { transition-delay: .2s; }
-.gest_wrap #section_1 .cont_1 > li.on:nth-child(3) { transition-delay: .5s; }
-.gest_wrap #section_1 .cont_1 > li.on:nth-child(4) { transition-delay: .75s; }
 
 .gest_wrap #section_1 .cont_1 h4 { margin: 0 0 10px; font-size: 25px; }
 .gest_wrap #section_1 .cont_1 p { line-height: 26px; font-size: 18px; }
@@ -92,7 +89,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_1 li img { display: block; margin: 0 0 5px; }
 
 /* cont 2 */
-.gest_wrap #section_2 .cont_2 { display: flex; align-items: center; justify-content: space-between; margin: 35px 0 0; transition-delay: .25s; }
+.gest_wrap #section_2 .cont_2 { display: flex; align-items: center; justify-content: space-between; margin: 35px 0 0; }
 .gest_wrap #section_2 .cont_2 h5 { font-size: 18px; color: #313131; font-weight: 500; text-align: center; }
 .gest_wrap #section_2 .cont_2 ul { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin: 10px 0 0; padding: 25px 0; width: 570px; background: rgba(247, 248, 250, .6); border-radius: 200px; }
 .gest_wrap #section_2 .cont_2 > div:first-child ul { width: 370px; }
@@ -101,7 +98,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_2 li:first-child:before { display: none; }
 
 /* cont 3 */
-.gest_wrap #section_2 .cont_3 { margin: 50px 0 0; transition-delay: .5s; }
+.gest_wrap #section_2 .cont_3 { margin: 50px 0 0; }
 .gest_wrap #section_2 .cont_3 h4 { font-size: 20px; font-weight: 600; text-align: center; }
 .gest_wrap #section_2 .cont_3 > p { margin: 15px 0 0; line-height: 22px; font-size: 15px; color: #313131; text-align: center; }
 .gest_wrap #section_2 .cont_3 > p span { font-weight: 600; }
@@ -112,7 +109,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_3 li p { line-height: 18px; font-size: 13px; color: #313131; letter-spacing: -0.3px; }
 
 /* cont 4 */
-.gest_wrap #section_2 .cont_4 { margin: 45px 0 0; transition-delay: .75s; }
+.gest_wrap #section_2 .cont_4 { margin: 45px 0 0; }
 .gest_wrap #section_2 .cont_4 dl { display: flex; flex-wrap: wrap; }
 .gest_wrap #section_2 .cont_4 dt { display: flex; align-items: center; justify-content: center; margin: 0 0 13px; width: 250px; min-height: 73px; font-size: 17px; color: #fff; font-weight: 600; background: #146bbc; }
 .gest_wrap #section_2 .cont_4 dt:first-child { justify-content: left; padding: 0 0 0 43px; }
@@ -125,7 +122,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_4 li:first-child:before { display: none; }
 
 /* cont 5 */
-.gest_wrap #section_2 .cont_5 { display: flex; justify-content: space-between; margin: 50px 0 0; transition-delay: 1s; }
+.gest_wrap #section_2 .cont_5 { display: flex; justify-content: space-between; margin: 50px 0 0; }
 .gest_wrap #section_2 .cont_5 > div { padding: 20px 30px 0; }
 .gest_wrap #section_2 .cont_5 h4 { font-size: 18px; color: #313131; font-weight: 600; text-align: center; }
 
@@ -144,7 +141,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_5 .right p { display: inline-block; margin: 7px 0 0; padding: 0 10px; line-height: 28px; font-size: 14px; border: 1px solid #fff; border-radius: 100px; vertical-align: top; }
 
 /* cont 6 */
-.gest_wrap #section_2 .cont_6 { margin: 50px 0 0; text-align: center; transition-delay: 1.25s; }
+.gest_wrap #section_2 .cont_6 { margin: 50px 0 0; text-align: center; }
 .gest_wrap #section_2 .cont_6:before { content: "시스템 장비 구성"; font-size: 18px; color: #313131; font-weight: 600; }
 .gest_wrap #section_2 .cont_6 ul { display: flex; justify-content: space-between; margin: 25px 0 20px; }
 .gest_wrap #section_2 .cont_6 li { height: 200px; }
@@ -155,7 +152,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_6 div span { display: block; line-height: 22px; font-size: 12px; font-weight: 600; }
 
 /* cont 7 */
-.gest_wrap #section_2 .cont_7 { margin: 70px 0 0; transition-delay: 1.5s; }
+.gest_wrap #section_2 .cont_7 { margin: 70px 0 0; }
 .gest_wrap #section_2 .cont_7:before { content: "외부연계"; display: block; font-size: 18px; color: #313131; font-weight: 600; text-align: center; }
 .gest_wrap #section_2 .cont_7 ul { display: flex; align-items: center; justify-content: space-between; margin: 15px 0 0; padding: 20px; background: rgba(243, 244, 247, .6); }
 .gest_wrap #section_2 .cont_7 li { display: inline-flex; align-items: center; }
@@ -408,10 +405,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap #section_1 h4:after { content: ""; position: absolute; bottom: 0; left: 0; width: 24px; height: 2px; background: #282828; }
 
 .aiger_wrap #section_1 ul { display: flex; align-items: center; justify-content: space-between; margin: 25px 0 0; }
-.aiger_wrap #section_1 li { position: relative; opacity: 0; transition: all .7s; }
-.aiger_wrap #section_1 li:nth-child(1) { left: -100px; }
-.aiger_wrap #section_1 li:nth-child(2) { left: -50px; transition-delay: .25s; }
-.aiger_wrap #section_1 li:nth-child(3) { left: 100px; transition-delay: .5s; }
+.aiger_wrap #section_1 li { position: relative; top: 100px; opacity: 0; transition: all .7s; }
 .aiger_wrap #section_1 li.arrow { display: inline-flex; align-items: center; justify-content: center; width: 50px; }
 .aiger_wrap #section_1 li.arrow:before { content: ""; position: relative; left: -10px; width: 37px; height: 37px; border-right: 2px solid #282828; border-bottom: 2px solid #282828; transform: rotate(-45deg); }
 .aiger_wrap #section_1 li img { width: 100%; }
@@ -420,10 +414,10 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap #section_1 li h6 { font-size: 17px; font-weight: 500; }
 .aiger_wrap #section_1 li span { font-size: 14px; font-weight: 500; }
 
-.aiger_wrap #section_1 li.on { opacity: 1; left: 0; }
+.aiger_wrap #section_1 li.on { opacity: 1; top: 0; }
 
 /* footer */
-.aiger_wrap .footer_1 { display: flex; align-items: start; position: relative; top: 50px; margin: 45px 0 0; opacity: 0; transition: all .7s .75s; }
+.aiger_wrap .footer_1 { display: flex; align-items: start; position: relative; top: 100px; margin: 45px 0 0; opacity: 0; transition: all .7s; }
 .aiger_wrap .footer_1 h6 { display: flex; align-items: center; padding: 7px 0 0; width: 330px; font-size: 20px; color: #282828; font-weight: 500; }
 .aiger_wrap .footer_1 h6:after { content: ""; display: inline-block; margin: 0 0 0 13px; width: 24px; height: 2px; background: #313131; }
 .aiger_wrap .footer_1 p { padding: 0 0 0 30px; width: calc(100% - 330px); line-height: 24px; font-size: 16px; color: #313131; word-break: keep-all; }
@@ -459,13 +453,13 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap #section_2 .cont_1 p img { margin: 0 10px; width: 17px; }
 
 /* cont 2 */
-.aiger_wrap #section_2 .cont_2 { position: relative; margin: 20px 0 0; padding: 220px 0 0; text-align: center; background: url(../img/sub/business/aiger_2_1.svg) no-repeat center top; transition-delay: .25s; }
+.aiger_wrap #section_2 .cont_2 { position: relative; margin: 20px 0 0; padding: 220px 0 0; text-align: center; background: url(../img/sub/business/aiger_2_1.svg) no-repeat center top; }
 .aiger_wrap #section_2 .cont_2:before { content: ""; position: absolute; top: -60px; left: 50%; width: 30px; height: 30px; background: url(../img/sub/title_x.svg) no-repeat center; background-size: 100%; transform: rotate(45deg) translateX(-50%); }
 .aiger_wrap #section_2 .cont_2 h6 { line-height: 22px; }
 .aiger_wrap #section_2 .cont_2 span { display: block; line-height: 22px; font-size: 14px; color: #939393; font-weight: 500; }
 
 /* cont 3 */
-.aiger_wrap #section_2 .cont_3 { margin: 30px 0 0; transition-delay: .5s; }
+.aiger_wrap #section_2 .cont_3 { margin: 30px 0 0; }
 .aiger_wrap #section_2 .cont_3 ul { position: relative; display: flex; justify-content: center; flex-wrap: wrap; }
 .aiger_wrap #section_2 .cont_3 ul:before { content: ""; position: relative; top: 40px; display: block; width: 34px; height: 32px; background: url(../img/sub/business/aiger_2_icon.svg) no-repeat center; background-size: 100%; transform: rotate(180deg); }
 .aiger_wrap #section_2 .cont_3 ul:after { content: ""; position: absolute; top: 435px; left: 50%; width: 34px; height: 32px; background: url(../img/sub/business/aiger_2_icon.svg) no-repeat center; background-size: 100%; transform: translateX(-50%); }
@@ -474,7 +468,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap #section_2 .cont_3 li:nth-child(2) { margin-right: 50px; }
 
 /* footer */
-.aiger_wrap .footer_2 { display: flex; position: relative; top: 50px; margin: 80px 0 0; opacity: 0; transition: all .7s .75s; }
+.aiger_wrap .footer_2 { display: flex; position: relative; top: 100px; margin: 80px 0 0; opacity: 0; transition: all .7s; }
 .aiger_wrap .footer_2 h6 { line-height: 30px; width: 260px; font-size: 20px; color: #282828; font-weight: 500; letter-spacing: -0.5px; }
 .aiger_wrap .footer_2 h6 span { display: inline-flex; align-items: center; font-size: 14px; vertical-align: top; }
 .aiger_wrap .footer_2 h6 span:before { content: ""; display: block; margin: 0 8px; width: 2px; height: 15px; background: #cdcdcd; }
@@ -515,7 +509,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .aiger_wrap #section_3 .cont_1 dd span { display: block; }
 
 /* cont 2 */
-.aiger_wrap #section_3 .cont_2 { margin: 70px 0 0; transition-delay: .25s; }
+.aiger_wrap #section_3 .cont_2 { margin: 70px 0 0; }
 .aiger_wrap #section_3 .cont_2 h4 { line-height: 24px; font-size: 20px; color: #313131; font-weight: 500; text-align: center; }
 
 .aiger_wrap #section_3 .cont_2 .top { display: flex; align-items: center; justify-content: space-around; }
