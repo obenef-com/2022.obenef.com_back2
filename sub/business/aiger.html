@@ -13,7 +13,7 @@
         <meta property="og:title" content="OBENEF">
         <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
         <meta property="og:url" content="www.obenef.com">
-        <meta property="og:image" content="www.obenef.com/og/banner.png">
+        <meta property="og:image" content="/img/etc/og_image.png">
 
         <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
         <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
@@ -69,6 +69,24 @@
                     }
                 }
             });
+
+            function responsiveImg() {
+                var w = $(window).innerWidth() || window.innerWidth;
+
+                if(w < 768) {
+                    $(".aiger1_1 img").attr("src", "/img/sub/business/aiger_1_1_m.jpg");
+                    $(".aiger1_2 img").attr("src", "/img/sub/business/aiger_1_2_m.jpg");
+                } else {
+                    $(".aiger1_1 img").attr("src", "/img/sub/business/aiger_1_1.jpg");
+                    $(".aiger1_2 img").attr("src", "/img/sub/business/aiger_1_2.jpg");
+                }
+            }
+
+            $(window).resize(function() {
+                responsiveImg();
+            });
+
+            responsiveImg();
         });
         </script>
 
@@ -87,7 +105,7 @@
                     <h4>business</h4>
 
                     <ul>
-                        <li>
+                        <li class="aiger1_1">
                             <img src="/img/sub/business/aiger_1_1.jpg" alt="전통적인 컴퓨터실">
                             <div>
                                 <h6>전통적인 컴퓨터실</h6>
@@ -95,7 +113,7 @@
                             </div>
                         </li>
                         <li class="arrow">&nbsp;</li>
-                        <li>
+                        <li class="aiger1_2">
                             <img src="/img/sub/business/aiger_1_2.jpg" alt="온라인 가상 실습(컴퓨터)실">
                             <div>
                                 <h6>컨테이너 기반의 클라우드 컴퓨팅<br>온라인 가상 실습(컴퓨터)실</h6>

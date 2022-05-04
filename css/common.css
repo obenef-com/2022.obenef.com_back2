@@ -485,7 +485,7 @@ h4.cStyle.on span:after { background: #fff; }
 
 
 @media (max-width: 424px) {
-  .subWrap .cWrap { padding: 120px 20px 80px; }
+  .subWrap .cWrap { padding: 110px 20px 80px; }
 
   /*### gnb ###*/
   /* #gnb { min-width: 400px; } */
@@ -500,7 +500,7 @@ h4.cStyle.on span:after { background: #fff; }
 
 
 /*########## fullpage ##########*/
-  #fullpage .cWrap { padding: 120px 20px 80px; }
+  #fullpage .cWrap { padding: 110px 20px 80px; }
 }
 
 

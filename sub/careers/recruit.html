@@ -13,7 +13,7 @@
         <meta property="og:title" content="OBENEF">
         <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
         <meta property="og:url" content="www.obenef.com">
-        <meta property="og:image" content="www.obenef.com/og/banner.png">
+        <meta property="og:image" content="/img/etc/og_image.png">
 
         <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
         <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
@@ -45,40 +45,6 @@
             <div class="next"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-WS6pnI2eqbXKI58gF_QFTBMLGyqpGdkXGYh780prJWi7gw/viewform" target="_blank"><i>&nbsp;</i><span>문의하기</span></a></div>
         </div>
 
-        <script>
-        function recruitGrid(){
-            var $grid = $(".recruit_wrap .grid").isotope({
-                itemSelector: "li",
-                layoutMode: 'fitRows'
-            });
-            $(".recruit_wrap .tab_btn button").on("click", function() {
-                $(this).siblings().removeClass("on");
-                $(this).addClass("on");
-
-                var filterValue = $(this).attr("data-filter");
-                $grid.isotope({ filter: filterValue });
-            });
-        }
-
-        $(function() {
-            $(".org_wrap .cont_wrap").addClass("on");
-
-            $(".recruit_wrap .grid li").each(function() {
-                if($(this).hasClass("on")) {
-                    $(this).find("div").text("채용중");
-                } else {
-                    $(this).find("div").text("채용종료");
-                    
-                    $(this).find("a").on("click",function(e) {
-                        e.preventDefault();
-                    });
-                }
-            });
-
-            recruitGrid();
-        });
-        </script>
-
 
         <div class="subWrap recruit_wrap">
             <div class="cWrap cWrap_1">
@@ -88,28 +54,19 @@
                         post a job opening
                     </h4>
                 </div>
+                
+                <div class="cont">
+                    <div class="img">
+                        <img src="/img/sub/careers/recruit_img.svg">
+                    </div>
 
-                <div class="tab_btn">
-                    <button class="on" data-filter="*"><span>전체</span></button>
-                    <button data-filter=".new"><span>신입</span></button>
-                    <button data-filter=".career"><span>경력</span></button>
-                    <button data-filter=".part"><span>파트타임</span></button>
+                    <div class="txt">
+                        <h4><span>오베네프와 함께 미래를</span> 이끌어나갈 인재를 채용합니다.</h4>
+                        <p><span>오베네프 채용 정보와 같이 근무하시길 원하시는 분은</span> 채용관으로 들어가기 버튼을 클릭하시길 바랍니다.</p>
+
+                        <a href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=U3I4UWdPQTIxN1prdlpKWUhuSE9KZz09" target="_blank">채용관으로 들어가기</a>
+                    </div>
                 </div>
-
-                <ul class="grid">
-                    <li class="part on">
-                        <div>&nbsp;</div>
-                        <h5><a href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=U3I4UWdPQTIxN1prdlpKWUhuSE9KZz09" target="_blank">PPT 제작 사무보조<span>교수학습자료 제작(PPT 제작)</span></a></h5>
-                        <span>2022.04.01 - 2022.12.31</span>
-                        <a href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=U3I4UWdPQTIxN1prdlpKWUhuSE9KZz09" target="_blank">입사지원</a>
-                    </li>
-                    <li class="new career">
-                        <div>&nbsp;</div>
-                        <h5><a href="#none">Graphic Designer<span>이러닝 콘텐츠 디자이너 신입/경력 채용</span></a></h5>
-                        <span>2021.12.12 - 2021.12.31</span>
-                        <a href="#none">입사지원</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </body>
