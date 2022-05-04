@@ -51,7 +51,7 @@
         $(function() {
             var agent = navigator.userAgent.toLowerCase();
 
-            if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
+                if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1) || (agent.indexOf("mac") != -1)) {  
                 $(".video_cont").hide(); 
             } else {
                 $(".img_cont").hide();
