@@ -792,6 +792,16 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
 @media (max-width: 424px) {
     /*### page 2 ###*/
+    /* cont 1 */
+    .aiger_wrap #section_2 .cont_1 li:nth-child(1) { top: 140px; padding: 0 0 150px; background-size: 80%; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(1):after { width: 20px; height: 20px; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { padding: 13px 40px; height: 75px; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(3) { padding: 0 0 130px; background-size: 75%; }
+    .aiger_wrap #section_2 .cont_1 h4 { font-size: 16px; }
+    .aiger_wrap #section_2 h6 { line-height: 20px; font-size: 14px; }
+    .aiger_wrap #section_2 .cont_1 span { padding: 0 10px; font-size: 12px; }  
+
+
     /* cont 2 */
     .aiger_wrap #section_2 .cont_2 { background-size: 100%; }
 
@@ -808,14 +818,15 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
 
     /*### page 4 ###*/
-    .aiger_wrap #section_4 .tit li { line-height: 20px; font-size: 13px; background-position: left 1px; }
+    .aiger_wrap #section_4 .tit li { padding: 0 0 0 23px; line-height: 18px; font-size: 12px; background-position: left top; background-size: 18px; }
 
     .aiger_wrap table { margin: 25px 0 0; }
     .aiger_wrap table:after { height: calc(100% + 10px); }
-    .aiger_wrap thead th { padding: 12px 7px; line-height: 18px; font-size: 13px; }
+    .aiger_wrap thead th { padding: 8px 5px; line-height: 18px; font-size: 12px; }
     .aiger_wrap thead th:first-child { width: 105px; }
-    .aiger_wrap tbody td { padding: 12px 7px; line-height: 18px; font-size: 13px; }
-    .aiger_wrap tbody td img { max-width: 24px; }
+    .aiger_wrap thead th i { font-size: 11px; }
+    .aiger_wrap tbody td { padding: 8px 5px; line-height: 18px; font-size: 12px; }
+    .aiger_wrap tbody td img { max-width: 20px; }
     .aiger_wrap tbody td i { line-height: 16px; font-size: 11px; }
 }
 
