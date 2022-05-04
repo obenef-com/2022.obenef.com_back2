@@ -53,8 +53,10 @@
 
             if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) { 
                 $(".video_cont").hide(); 
+                $(".img_cont").show();
             } else {
                 $(".img_cont").hide();
+                $(".video_cont").show(); 
             }
 
             $("header").addClass("vision_1");
