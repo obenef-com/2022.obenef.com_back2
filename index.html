@@ -77,7 +77,11 @@
 
                 $("#main .sound").removeClass("on");
                 video.prop("muted", true);
+
+                var video_total = $("#main_pop .slide_cont").length;
                
+                $("#main_pop .slide_pagination .total").text(video_total);
+
                 // video_pop.get(0).play();
                 // video_pop.get(0).currentTime = 0;
             });
@@ -122,15 +126,35 @@
                     <div class="next"><a onclick="plusSlides(1)"><img src="/img/main/next_arrow.svg"></a></div>
                 </div>
 
-                <div class="slide_cont">
-                    <video src="/img/main/pop_video.mp4" controls>
-                        <source  type="video/mp4">
-                    </video> 
+                <div class="video_cont">
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_1.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_2.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_3.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_4.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_5.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_6.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_7.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_8.mp4" controls></video> 
+                    </div>
                 </div>
-                <div class="slide_cont">
-                    <video src="/img/main/pop_video.mp4" controls>
-                        <source  type="video/mp4">
-                    </video> 
+
+                <div class="slide_pagination">
+                    <span class="current"></span> / <span class="total"></span>
                 </div>
             </div>
         </div>
@@ -147,6 +171,14 @@
         function showSlides(n) {
             var slides = $(".slide_cont");
             var slide_video = $(".slide_cont video");
+            var slide_total = $("#main_pop .slide_cont").length;
+            var slide_current = n % slide_total;
+
+            if((slide_current % slide_total) == 0) {
+                slide_current = slide_total;
+            }
+
+            $("#main_pop .slide_pagination .current").text(slide_current);
 
             if (n > slides.length) {slideIndex = 1}
                 if (n < 1) {slideIndex = slides.length}
