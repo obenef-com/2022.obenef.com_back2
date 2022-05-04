@@ -131,6 +131,9 @@
     .bo_wrap .contents .cont p  { line-height: 22px; font-size: 14px; }
 }
 
+@media (max-width: 767px) {
+    .bo_wrap .contents { padding: 0 20px; }
+}
 
 
 
@@ -160,6 +163,7 @@
 }
 
 @media (max-width: 767px) {
+    .bo_wrap .bo_btn { padding: 0 20px; }
     .bo_wrap .bo_btn li.prev h6,
     .bo_wrap .bo_btn li.next h6 { display: none; }
     .bo_wrap .bo_btn li.next span { margin-left: auto; }
