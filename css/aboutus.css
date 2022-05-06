@@ -469,8 +469,8 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
     .opeople .cont .txt p { font-size: 14px; }
     .opeople .cont .txt p span { font-size: 19px; }
 
-    .opeople .cont_1 .img div { width: 260px; line-height: 40px; font-size: 28px; }
-    .opeople .cont_1 .img div span { font-size: 16px; }
+    .opeople .cont_1 .img div { width: 260px; line-height: 36px; font-size: 26px; }
+    .opeople .cont_1 .img div span { font-size: 15px; }
 
     .opeople .cont_2 .quot_txt { line-height: 24px; font-size: 16px; }
 }
