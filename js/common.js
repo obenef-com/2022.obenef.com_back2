@@ -21,6 +21,13 @@ $(function() {
     $(".m_nav_btn").on("click", function() {
         $("#m_nav").addClass("on");
         $("#m_nav .gnb > li").removeClass().find(".subMenu").hide();
+
+        // console.log($("#gnb > li.on").find("li.on").text());
+
+        var depth1 = $("#gnb > li.on").index();
+        var depth2 = $("#gnb > li.on").find("li.on").index();
+
+        $("#m_nav .gnb > li").eq(depth1).addClass("on").find(".subMenu").show().find("li").eq(depth2).addClass("on");
     });
     $("#m_nav button").on("click", function() {
         $("#m_nav").removeClass("on");
@@ -44,6 +51,34 @@ $(function() {
     $("#m_nav .gnb .subMenu li a").on("click", function() {
         $(this).parent().addClass("on");
     });
+
+
+    // mobile sub menu position
+    var subMenu = $("#gnb > li.on .sub_menu");
+    var subMenuItem = subMenu.find("li");
+    var subMenuItemOn = subMenu.find("li.on");
+    var subMenuHarf = subMenu.width()/2;
+    var pos;
+    var listWidth=0;
+    var targetLeft = 0;
+    
+    subMenuItem.each(function(){ listWidth += $(this).outerWidth(); });
+
+    for (var i=0; i<subMenuItemOn.index(); i++) {
+        targetLeft += subMenuItem.eq(i).outerWidth();
+    }
+
+    var selectTargetPos = (targetLeft + subMenuItemOn.outerWidth()/2);
+
+    if (selectTargetPos <= subMenuHarf) { // left
+        pos = 0;
+    } else if (listWidth - selectTargetPos <= subMenuHarf) {
+        pos = listWidth;
+    } else {
+        pos = selectTargetPos - subMenuHarf;
+    }
+
+    subMenu.animate({scrollLeft: pos}, 0);
 
 
     // 서비스 준비중 페이지

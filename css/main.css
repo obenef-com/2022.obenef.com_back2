@@ -42,9 +42,12 @@ header { background: #000 !important; }
 #main_pop .slide_btn a { cursor: pointer; }  
 #main_pop .slide_btn img { width: 20px; height: 30px; }  
 
+#main_pop h5 { margin: 0 0 15px; font-size: 18px; color: #fff; font-weight: 500; text-align: center; }
+
 #main_pop .video_cont { width: 960px; height: 540px; overflow: hidden; }
 #main_pop .slide_cont { animation: fade 1.5s; }
 #main_pop .slide_cont video { width: 100%; height: 100%; }
+
 #main_pop .slide_pagination { margin: 15px 0 0; font-size: 16px; color: #fff; text-align: center; }
 
 
@@ -90,25 +93,38 @@ header { background: #000 !important; }
     #main p { font-size: 16px; }
     #main .play_btn { width: 25px; height: 25px; }
  
-    #main .pause_btn { bottom: 20px; right: 20px; width: 30px; height: 30px; }
-
-    
 
 
     /* popup */
     #main_pop .video_wrap { width: 75%; }
 
+    #main_pop h5 { font-size: 15px; }
+
     #main_pop .slide_btn .prev { left: -35px; }
     #main_pop .slide_btn .next { right: -35px; }
+}
+
+@media (max-width: 424px) {
+    #main video { margin: -6vh 0 0; height: 35vh !important; }
+    #main h2 img { max-height: 10vh !important; }
+
+
+    #main .btn_group { bottom: 20px; right: 25px; }
+    #main .btn_group li { width: 30px; height: 30px; }
+
+    #main .btn_group .sound { background-size: 17px; }
+    #main .btn_group .pause { background-size: 13px; }
+    #main .btn_group .sound.on { background-position: center 6px; background-size: 17px; }
+    #main .btn_group .pause.on { background-size: 13px; }   
 }
 
 
 @media (max-height: 700px) {
     #main video { height: 38vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
-    #main h2 img { max-height: 14vh; }
+    #main h2 img { max-height: 12vh; }
     
     
     /* popup */
     #main_pop .video_cont { width: 100%; height: 100%; }
-    #main_pop .video_cont video { height: 70vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
+    #main_pop .video_cont video { height: 40vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
 }

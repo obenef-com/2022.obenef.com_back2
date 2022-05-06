@@ -906,6 +906,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .edu_wrap #section_2 .top .cont_2 li.icon { width: 18px; height: 18px; transform: rotate(45deg); }
 .edu_wrap #section_2 .top .cont_2 li img { width: 100%; }
 
+.edu_wrap #section_2 .top .m_txt { display: none; margin: 30px 0 0; line-height: 24px; font-size: 16px; color: #313131; word-break: keep-all; }
+
 
 
 /*# bottom #*/
@@ -1075,6 +1077,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     /*# top #*/
     .edu_wrap #section_2 .top { padding: 0 0 40px; }
     .edu_wrap #section_2 .top .txt p { line-height: 20px; font-size: 14px; }
+    .edu_wrap #section_2 .top .txt p span { display: none; }
 
     .edu_wrap #section_2 .top .cont_2 h5 { font-size: 17px; }
     .edu_wrap #section_2 .top .cont_2 p { font-size: 14px; }
@@ -1082,6 +1085,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .edu_wrap #section_2 .top .cont_2 ul { margin: 30px 0 0; justify-content: space-between; }
     .edu_wrap #section_2 .top .cont_2 li { font-size: 15px; letter-spacing: -0.3px; }
     .edu_wrap #section_2 .top .cont_2 li.icon { width: 15px; height: 15px; }
+
+    .edu_wrap #section_2 .top .m_txt { display: block; line-height: 20px; font-size: 14px; }
 
     
     /*# bottom #*/

@@ -3,7 +3,7 @@
     <head> 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
         
         <title>미래교육기업 오베네프 OBENEF</title>
         <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
@@ -126,6 +126,8 @@
                     <div class="next"><a onclick="plusSlides(1)"><img src="/img/main/next_arrow.svg"></a></div>
                 </div>
 
+                <h5></h5>
+
                 <div class="video_cont">
                     <div class="slide_cont">
                         <video src="/img/main/pop_video_1.mp4" controls></video> 
@@ -153,6 +155,9 @@
                     </div>
                 </div>
 
+                <div>
+
+                </div>
                 <div class="slide_pagination">
                     <span class="current"></span> / <span class="total"></span>
                 </div>
@@ -173,12 +178,38 @@
             var slide_video = $(".slide_cont video");
             var slide_total = $("#main_pop .slide_cont").length;
             var slide_current = n % slide_total;
+            var video_title = '';
 
             if((slide_current % slide_total) == 0) {
                 slide_current = slide_total;
             }
 
             $("#main_pop .slide_pagination .current").text(slide_current);
+            
+            
+            switch(slide_current) {
+                case 1:
+                    video_title = 'AI와 공존, 그리고 AI 윤리'; break;
+                case 2:
+                    video_title = '프로그램! 에이~아이도 할 수 있어!'; break;
+                case 3:
+                    video_title = '생활과학을 위한 인공지능'; break;
+                case 4:
+                    video_title = '기초 AI 프로그래밍 이해'; break;
+                case 5:
+                    video_title = '기초벡터이론'; break;
+                case 6:
+                    video_title = '민주시민교육'; break;
+                case 7:
+                    video_title = '인공지능과 통계'; break;
+                case 8:
+                    video_title = '인체생물학'; break;
+            }
+
+            console.log(slide_current, video_title);
+
+            $("#main_pop .video_wrap h5").html(video_title);
+
 
             if (n > slides.length) {slideIndex = 1}
                 if (n < 1) {slideIndex = slides.length}

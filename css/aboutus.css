@@ -8,6 +8,9 @@
 .vision_wrap .sub_title { align-items: flex-start; }
 .vision_wrap .sub_title h3 { margin-top: 8px; letter-spacing: 8px; }
 .vision_wrap .sub_title div { position: relative; }
+.vision_wrap .sub_title div span { font-size: 22px; color: #99DCFD; font-weight: 600; }
+.vision_wrap .sub_title div span:before,
+.vision_wrap .sub_title div span:after { display: none; }
 .vision_wrap .sub_title p { position: relative; padding: 0 0 0 65px; line-height: 22px; font-size: 15px; font-weight: 300; }
 .vision_wrap .sub_title p:before { content: ""; position: absolute; top: 0; left: 48px; width: 10px; height: 10px; border-bottom: 1px solid #fff; border-left: 1px solid #fff; }
 
@@ -99,6 +102,7 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
 
 @media (max-width: 1100px) {
     .vision_wrap .sub_title h3 { margin-top: 4px; }
+    .vision_wrap .sub_title div span { font-size: 18px; }
     .vision_wrap .sub_title p { padding: 0 0 0 30px; line-height: 20px; font-size: 14px; word-break: keep-all; }
     .vision_wrap .sub_title p:before { left: 13px; }
 
@@ -165,6 +169,7 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
 
 @media (max-width: 767px) {
     .vision_wrap .sub_title > div { font-size: 15px; }
+    .vision_wrap .sub_title div span { font-size: 17px; }
     .vision_wrap .sub_title p { font-size: 14px; }
 
     .vision_wrap .v_cont { width: 100%; height: 400px; }
