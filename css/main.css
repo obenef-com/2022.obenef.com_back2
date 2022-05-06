@@ -79,7 +79,7 @@ header { background: #000 !important; }
 @media (max-width: 767px) {
     #gnb { text-align: center; overflow-x: scroll; }
     #gnb > li { display: inline-block; width: auto; max-width: 100%; }
-    #gnb > li > a { display: inline-block; padding: 0 10px; font-size: 15px; }
+    #gnb > li > a { display: inline-block; padding: 0 15px; font-size: 15px; }
     #gnb > li:nth-child(4) a { max-width: 100%; min-width: auto }
 
     #gnb > li.on .sub_menu { display: none; }
