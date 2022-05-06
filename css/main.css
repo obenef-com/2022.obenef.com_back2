@@ -96,6 +96,8 @@ header { background: #000 !important; }
 
 
     /* popup */
+    #main_pop .close_btn { width: 30px; height: 30px; }
+
     #main_pop .video_wrap { width: 75%; }
 
     #main_pop h5 { font-size: 15px; }
