@@ -130,3 +130,9 @@ header { background: #000 !important; }
     #main_pop .video_cont { width: 100%; height: 100%; }
     #main_pop .video_cont video { height: 40vh; max-width: -webkit-fill-available; max-height: -webkit-fill-available; }
 }
+
+@media (max-height: 450px) {
+    #main .wrap { justify-content: flex-end; padding: 0 0 10vh; } 
+    /* #main h2 { display: none; } */
+    #main p { margin: 3vh 0 0; }
+}
