@@ -693,6 +693,8 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
 
     /* page 2 */
+    .aw_head2 #gnb > li.on .sub_menu { background: none !important; }
+
     .awards_wrap .aw_cert { display: block; padding: 0; }
     .awards_wrap .aw_cert li { margin: 0 auto 40px; width: 100%; max-width: 300px; }
     .awards_wrap .aw_cert li:last-child { margin-bottom: 0; }
