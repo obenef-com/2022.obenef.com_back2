@@ -54,7 +54,7 @@ nav .sub_menu li a { font-size: 13px; color: #767676; font-weight: 300; transiti
 nav .sub_menu li a:hover { color: #656565; }
 nav .sub_menu li.on a { color: #656565; font-weight: 500; border-bottom: 2px solid #656565; }
 
-#gnb > li.on .sub_menu { display: flex; padding: 4px 25px; background: rgba(255, 255, 255, .9); border-radius: 200px; }
+#gnb > li.on .sub_menu { display: flex; padding: 4px 25px; border-radius: 200px; }
 
 
 
