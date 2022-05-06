@@ -93,6 +93,7 @@
 }
 
 @media (max-width: 820px) {
+    .client_wrap .list { top: 0; opacity: 1; transition: none; }
     .client_wrap .list li { margin: 10px 0 0 1%; width: 32.333333333%; }
     .client_wrap .list li:nth-child(4n+1) { margin-left: 1%; }
     .client_wrap .list li:nth-child(3n+1) { margin-left: 0; }

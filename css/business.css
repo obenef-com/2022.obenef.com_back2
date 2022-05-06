@@ -242,6 +242,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
     .gest_wrap #section_1 .wrap { padding: 0 25px; }
 
+    .gest_wrap #section_1 .cont_1 > li { top: 0; opacity: 1; transition: none; }
+
     /* logo image */
     .gest_wrap #section_1 .gesture_logo ul { display: block; padding: 20px 0 5px; text-align: center; }
     .gest_wrap #section_1 .gesture_logo li { display: inline-flex; margin: 0 15px 15px; align-items: center; vertical-align: middle; }
@@ -257,6 +259,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     /*### page 2 ###*/
     .gest_wrap #section_2 .wrap { padding: 0 25px 120px; }
 
+    .gest_wrap #section_2 .cont { top: 0; opacity: 1; transition: none; }
+
     /* cont 5 */
     .gest_wrap #section_2 .cont_5 .left p { font-size: 14px; }
 
@@ -271,7 +275,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 @media (max-width: 767px) {
     /*### page 1 ###*/
     .gest_wrap #section_1 .cont_1:after { display: none; }
-    .gest_wrap #section_1 .cont_1 > li { margin: 60px 0 0; padding: 0; width: 100%; height: auto;  }
+    .gest_wrap #section_1 .cont_1 > li { margin: 60px 0 0; padding: 0; width: 100%; height: auto; }
     .gest_wrap #section_1 .cont_1 > li:first-child { margin: 20px 0 0; }
     .gest_wrap #section_1 .cont_1 > li:before,
     .gest_wrap #section_1 .cont_1 > li:after { display: none; }
@@ -294,6 +298,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .gest_wrap #section_2 .cWrap p { display: flex; justify-content: center; padding: 15px 20px; font-size: 16px; text-align: left; word-break: keep-all; }
 
     .gest_wrap #section_2 .wrap { margin-top: 50px; padding: 0 20px 100px; }
+
 
     /* cont 1 */
     .gest_wrap #section_2 .cont_1 { display: block; padding: 17px 0 14px; border-radius: 0; }
@@ -651,6 +656,9 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
 @media (max-width: 820px) {
     /*### page 1 ###*/
+    .aiger_wrap #section_1 li { top: 0; opacity: 1; transition: none; }
+
+    .aiger_wrap .footer_1 { top: 0; opacity: 1; transition: none; }
     .aiger_wrap .footer_1 h6 { font-size: 18px; }
     .aiger_wrap .footer_1 p { font-size: 15px; }
 
@@ -658,9 +666,12 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
 
     /*### page 2 ###*/
+    .aiger_wrap #section_2 .cont { top: 0; opacity: 1; transition: none; }
+
     .aiger_wrap #section_2 .sub_title h3 { width: 100%; font-size: 18px; }
     .aiger_wrap #section_2 .sub_title div { width: 100%; font-size: 15px; }
 
+    .aiger_wrap .footer_2 { top: 0; opacity: 1; transition: none; }
 
 
 
@@ -670,6 +681,8 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
      .aiger_wrap #section_3 .tit h3:after { content: ""; position: absolute; top: 50%; transform: translateY(-50%); }
      .aiger_wrap #section_3 .tit h3:before { left: 0; margin: 0; }
      .aiger_wrap #section_3 .tit h3:after { right: 0; margin: 0; }
+
+     .aiger_wrap #section_3 .cont { top: 0; opacity: 1; transition: none; }
 
      /* cont 1 */
     .aiger_wrap #section_3 .cont_1 li { padding: 0 27px; height: 370px; }
@@ -682,6 +695,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 
 
     /*### page 4 ###*/
+    .aiger_wrap table { top: 0; opacity: 1; transition: none; }
     .aiger_wrap thead th span { display: block; }
 
 }
