@@ -133,6 +133,6 @@ header { background: #000 !important; }
 
 @media (max-height: 450px) {
     #main .wrap { justify-content: flex-end; padding: 0 0 10vh; } 
-    /* #main h2 { display: none; } */
+    #main h2 { display: none; }
     #main p { margin: 3vh 0 0; }
 }
