@@ -26,6 +26,13 @@
         <script src="/js/scrolloverflow.js"></script>
         <script src="/js/jquery.fullpage.min.js"></script>
         <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/pr.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
     </head>
 
     <body>
@@ -35,7 +42,7 @@
             $(function() {
                 $("header").load("/header.html", function() { 
                     $("#gnb > li").eq(3).addClass("on").find("li").eq(2).addClass("on");
-                    $.getScript("/js/common.js");
+                    $.getScript('/js/common.js?v='+ times);
                 });
             });
             </script>

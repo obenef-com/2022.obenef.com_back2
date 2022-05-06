@@ -26,6 +26,14 @@
         <script src="/js/jquery-1.12.4.min.js"></script>
         <script src="/js/swiper.min.js"></script>
         <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/pr.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/border.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
     </head>
 
     <body>
@@ -35,7 +43,7 @@
             $(function() {
                 $("header").load("/header.html", function() { 
                     $("#gnb > li").eq(3).addClass("on").find("li").eq(1).addClass("on");
-                    $.getScript("/js/common.js");
+                    $.getScript('/js/common.js?v='+ times);
                 });
             });
             </script>

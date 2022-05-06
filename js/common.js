@@ -1,4 +1,6 @@
 $(function() {
+    times = new Date().getTime();
+
     // language pack
     $("#lang_pack h6").on("click", function() {
         var state = $(this).next().css("display");

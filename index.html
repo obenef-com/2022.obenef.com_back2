@@ -28,6 +28,13 @@
         <script src="/js/scrolloverflow.js"></script>
         <script src="/js/swiper.min.js"></script>
         <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/main.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
     </head>
 
     <body>
@@ -36,7 +43,7 @@
             <script>
             $(function() {
                 $("#header").load("/header.html", function() {
-                    $.getScript("/js/common.js");
+                    $.getScript('/js/common.js?v='+ times);
                 });
             });
             </script>

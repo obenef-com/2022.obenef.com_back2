@@ -398,20 +398,24 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
 
 /*########## o.people ##########*/
 .opeople .cont img { max-width: 100%; }
-.opeople .cont p { margin: 30px 0 0; line-height: 23px; font-size: 16px; word-break: keep-all; }
-.opeople .cont p:first-child { margin: 0; }
-.opeople .cont p span { font-size: 22px; font-weight: 500; }
-.opeople .cont p b { font-weight: 600; }
-.opeople .cont p i { display: block; font-style: normal; }
+.opeople .cont .txt p { margin: 30px 0 0; line-height: 23px; font-size: 16px; word-break: keep-all; }
+.opeople .cont .txt p:first-child { margin: 0; }
+.opeople .cont .txt p span { font-size: 22px; font-weight: 500; }
+.opeople .cont .txt p b { font-weight: 600; }
+.opeople .cont .txt p i { display: block; font-style: normal; }
 
 .opeople .cont_1 { position: relative; top: 100px; padding: 0 0 175px; text-align: right; opacity: 0; transition: all .7s; }
 .opeople .cont_1.on { top: 0; opacity: 1; }
 .opeople .cont_1:after { content: ""; position: absolute; bottom: 0; left: 50%; width: 1px; height: 130px; background: #919191; transform: translateX(-50%); }
 .opeople .cont_1 .img { position: relative; display: inline-block; vertical-align: top; }
-.opeople .cont_1 .img div { position: absolute; bottom: -130px; left: -240px; opacity: 0; transition: all 2s 1s; }
-.opeople .cont_1 .img div.on { bottom: -30px; left: -240px; opacity: 1; }
+.opeople .cont_1 .img div { position: absolute; bottom: -165px; left: -240px; line-height: 60px; font-size: 46px; color: #284eb7; font-weight: 900; letter-spacing: 2px; text-align: left; font-family: 'Chosunilbo_myungjo'; opacity: 0; transition: all 2s 1s; }
+.opeople .cont_1 .img div:before { content: ""; position: absolute; top: -15px; left: 0; width: 25px; height: 17px; background: url(../img/sub/about/o_quotation.svg) no-repeat center; background-size: 100%; }
+.opeople .cont_1 .img div.on { bottom: -65px; left: -240px; opacity: 1; }
+.opeople .cont_1 .img div p {font-family: 'Chosunilbo_myungjo'; }
+.opeople .cont_1 .img div span { font-size: 20px; color: #282828; font-family: 'Chosunilbo_myungjo'; }
+
 .opeople .cont_1 .txt { display: inline-block; margin: 15px 0 0 20px; width: 400px; text-align: left; vertical-align: top; }
-.opeople .cont_1 p { margin: 25px 0 0; }
+.opeople .cont_1 .txt p { margin: 25px 0 0; }
 
 .opeople .cont_2 { margin: 40px 0 30px; }
 .opeople .cont_2 .quot_txt { position: relative; margin: 0 0 30px; line-height: 30px; font-size: 20px; color: #313131; font-weight: 600; word-break: keep-all; font-family: 'Chosunilbo_myungjo'; }
@@ -426,8 +430,9 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
     .opeople .cont_1 { padding: 0 0 175px; text-align: center; }
     .opeople .cont_1:after { display: none; }
     .opeople .cont_1 .img { width: 340px; }
-    .opeople .cont_1 .img div { position: absolute; bottom: -240px; left: 0; }
+    .opeople .cont_1 .img div { bottom: -240px; left: 0; line-height: 50px; font-size: 35px; }
     .opeople .cont_1 .img div.on { bottom: -140px; left: 0; }
+    .opeople .cont_1 .img div span { font-size: 18px; }
     .opeople .cont_1 .txt { margin: 15px 0 0 10px; }
 
     .opeople .cont_2 .quot_txt { padding: 0 0 0 20px; line-height: 28px; font-size: 18px; }
@@ -437,8 +442,8 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
 @media (max-width: 820px) {
     .opeople .cont_1 { display: block; padding: 0 0 30px; }
     .opeople .cont_1 .img { display: block; margin: 0 auto; text-align: center; }
-    .opeople .cont_1 .img div { position: relative; bottom: -120px; }
-    .opeople .cont_1 .img div.on { bottom: -20px; }
+    .opeople .cont_1 .img div { position: relative; bottom: -130px; }
+    .opeople .cont_1 .img div.on { bottom: -30px; }
     .opeople .cont_1 .txt { margin: 70px auto 0; width: 100%; /* max-width: 400px; */ }
 }
 
@@ -446,14 +451,19 @@ header.vision_1 { background: url(../img/sub/about/vision_bg_1.jpg) no-repeat ce
     .opeople .sub_title > div { display: block; }
     .opeople .sub_title > div div { display: inline; }
 
+    .opeople .cont_1 .img div { margin: 0 auto; width: 270px; line-height: 45px; font-size: 30px; }
+    .opeople .cont_1 .img div span { font-size: 17px; }
     .opeople .cont_1 .img img { max-width: 80%; }
 
     .opeople .cont_2 .quot_txt { font-size: 17px; }
 }
 
 @media (max-width: 424px) {
-    .opeople .cont p { font-size: 14px; }
-    .opeople .cont p span { font-size: 19px; }
+    .opeople .cont .txt p { font-size: 14px; }
+    .opeople .cont .txt p span { font-size: 19px; }
+
+    .opeople .cont_1 .img div { width: 260px; line-height: 40px; font-size: 28px; }
+    .opeople .cont_1 .img div span { font-size: 16px; }
 
     .opeople .cont_2 .quot_txt { line-height: 24px; font-size: 16px; }
 }
