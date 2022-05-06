@@ -27,7 +27,11 @@ $(function() {
         var depth1 = $("#gnb > li.on").index();
         var depth2 = $("#gnb > li.on").find("li.on").index();
 
-        $("#m_nav .gnb > li").eq(depth1).addClass("on").find(".subMenu").show().find("li").eq(depth2).addClass("on");
+        console.log(depth1, depth2);
+
+        if(depth1 != -1 && depth2 != -1) {
+            $("#m_nav .gnb > li").eq(depth1).addClass("on").find(".subMenu").show().find("li").eq(depth2).addClass("on");
+        }
     });
     $("#m_nav button").on("click", function() {
         $("#m_nav").removeClass("on");

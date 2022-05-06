@@ -97,6 +97,9 @@
                 // video_pop.get(0).pause();
                 // video_pop.get(0).currentTime = 0;
             });
+
+            
+            $("#m_nav .gnb > li").removeClass("on");
         });
         </script>
 
@@ -205,8 +208,6 @@
                 case 8:
                     video_title = '인체생물학'; break;
             }
-
-            console.log(slide_current, video_title);
 
             $("#main_pop .video_wrap h5").html(video_title);
 
