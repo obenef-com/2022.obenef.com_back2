@@ -1,8 +1,6 @@
 @charset "utf-8";
 
 .bo_wrap { padding: 140px 0 120px; min-height: 100vh; background: #fff; }
-.bo_wrap.rd_wrap,
-.bo_wrap.report_wrap { background: #fff; }
 
 .bo_wrap .bo_cont { margin: 0 auto; max-width: 1000px; }
 
