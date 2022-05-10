@@ -86,7 +86,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
 .gest_wrap #section_2 .cont_1 ul:first-child { margin: 0; }
 .gest_wrap #section_2 .cont_1 li { margin: 0 0 0 15px; line-height: 22px; font-size: 12px; color: #313131; text-align: center; }
 .gest_wrap #section_2 .cont_1 li:first-child { margin: 0; }
-.gest_wrap #section_2 .cont_1 li img { display: block; margin: 0 0 5px; }
+.gest_wrap #section_2 .cont_1 li img { display: block; margin: 0 auto 5px; }
 
 /* cont 2 */
 .gest_wrap #section_2 .cont_2 { display: flex; align-items: center; justify-content: space-between; margin: 35px 0 0; }
