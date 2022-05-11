@@ -341,7 +341,14 @@
 }
 
 @media (max-width: 767px) {
+    /* section 2 */
+    .edu_wrap #section_2 .slide_btn li button { font-size: 14px; }
+    .edu_wrap #section_2 .slide_btn span { width: 120px; }
+    .edu_wrap #section_2 .slide_btn li.left span { right: -170px; }
+    .edu_wrap #section_2 .slide_btn li.right span { left: -160px; }
+
     .edu_wrap #section_2 .cont { width: calc(200% - 100px); }
+    
 }
 
 

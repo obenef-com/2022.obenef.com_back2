@@ -1110,7 +1110,7 @@ header.on.gest_head { background: url(../img/sub/business/gesture_bg_1.jpg) no-r
     .edu_wrap #section_2 .slide_btn li.left button { padding: 0 0 0 40px; background: url(../img/sub/business/edu_left.svg) no-repeat left center; background-size: 35px; }
     .edu_wrap #section_2 .slide_btn li.right button { padding: 0 40px 0 0; background: url(../img/sub/business/edu_right.svg) no-repeat right center; background-size: 35px; }
     
-    .edu_wrap #section_2 .slide_btn span { position: absolute; top: 0; width: 140px; height: 35px; line-height: 35px; font-size: 13px; color: #fff; font-weight: 400; letter-spacing: -0.3px; text-align: center; background: #525252; border-radius: 200px; cursor: default; }
+    .edu_wrap #section_2 .slide_btn span { position: absolute; top: 0; width: 140px; height: 35px; line-height: 35px; font-size: 13px; color: #fff; font-weight: 400; letter-spacing: -0.3px; text-align: center; background: #525252; border-radius: 200px; z-index: 99; cursor: default; }
     .edu_wrap #section_2 .slide_btn li.left span { right: -190px; animation: bounceX 2s infinite; }
     .edu_wrap #section_2 .slide_btn li.right span { left: -180px; animation: bounceX 2s infinite; }
     
