@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/aboutus.css">
+        <link rel="stylesheet" href="/css/en/style.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/aboutus.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/en/style.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/en/header.html", function() { 
+                    $("#gnb > li").eq(0).addClass("on").find("li").eq(4).addClass("on");
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/en/sub/about/history.html"><i>&nbsp;</i><span>HISTORY</span></a></div>
+            <div class="next"><a href="/en/sub/about/location.html"><i>&nbsp;</i><span>Location</span></a></div>
+        </div>
+
+
+        <script>
+        $(function() {
+            $("#fullpage").fullpage({
+                anchors: ['Page1', 'Page2'],
+                scrollOverflow: true,
+                navigation: true,
+                navigationPosition: 'right',
+                'afterLoad': function(origin, destination, direction){
+                    if(destination==1) {
+                        $("header").addClass("on aw_head");
+                        $("#pageBtn").addClass("on");
+                        $(".aw_cont li").addClass("on");
+                    } else {
+                        $("header").addClass("aw_head2");
+                        $("header, #pageBtn").removeClass("on");
+
+                        $(".awards_wrap .aw_cert").addClass("on");
+                    }
+                },
+                'onLeave': function(origin, destination, direction) {
+                    if(destination==1) {
+                        $("header").addClass("on aw_head");
+                        $("#pageBtn").addClass("on");
+                    } else {
+                        $("header").addClass("aw_head2");
+                        $("header, #pageBtn").removeClass("on");
+                    }
+                }
+            });
+        });
+        </script>
+
+        <div id="fullpage" class="awards_wrap">
+            <!-- page 1 -->
+            <div class="section" id="section_1">
+                <div class="cWrap cWrap_1">
+                    <div class="sub_title on">
+                        <h3>Awards &amp;<br>Recognition</h3>
+                        <div>
+                            Our company is constantly striving to become the next generation of education company.
+                        </div>
+                    </div>
+
+                    <h4 class="cStyle on">
+                        <span>our</span>
+                        award
+                    </h4>
+
+                    <ul class="aw_cont">
+                        <li>
+                            <div class="tit">
+                                <h5>Target<p>Award and selection related <br> to Edutech Startup.</p></h5>
+                            </div>
+                             <ul class="sub">
+                                 <li>obtained Inno-Biz certification for Technology innovative SMEs in 2022<p>Inno-Biz</p></li>
+                                 <li>Selected as an organization participating in the 2021 "Untact Realistic OpenXR Platform Technology Development" organized by the National Science and Technology Research Association.</li>
+                                 <li>The 5th e-learning Edutech business model contest (2020) Grand Prize<p>Minister of Trade, Industry and Energy Award</p></li>
+                                 <li>Joined in The board of directors of the Korea Edu-Tech Industry Association<p>(Corp.)Korea Edu-Tech Industry Association.</p></li>
+                                 <li>Selected as '2019 Youth-Friendly Small bur strong  Business'<p>Minister of Employment and Labor</p></li>
+                                 <li>Awarded "2018 Youth Entrepreneurial Commendation"<p>Minister of SMEs and Startups</p></li>
+                             </ul>
+                        </li>
+                        <li>
+                            <div class="tit">
+                                <h5>IEEE<p>Domestic and <br> international papers.</p></h5>
+                            </div>
+                            <ul class="sub">
+                                <li>nteractive Computational Engineering E-learning Content Authoring Tool Development, 2017 Comprehensive academic conference of the Korean Society of Contents, The Korean Society of Contents.</li>
+                                <li>A Web-Based MOOC Authoring and Learning System for Computational Science Education 2018 IEEE, IEEE</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="tit">
+                                <h5>10<p>10 patents and<br>programs.</p></h5>
+                            </div>
+                            <ul class="sub">
+                                <li>Methods and systems for configuring content modules and storing educational activities when learning vocational experience education for elementary school students using virtual reality technology.</li>
+                                <li>nteractions between learners and instructors for simulation education in virtual reality content and the system.</li>
+                                <li>Coding education method for elementary school students using virtual reality.</li>
+                                <li>Methods and devices for evaluating online lectures and learners' competencies.</li>
+                                <li>A method of encouraging customized automatic learning based on competence indicators</li>
+                                <li>A method to organize a screen that provides learning content enabling online coding practice.</li>
+                                <li>A big data system that detects teaching and learning activities on a web browser and transmits them to a web server.</li>
+                                <li>A method of converting teaching and learning activity detection data into JavaScript object notification code.</li>
+                                <li>It’ll skip these two.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- // page 1 -->
+
+            <!-- page 2 -->
+            <div class="section" id="section_2">
+                <div class="cWrap cWrap_1">
+                    <h4 class="cStyle">
+                        <span>our</span>
+                        certification
+                    </h4>
+
+                    <ul class="aw_cert">
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_8.svg" alt="2022년 기술혁신형 중소기업 이노비즈 회원사"></div>
+                            <h6>A member of Inno-Biz for Technology innovative SMEs in 2022<span>Inno-Biz</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_1.svg" alt="2020년 이러닝에듀테크 박람회 대상 수상"></div>
+                            <h6>2020 EdTech Korea Fair Grand Prize Winner<span>Ministry of Trade, Industry and Energy</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_2.svg" alt="(사)에듀테크산업협회 회원사"></div>
+                            <h6>Member of EdTech Industry Association<span>(Corp.)Edu-Tech Industry Association</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_3.svg" alt="2019청년친화강소기업 선정"></div>
+                            <h6>2019 Selected as a youth-friendly small and medium-sized enterprise<span>Ministry of Employment and Labor</span></h6>
+                        </li>
+                        <li> 
+                            <div class="logo"><img src="/img/sub/about/cert_4.svg" alt="2018청년기업가표창"></div>
+                            <h6>2018 Youth Entrepreneur Award <span>Ministry of SMEs and Startups</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_5.svg" alt="기업부설연구소 인정서"></div>
+                            <h6>Company-affiliated research institute accreditation<span>Korea Industrial Technology Association</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_6.svg" alt="벤처기업 확인서"></div>
+                            <h6>Venture company confirmation<span>Organization  For Venture Enterprise certification</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_2.svg" alt="이러닝 사업자 신고확인서"></div>
+                            <h6>E-learning business certificate<span>(Corp.)Edu-Tech Industry Association</span></h6>
+                        </li>
+                        <li>
+                            <div class="logo"><img src="/img/sub/about/cert_7.svg" alt="프로그램등록증"></div>
+                            <h6>Program registration certificate<span>Korea Copyright  Commission</span></h6>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- // page 2 -->
+        </div>
+
+
+    </body>
+</html> 
+	

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/aboutus.css">
+        <link rel="stylesheet" href="/css/en/style.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/aboutus.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/en/style.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/en/header.html", function() { 
+                    $("#gnb > li").eq(0).addClass("on").find("li").eq(5).addClass("on");
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/en/sub/about/awards.html"><i>&nbsp;</i><span>Awards</span></a></div>
+            <div class="next"><a href="/en/sub/business/gesture.html"><i>&nbsp;</i><span>GETSTURE</span></a></div>
+        </div>
+
+
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <script>
+        $(function() {
+            $(".location .tabMenu li").on("click", function() {
+                var idx = $(this).index();
+                var tabmenu = $(".location .tabMenu li");
+                var tabcont = $(".location .tabCont > div");
+
+                $(tabmenu).removeClass();
+                $(tabmenu).eq(idx).addClass("on");
+                $(tabcont).hide();
+                $(tabcont).eq(idx).show();
+
+                if(idx==1) { // 수내 사무실
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1650442444683",
+                        "key" : "29wic",
+                        "mapWidth" : "640",
+                        "mapHeight" : "360"
+                    }).render();
+                }
+                if(idx==2) { // 광주 스튜디오
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1650443853815",
+                        "key" : "29wis",
+                        "mapWidth" : "640",
+                        "mapHeight" : "360"
+                    }).render();
+                }
+                if(idx==3) { // 정자 스튜디오
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1650444336591",
+                        "key" : "29wj3",
+                        "mapWidth" : "640",
+                        "mapHeight" : "360"
+                    }).render();
+                }
+            });
+
+            // 광주 사무실
+            new daum.roughmap.Lander({
+                "timestamp" : "1650443993446",
+                "key" : "29wit",
+                "mapWidth" : "640",
+                "mapHeight" : "360"
+            }).render();
+
+
+            $(".location_pop button, .location_pop .pop_bg").on("click", function() {
+                $(".location_pop").fadeOut();
+                $("html, body").css("overflow-y", "auto");
+            });
+        });
+
+        function view_gallery(num) {
+            $(".location_pop").fadeIn();
+            $("html, body").css("overflow", "hidden");
+
+            var cont = $(".location_pop .cont");
+
+            $(".location_pop .cont_wrap").scrollTop(0);
+
+            cont.hide();
+            cont.eq(num).show();
+        }
+
+        </script>
+
+
+        <div class="subWrap location">
+            <div class="cWrap cWrap_1">
+                <div class="sub_title">
+                    <h3>Location</h3>
+                </div>
+
+                <!-- tab menu -->
+                <ul class="tabMenu">
+                    <li class="on">Obenef Head Office</li>
+                    <li>Pangyo R&D Center</li>
+                    <li>Gwanju-Jeonnam Studio</li>
+                    <li>Gyeonggi-Bundang Studio</li>
+                </ul> <!-- // tab menu -->
+
+                <!-- tab contents --> 
+                <div class="tabCont">
+                    <!-- 광주 사무실 -->
+                    <div>
+                        <h4>office</h4>
+
+                        <div class="map_wrap">
+                            <div>
+                                <div id="daumRoughmapContainer1650443993446" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            </div>
+                            <div onclick="view_gallery(0);">
+                                <img src="/img/sub/about/location_1_main.jpg" alt="광주 사무실">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h6>obenef 9 | Obenef Head Office</h6>
+                            <address><span>(61228) 9F, 239, Mudeung-ro, Buk-gu,</span> Gwangju, Republic of Korea<a href="http://kko.to/PcTc9JxA8" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(0);">view</button>
+                        </div>
+                    </div> <!-- // 광주 사무실 -->
+
+                    <!-- 수내 사무실 -->
+                    <div>
+                        <h4>office</h4>
+
+                        <div class="map_wrap">
+                            <div>
+                                <div id="daumRoughmapContainer1650442444683" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            </div>
+                            <div onclick="view_gallery(1);">
+                                <img src="/img/sub/about/location_2_main.jpg" alt="수내 사무실">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h6>obenef 601 | Pangyo R&D Center</h6>
+                            <address><span>(13595) #601, 31, Hwangsaeul-ro 258beon-gil, Bundang-gu, Seongnam-si,</span> Gyeonggi-do, Republic of Korea<a href="http://kko.to/1PKhM9wRs" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(1);">view</button>
+                        </div>
+                    </div> <!-- // 수내 사무실 -->
+
+                    <!-- 광주 스튜디오 -->
+                    <div>
+                        <h4>studio</h4>
+
+                        <div class="map_wrap">
+                            <div>
+                                <div id="daumRoughmapContainer1650443853815" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            </div>
+                            <div onclick="view_gallery(2);">
+                                <img src="/img/sub/about/location_3_main.jpg" alt="광주 스튜디오">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h6>obenef 3 | Gwanju-Jeonnam Studio</h6>
+                            <address><span>(61429) 3F, 81, Donggyecheon-ro, Dong-gu,</span> Gwangju, Republic of Korea<a href="http://kko.to/4LUz9RScz" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(2);">view</button>
+                        </div>
+                    </div> <!-- // 광주 스튜디오 -->
+                    
+                    <!-- 정자 스튜디오 -->
+                    <div>
+                        <h4>studio</h4>
+                        
+                        <div class="map_wrap">
+                            <div>
+                                <div id="daumRoughmapContainer1650444336591" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            </div>
+                            <div onclick="view_gallery(3);">
+                                <img src="/img/sub/about/location_4_main.jpg" alt="정자 스튜디오">
+                            </div>
+                        </div>
+                        
+                        <div class="info">
+                            <h6>obenef 905 | Gyeonggi-Bundang Studio</h6>
+                            <address><span>(13558) #905,16, Neuti-ro, Bundang-gu, Seongnam-si,</span> Gyeonggi-do, Republic of Korea<a href="http://kko.to/KnnnG5O6o" target="_blank" title="지도보기">지도보기</a></address>
+                            <p>031-8023-5300</p>
+                            <button onclick="view_gallery(3);">view</button>
+                        </div>
+                    </div> <!-- // 정자 스튜디오 -->
+                </div> <!-- // tab contents -->
+            </div>
+        </div>
+
+
+
+        <!-- popup image -->
+        <div class="location_pop">
+            <div class="pop_bg">&nbsp;</div>
+            <div class="cont_wrap">
+                <button>close</button>
+
+                <!-- 광주 사무실 -->
+                <div class="cont cont_1">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>gwangju obenef 9</p>
+                    </div>
+    
+                    <address><span>(61228) 9F, 239, Mudeung-ro, Buk-gu,</span> Gwangju, Republic of Korea<a href="http://kko.to/PcTc9JxA8" target="_blank">&nbsp;</a></address>
+    
+                    <ul>
+                        <li><img src="/img/sub/about/location_1_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_9.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_10.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_11.jpg"></li>
+                        <li><img src="/img/sub/about/location_1_12.jpg"></li>
+                    </ul>
+                </div> <!-- // 광주 사무실 -->
+
+                <!-- 수내 사무실 -->
+                <div class="cont cont_2">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>sunae obenef 601</p>
+                    </div>
+    
+                    <address><span>(13595) Hwangsaeul-ro 258beon-gil, Bundang-gu, Seongnam-si,</span> Gyeonggi-do, Republic of Korea<a href="http://kko.to/1PKhM9wRs" target="_blank">&nbsp;</a></address>
+    
+                    <ul>
+                        <li><img src="/img/sub/about/location_2_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_9.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_10.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_11.jpg"></li>
+                        <li><img src="/img/sub/about/location_2_12.jpg"></li>
+                    </ul>
+                </div> <!-- // 수내 사무실 -->
+                
+                <!-- 광주 스튜디오 -->
+                <div class="cont cont_3">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>gwangju obenef 3</p>
+                    </div>
+                    
+                    <address><span>(61429) Donggyecheon-ro, Dong-gu,</span> Gwangju, Republic of Korea<a href="http://kko.to/4LUz9RScz" target="_blank">&nbsp;</a></address>
+                    
+                    <ul>
+                        <li><img src="/img/sub/about/location_3_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_3_9.jpg"></li>
+                    </ul>
+                </div> <!-- // 광주 스튜디오 -->
+                
+                <!-- 정자 스튜디오 -->
+                <div class="cont cont_4">
+                    <div class="tit">
+                        <h4>our gallery</h4>
+                        <p>jeong-ja obenef 905</p>
+                    </div>
+    
+                    <address><span>(13558) #905,16, Neuti-ro, Bundang-gu, Seongnam-si,</span> Gyeonggi-do, Republic of Korea<a href="http://kko.to/KnnnG5O6o" target="_blank">&nbsp;</a></address>
+
+                    <ul>
+                        <li><img src="/img/sub/about/location_4_1.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_2.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_3.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_4.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_5.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_6.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_7.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_8.jpg"></li>
+                        <li><img src="/img/sub/about/location_4_9.jpg"></li>
+                    </ul>
+                </div> <!-- // 정자 스튜디오 -->
+            </div> 
+            
+        </div> <!-- // popup image -->
+
+    </body>
+</html>

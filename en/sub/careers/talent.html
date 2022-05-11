@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/careers.css">
+        <link rel="stylesheet" href="/css/en/style.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/careers.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/en/style.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/en/header.html", function() { 
+                    $("#gnb > li").eq(4).addClass("on").find("li").eq(0).addClass("on");
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/en/sub/pr/client.html"><i>&nbsp;</i><span>Customers</span></a></div>
+            <div class="next"><a href="/en/sub/careers/organization.html"><i>&nbsp;</i><span>Work organization and Human resource composition information</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $(".talent_wrap ul").addClass("on");
+        });
+        </script>
+
+
+        <div class="subWrap talent_wrap">
+            <div class="cWrap cWrap_1">
+                <div class="sub_title">
+                    <h3>Welcome to OBENEF Careers</h3>
+                </div>
+
+                <div class="careers_tit">
+                    <h4>
+                        <span>Join Our Team</span>
+                    </h4>
+                    <div>Our company aims for growth. We wait for you to acquire expertise with a challenging and passionate mindset and create a next-generation educational company with outstanding creativity through communication and mutual cooperation with colleagues.</div>
+                </div>
+
+                <ul class="list">
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_1.svg" alt="도전"></div>
+                        <h5>Challenge</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_2.svg" alt="열정"></div>
+                        <h5>Passion</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_3.svg" alt="전문지식"></div>
+                        <h5>Expertise</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_4.svg" alt="창의성"></div>
+                        <h5>Creativity</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_5.svg" alt="상호협력"></div>
+                        <h5>Mutual Cooperation</h5>
+                    </li>
+                    <li>
+                        <div class="img"><img src="/img/sub/careers/talent_6.svg" alt="소통"></div>
+                        <h5>Communication</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

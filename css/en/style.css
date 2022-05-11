@@ -1,0 +1,407 @@
+@charset "utf-8";
+@import url(./common.css);
+
+
+
+
+@media (max-width: 1100px) {
+    #gnb { display: block; margin: 0; white-space: nowrap; }
+    #gnb > li { display: none; }
+    #gnb > li > a { display: none; font-size: 15px; }
+    #gnb > li:nth-child(4) a { max-width: 100%; }
+
+    nav .sub_menu { position: static; right: 0; padding: 0; overflow-x: scroll; overflow-y: hidden; }
+    nav .sub_menu li { display: inline-block; margin: 0; }
+    nav .sub_menu li a { display: block; padding: 0 15px; font-size: 13px; }
+
+    #gnb > li.on { display: block; width: 100%; max-width: 100%; }
+    #gnb > li.on .sub_menu { display: block; padding: 0; border-radius: 0; }
+
+    header.on #gnb > li.on .sub_menu { background: none; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#################### about us ####################*/
+/*########## vision ##########*/
+.vision_wrap .sub_title > div { line-height: 24px; font-size: 16px; }
+.vision_wrap .sub_title div span { font-size: 20px; }
+.vision_wrap .sub_title p { padding: 0 0 0 45px; line-height: 20px; font-size: 14px; letter-spacing: -0.5px; }
+.vision_wrap .sub_title p:before { left: 25px; }
+
+.vision_wrap .v_cont h4 { line-height: 22px; font-size: 16px; }
+.vision_wrap .v_cont h4 span { line-height: 24px; font-size: 18px; }
+
+/* cont 2 */
+.vision_wrap #section_1 .cont_2 li { font-size: 15px; letter-spacing: -0.5px; }
+.vision_wrap #section_1 .cont_2 li:nth-child(5) { width: 220px; }
+
+/* cont 3 */
+.vision_wrap #section_1 .cont_3 li { padding: 60px 20px 0; line-height: 20px; font-size: 14px; }
+.vision_wrap #section_1 .cont_3 li:nth-child(3) { padding: 60px 20px 0; }
+.vision_wrap #section_1 .cont_3 li h5 { line-height: 24px; font-size: 17px; }
+
+.vision_wrap #section_1 .cont_3 p { text-align: left; }
+
+
+@media (max-width: 767px) {
+    .vision_wrap .sub_title > div { font-size: 15px; }
+    .vision_wrap .sub_title div span { font-size: 17px; }
+
+    .vision_wrap .v_cont h4 { line-height: 20px; font-size: 14px; }
+
+    /* cont 2 */
+    .vision_wrap #section_1 .cont_2 li:nth-child(5) { width: 100%; }
+
+    /* cont 3 */
+    .vision_wrap #section_1 .cont_3 li { padding: 40px 15px 0; line-height: 18px; font-size: 13px; }
+    .vision_wrap #section_1 .cont_3 li:nth-child(3) { padding: 30px 15px 0; line-height: 17px; font-size: 12px; }
+    .vision_wrap #section_1 .cont_3 li h5 { line-height: 22px; font-size: 15px; }
+}
+
+
+
+
+/*########## ci ##########*/
+.about_ci p { max-width: 200px; }
+
+@media (max-width: 820px) {
+    .about_ci p { width: 200px; }
+    .about_ci li:last-child p { width: 200px; }
+}
+
+
+
+
+/*########## opeople ##########*/
+@media (max-width: 767px) {
+    .opeople .name img { width: 160px; }
+}
+
+
+
+
+/*########## history ##########*/
+.historyWrap h4 { width: 100%; text-align: left; }
+
+.historyWrap .title p { padding: 0 15px 0 0; font-size: 15px; letter-spacing: -0.5px; }
+.historyWrap .title > span { padding: 0 15px 0 0; letter-spacing: -0.5px; }
+
+
+@media (max-width: 767px) {
+    .historyWrap h4 { font-size: 17px; }
+}
+
+
+
+
+/*########## location ##########*/
+.location .sub_title h3 { letter-spacing: 4px; }
+
+@media (max-width: 1100px) {
+    .location .tabMenu li { font-size: 14px; letter-spacing: -0.3px; }
+}
+
+@media (max-width: 767px) {
+    .location .tabCont > div:nth-child(3) .info address span { display: block; }
+
+    .location .info h6 { font-size: 16px; }
+}
+
+@media (max-width: 424px) {
+    .location .tabMenu li { font-size: 13px; }
+
+    .location .info address { font-size: 12px; }
+    .location .info h6 { font-size: 14px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*#################### business ####################*/
+/*########## getster ##########*/
+/* section 1 */
+.gest_wrap #section_1 .cont_1 p { line-height: 24px; font-size: 17px; }
+.gest_wrap #section_1 .cont_1 ul { width: auto; }
+
+/* section 2 */
+.gest_wrap #section_2 .cont_1 ul:nth-child(1):before { content: "User"; }
+.gest_wrap #section_2 .cont_1 ul:nth-child(2):before { content: "Place"; }
+.gest_wrap #section_2 .cont_1 ul:nth-child(3):before { content: "Device"; }
+
+.gest_wrap #section_2 .cont_3 > p { font-size: 14px; }
+.gest_wrap #section_2 .cont_3 li { padding: 50px 15px 15px; height: 190px; }
+.gest_wrap #section_2 .cont_3 li:nth-child(4) { padding-top: 20px; }
+.gest_wrap #section_2 .cont_3 li:nth-child(5) { padding-top: 35px; }
+.gest_wrap #section_2 .cont_3 li h5 { font-size: 15px; }
+.gest_wrap #section_2 .cont_3 li p { font-size: 12px; letter-spacing: -0.5px; }
+
+.gest_wrap #section_2 .cont_4 dt:first-child { justify-content: center; padding: 0; }
+.gest_wrap #section_2 .cont_4 li { font-size: 13px; letter-spacing: -0.5px; }
+.gest_wrap #section_2 .cont_4 li:before { margin: 0 20px; }
+.gest_wrap #section_2 .cont_4 dd:nth-child(2) li:before { margin: 0 30px; }
+
+.gest_wrap #section_2 .cont_5 h4 { font-size: 16px; }
+.gest_wrap #section_2 .cont_5 .left p { line-height: 24px; font-size: 13px; letter-spacing: -0.5px; }
+.gest_wrap #section_2 .cont_5 .right h6 { font-size: 14px; }
+.gest_wrap #section_2 .cont_5 .right p { padding: 5px 10px; line-height: 16px; font-size: 13px; }
+
+.gest_wrap #section_2 .cont_6:before { content: "System equipment configuration"; }
+
+.gest_wrap #section_2 .cont_7:before { content: "External connection"; }
+
+
+@media (max-width: 1100px) {
+    /* section 1 */
+    .gest_wrap #section_1 .cont_1 p { line-height: 22px; font-size: 16px; }
+    
+    /* section 2 */
+    .gest_wrap #section_2 .cWrap p { font-size: 17px; }
+    
+    .gest_wrap #section_2 .cont_3 > p { text-align: left; }
+    .gest_wrap #section_2 .cont_3 li:nth-child(4) { padding-top: 35px; }
+    
+    .gest_wrap #section_2 .cont_4 li:before { margin: 0; }
+    .gest_wrap #section_2 .cont_4 dd:nth-child(2) li:before { margin: 0; }
+
+    .gest_wrap #section_2 .cont_5 .left p { line-height: 18px; }
+    .gest_wrap #section_2 .cont_5 .right h6 { font-size: 13px; letter-spacing: -0.3px; }
+    .gest_wrap #section_2 .cont_5 .right p { padding: 4px 10px; line-height: 13px; font-size: 12px; }
+}
+
+@media (max-width: 820px) {
+    /* section 2 */
+    .gest_wrap #section_2 .cWrap p { font-size: 15px; }
+}
+
+@media (max-width: 767px) {
+    /* section 1 */
+    .gest_wrap #section_1 .cont_1 p { font-size: 15px; }
+
+    /* section 2 */
+    .gest_wrap #section_2 .cont_1 ul:before { padding: 0 0 0 15px; width: 70px; font-size: 15px; }
+
+    .gest_wrap #section_2 .cont_3 li { padding: 60px 15px 15px; height: 210px; }
+    .gest_wrap #section_2 .cont_3 li:nth-child(4),
+    .gest_wrap #section_2 .cont_3 li:nth-child(5) { padding-top: 22px; }
+
+    .gest_wrap #section_2 .cont_4 dt { font-size: 14px; }
+    .gest_wrap #section_2 .cont_4 li { font-size: 11px; }
+}
+
+
+
+
+
+
+/*########## aiger ##########*/
+/* section 2 */
+.aiger_wrap #section_2 .sub_title h3 { width: 380px; font-size: 18px; }
+.aiger_wrap #section_2 .sub_title div { width :calc(100% - 380px); }
+
+.aiger_wrap #section_2 .cont_1 h4 { font-size: 18px; }
+.aiger_wrap #section_2 .cont_1 li:nth-child(2) { padding: 25px 30px; }
+.aiger_wrap #section_2 .cont_1 p { font-size: 13px; letter-spacing: -0.5px; }
+
+.aiger_wrap #section_2 .cont_2 { background-image: url(../../img/sub/business/en/aiger_2_1.svg); }
+
+.aiger_wrap #section_2 .cont_3 li img { width: 292px; height: 340px; }
+
+
+/* section 3 */
+.aiger_wrap #section_3 .cont_2 .top { margin: 30px 0 0; }
+.aiger_wrap #section_3 .cont_2 .top li { font-size: 16px; }
+.aiger_wrap #section_3 .cont_2 .top li:first-child, 
+.aiger_wrap #section_3 .cont_2 .top li:last-child { padding: 95px 10px 0; }
+
+.aiger_wrap #section_3 .cont_2 .bot p { line-height: 25px; background-position: left 3px; }
+
+/* footer */
+.aiger_wrap .footer_2 h6 { width: 350px; }
+.aiger_wrap .footer_2 div { width: calc(100% - 350px); }
+.aiger_wrap .footer_2 div p { font-size: 14px; }
+
+
+@media (max-width: 820px) {
+    /* section 1 */
+    .aiger_wrap #section_1 .sub_title h3 span { display: block; width: 100%; }
+
+    /* section 2 */
+    .aiger_wrap #section_2 .sub_title div { width: 100%; }
+    
+    .aiger_wrap #section_2 h6 { font-size: 16px; }
+
+
+    /* section 3 */
+    .aiger_wrap #section_3 .tit h3 { font-size: 17px; }
+    
+    .aiger_wrap #section_3 .cont_1 dd { font-size: 14px; }
+
+    .aiger_wrap #section_3 .cont_2 .bot p { padding: 0 15px 0 25px; font-size: 14px; }
+
+
+    /* footer */
+    .aiger_wrap .footer_2 h6 { width: 100%; }
+    .aiger_wrap .footer_2 div { width: 100%; }
+
+
+}
+
+@media (max-width: 767px) {
+    /* section 2 */
+    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { height:  95px; }
+    
+
+    /* section 3 */
+    .aiger_wrap #section_3 .tit h3 { font-size: 16px; }
+
+    .aiger_wrap #section_3 .cont_1 dt { font-size: 16px; }
+
+    .aiger_wrap #section_3 .cont_2 .bot p { padding: 0 0 0 25px; }
+
+
+    /* footer */
+    .aiger_wrap .footer_2 h6 span:before { display: none; }
+}
+
+
+@media (max-width: 424px) {
+    /* section 2 */
+    .aiger_wrap #section_2 .cont_1 li:nth-child(1) { top: 170px; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(2) { height: 100px; }
+    .aiger_wrap #section_2 .cont_1 li:nth-child(3) { top: 170px; }
+    .aiger_wrap #section_2 .cont_1 h4 { font-size: 15px; }
+
+    .aiger_wrap #section_2 .cont_3 li img { width: 145px; height: auto; }
+}
+
+`   
+
+
+
+
+/*########## Professional education Content development service ##########*/
+/* section 1 */
+.edu_wrap #section_1 .sub_title h3 span { width: 100%; font-size: 16px; }
+.edu_wrap #section_1 .sub_title > div { line-height: 24px; font-size: 16px; letter-spacing: -0.5px; }
+
+
+/* section 2 */
+.edu_wrap #section_2 .info li { font-size: 14px; }
+
+.edu_wrap #section_2 .cont li:nth-child(2) { width: 150px; }
+.edu_wrap #section_2 .cont li:nth-child(3) { width: 180px; }
+.edu_wrap #section_2 .cont li:nth-child(5) { width: 245px; }
+.edu_wrap #section_2 .cont li:nth-child(6) { width: 150px; }
+
+.edu_wrap #section_2 .cont div:nth-child(1) { height: 210px; }
+.edu_wrap #section_2 .cont div:nth-child(2) { font-size: 15px; }
+
+
+
+@media (max-width: 1250px) {
+    /* section 2 */
+    .edu_wrap #section_2 .cont li:nth-child(2),
+    .edu_wrap #section_2 .cont li:nth-child(3),
+    .edu_wrap #section_2 .cont li:nth-child(5),
+    .edu_wrap #section_2 .cont li:nth-child(6) { width: 100%; }
+
+    .edu_wrap #section_2 .cont div:nth-child(1) { width: calc(50% - 50px); }
+    .edu_wrap #section_2 .cont div:nth-child(2) { width: 100px; }
+    .edu_wrap #section_2 .cont div:nth-child(3) { width: calc(50% - 50px); }
+}
+
+
+@media (max-width: 1100px) {
+    /* section 1 */
+    .edu_wrap #section_1 .sub_title h3 span { font-size: 14px; }
+
+    /* section 2 */
+    .edu_wrap #section_2 .cont p { font-size: 15px; }
+}
+
+@media (max-width: 767px) {
+    .edu_wrap #section_2 .cont { width: calc(200% - 100px); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*#################### careers ####################*/
+/*########## Recruitment information and procedures ##########*/
+.talent_wrap .sub_title h3 { letter-spacing: 4px; }
+
+
+
+
+/*########## Work organization and Human resource composition information ##########*/
+.org_wrap .cont > div:nth-child(1) h5 { padding: 7px 25px 0; font-size: 15px; }
+.org_wrap .cont > div:nth-child(3) h5 { padding: 7px 20px 0; line-height: 21px; font-size: 15px; }
+
+.org_wrap .cont h6 { font-size: 13px; }
+.org_wrap .cont > div:nth-child(1) li:first-child h6 { padding: 6px 10px 0; line-height: 16px; }
+.org_wrap .cont > div:nth-child(3) li:first-child h6 { padding: 6px 10px 0; line-height: 16px; }
+
+
+@media (max-width: 1100px) {
+    .org_wrap .cont > div:nth-child(1) h5 { padding: 0; line-height: 55px; font-size: 18px; }
+    .org_wrap .cont > div:nth-child(3) h5 { padding: 0; line-height: 55px; font-size: 18px; }
+    
+    .org_wrap .cont > div:nth-child(1) li:first-child h6 { padding: 0; line-height: 44px; }
+    .org_wrap .cont > div:nth-child(3) li:first-child h6 { padding: 0; line-height: 44px; }
+}
+
+@media (max-width: 767px) {
+    .org_wrap .cont > div:nth-child(1) h5 { font-size: 16px; }
+    .org_wrap .cont > div:nth-child(3) h5 { font-size: 15px; }
+    
+    .org_wrap .cont > div:nth-child(1) li:first-child h6 { line-height: 39px; }
+    .org_wrap .cont > div:nth-child(3) li:first-child h6 { line-height: 39px; }
+}
+
+@media (max-width: 424px) {
+    .org_wrap .cont > div:nth-child(2) li:first-child h6 { padding: 3px 0 0; line-height: 16px; }
+    .org_wrap .cont > div:nth-child(2) li:last-child h6 { padding: 3px 0 0; line-height: 16px; }
+}
+
+
+
+
+
+
+
+/*########## Job opening & application ##########*/
+.recruit_wrap .careers_tit h4 { width: 100%; }
+
+.recruit_wrap .cont h4 { font-size: 18px; }
+.recruit_wrap .cont p { font-size: 14px; }
+
+

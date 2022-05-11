@@ -897,6 +897,11 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
 
 @media (max-width: 600px) {
+    .location .map_wrap > div:first-child { height: 250px; }
+    .location .root_daum_roughmap .wrap_map { height: 250px !important; }
+
+
+
     /*### popup ###*/
     .location_pop ul li { margin: 8px 0 0; width: 100% !important; height: auto; min-height: 200px; }
     .location_pop ul li:nth-child(3n+1) { margin-left: 0; }

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/business.css">
+        <link rel="stylesheet" href="/css/en/style.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/business.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/en/style.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/en/header.html", function() { 
+                    $("#gnb > li").eq(1).addClass("on").find("li").eq(2).addClass("on");
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/en/sub/business/aiger.html"><i>&nbsp;</i><span>AIGER</span></a></div>
+            <div class="next"><a href="/en/sub/edutech/rd.html"><i>&nbsp;</i><span>R&amp;D</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $("#fullpage").fullpage({
+                anchors: ['Page1', 'Page2'],
+                scrollOverflow: true,
+                navigation: true,
+                navigationPosition: 'right',
+                'afterLoad': function(origin, destination, direction){
+                    if(destination==2) {
+                        $("#fp-nav").css("transform", "translate(650px, 60px)");
+                    }
+                },
+                'onLeave': function(origin, destination, direction) {
+                    if(destination==1) {
+                        $("#fp-nav").css("transform", "translate(550px, 60px)");
+                    }
+                    if(destination==2) {
+                        $("#fp-nav").css("transform", "translate(650px, 60px)");
+                    }
+                }
+            });
+
+            var btn = $(".edu_wrap #section_2 .slide_btn li button");
+            var cont_wrap = $(".edu_wrap #section_2 .cont");
+            var cont = $(".edu_wrap #section_2 .cont div").eq(0);
+
+            $(window).resize(function() {
+                if($(".edu_wrap #section_2 .slide_btn li").eq(1).hasClass("on") && $(".edu_wrap #section_2 .slide_btn li").eq(1).hasClass("right")) {
+                    cont_wrap.stop().animate({right: cont.width() + 25}, 0);
+                }
+            });
+
+            btn.on("click", function() {
+                var idx = $(this).parent().index();
+
+                btn.parent().removeClass("on");
+                btn.parent().eq(idx).addClass("on");
+
+                if($(this).parent().hasClass("on") && $(this).parent().hasClass("left")) {
+                    cont_wrap.stop().animate({right: 0});
+                }
+                if($(this).parent().hasClass("on") && $(this).parent().hasClass("right")) {
+                    cont_wrap.stop().animate({right: cont.width() + 25});
+                }
+            });
+        });
+        </script>
+
+
+        <div id="fullpage" class="edu_wrap">
+            <!-- page 1 -->
+            <div class="section" id="section_1">
+                <div class="cWrap cWrap_1">
+                    <div class="sub_title">
+                        <h3>Professional education<span>Content development service</span></h3>
+                        <div>
+                            <div>In a rapidly changing environment due to COVID-19, how should we provide existing offline education through online contents?</div>
+                            <div>
+                                How can existing online education services learners' various complaints be solved  and improve learning concentration and achievement? It's a key concern for the development of professional educational contents that we think of..
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cont_wrap cont">
+                        <h4>Information on the types of products for professional educational content</h4>
+
+                        <ul>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_1.jpg" alt="교안 중심 이론 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>Center of the teaching plan of Type theory class</h6>
+                                    <p>By utilizing ultimedia data and the manuscript, Video classes centered on school plans proceed</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_2.jpg" alt="교구 이용 실습 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>Practice class type using a tool</h6>
+                                    <p>Along with the theory class centered on school plans, Practice classes using teaching tools can do at the same time</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_3.jpg" alt="교수-학습자 상호작용 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>Instructor-learner interaction class type<span>task-solving-oriented</span></h6>
+                                    <p>With the lesson on theory centered on school plans, Instructors-learners use teaching tools in studios or discussions. The class focuses on solving the task.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_4.jpg" alt="소프트웨어 이용 화면 녹화 실습 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>Using software. Screen recording practice class type</h6>
+                                    <p>With the lesson on theory centered on school plans, Practice classes to record screens of PCs or smart devices proceed</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="/img/sub/business/edu_img_5.jpg" alt="전자칠판 수업형">
+                                </div>
+                                <div class="txt">
+                                    <h6>Electronic board class type</h6>
+                                    <p>
+                                        With a school plan (PPT)  filmed by the instructor,  visiting the studio in Dongmyeong-dong, Gwangju, We photographed and edited the contents of the electronic board with the instructor at the same time
+                                        <span>copyright on the contents of the textbook, impossible to work on the processing of Yunmun</span>
+                                        <i>At the studio in Dongmyeong-dong, Gwangju, with an electronic board</i>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 1 -->
+
+            <!-- page 2 -->
+            <div class="section" id="section_2">
+                <div class="cWrap cWrap_3">
+                    <div class="cont_wrap">
+                        <h4>Company Strengths</h4>
+
+                        <div class="top">
+                            <div class="txt">
+                                <p>We apply our content development methodology based on our experience and know-how in developing professional education content in various fields to project development. <span>OOMD(Obenef Openinnovation Development Methodology) is an optimal development methodology that emphasizes the communication and collaboration of project participants when planning content development to enhance the quality of content, and applies a systematic quality control process during the production process to create the optimal content requested by customers without copyright problems.</span></p>
+                                <p>We are constantly growing to complete professional education content with more innovative educational ideas through active communication and cooperation with experts in each field.</p>
+                            </div>
+
+                            <div class="cont_2">
+                                <h5><span>OODM</span></h5>
+                                <div>
+                                    <p><span>O</span>benef</p>
+                                    <p><span>O</span>pen innovation</p>
+                                    <p><span>D</span>evelopment</p>
+                                    <p><span>M</span>ehtodology</p>
+                                </div>
+
+                                <ul>
+                                    <li>Innovation</li>
+                                    <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                                    <li>Quality</li>
+                                    <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                                    <li>Communication</li>
+                                    <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                                    <li>Cooperation</li>
+                                    <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                                    <li>Convenience</li>
+                                    <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                                    <li>Ideas</li>
+                                </ul>
+                            </div>
+
+                            <div class="m_txt">
+                                OOMD(Obenef Openinnovation Development Methodology) is an optimal development methodology that emphasizes the communication and collaboration of project participants when planning content development to enhance the quality of content, and applies a systematic quality control process during the production process to create the optimal content requested by customers without copyright problems.
+                            </div>
+                        </div>
+
+
+
+                        <div class="bottom">
+                            <ul class="info">
+                                <li>Participating professor</li>
+                                <li>Obenef</li>
+                            </ul>
+                            
+                            <!-- mobile button -->
+                            <ul class="slide_btn">
+                                <li class="on left"><button>참여교수</button><span>클릭하면 이동됩니다.</span></li>
+                                <li class="right"><button>오베네프</button><span>클릭하면 이동됩니다.</span></li>
+                            </ul> <!-- // mobile button -->
+
+                            <ul class="cont">
+                                <!-- 착수 -->
+                                <li>
+                                    <div>&nbsp;</div>
+                                    <div>Launched</div>
+                                    <div>
+                                        <p>Basic proposal and contract</p>
+                                    </div>
+                                </li> <!-- // 착수 -->
+
+                                <!-- 분석 -->
+                                <li>
+                                    <div>&nbsp;</div>
+                                    <div>Analysis</div>
+                                    <div>
+                                        <p>Curriculum analysis of subjects to be developed</p>
+                                        <p>Organizing ideas</p>
+                                    </div>
+                                </li> <!-- // 분석 -->
+
+                                <!-- 설계 -->
+                                <li>
+                                    <div>
+                                        <p>Initial meeting and orientation based on the analysis results <span><i>(diocese-related consultation)</i></span></p>
+                                        <p>Plaintiff's approval for delivery and filming of the Plaintiff's approval</p>
+                                        <p>Outfit, makeup, and information</p>
+                                    </div>
+                                    <div>Plan</div>
+                                    <div>
+                                        <p>election of educational contents development types and development of manuscript writing guides</p>
+                                        <p>The minimum modification of the manuscript for filming</p>
+                                    </div>
+                                </li> <!-- // 설계 -->
+
+                                <!-- 프로토타입 제작 -->
+                                <li>
+                                    <div>
+                                        <p>After the outfit and makeup, do film the video with the manuscript</p>
+                                        <p>Check and approve the storyboard <i>(subject + caption)</i> in PPT format</p>
+                                        <p>Video/ Copyright Management/ Abbreviation/ Lecture note approval</p>
+                                    </div>
+                                    <div>Prototype production</div>
+                                    <div>
+                                        <p>Prototype <i>(one episode)</i> video shoot</p>
+                                        <p>Prototype <i>(one episode)</i> Developing a storyboard for the first time</p>
+                                        <p>Prototype <i>(one episode)</i> video development / Copyright management ledger, abbreviation table, lecture note development</p>
+                                    </div>
+                                </li> <!-- // 프로토타입 제작 -->
+
+                                <!-- 양산 및 중간 검수 -->
+                                <li>
+                                    <div>
+                                        <p>After the outfit and makeup, do film the video with the manuscript</p>
+                                        <p>Check and approve the storyboard <i>(subject + caption)</i> in PPT format</p>
+                                        <p>Video/ Copyright Management / Abbreviation / Lecture note approval</p>
+                                        <p>* First and second rounds are the same</p>
+                                    </div>
+                                    <div>mass production and interim inspection</div>
+                                    <div>
+                                        <p>The first video shoot</p>
+                                        <p>First storyboard production</p>
+                                        <p>1st video development / Copyright management ledger, abbreviation table, lecture note development</p>
+                                        <p>The 2nd video shoot</p>
+                                        <p>2nd storyboard production</p>
+                                        <p>2nd video development/copyright management ledger and lecture note development of abbreviation table</p>
+                                    </div>
+                                </li> <!-- // 양산 및 중간 검수 -->
+                                
+                                <!-- 분석 -->
+                                <li>
+                                    <div>
+                                        <p>Final inspection</p>
+                                    </div>
+                                    <div>Analysis</div>
+                                    <div>
+                                        <p>Final inspection of output</p>
+                                        <p>Final inspection of LMS porting and service inspection</p>
+                                        <p>Monitoring and pilot operation</p>
+                                    </div>
+                                </li> <!-- // 분석 -->
+
+                                <!-- 종료 -->
+                                <li>
+                                    <div>
+                                        <p>Approval and termination</p>
+                                    </div>
+                                    <div>Finished</div>
+                                    <div>
+                                        <p>Approval and termination</p>
+                                    </div>
+                                </li> <!-- // 종료 -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 2 -->
+        </div>
+    </body>
+</html>

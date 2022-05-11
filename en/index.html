@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/swiper.css">
+        <link rel="stylesheet" href="/css/main.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/swiper.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/main.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="header" class="on">
+            <script>
+            $(function() {
+                $("#header").load("/en/header.html", function() {
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <script>
+        $(function() {
+            var video = $("#main .video video");
+            var video_pop = $("#main_pop video");
+            var slide_video = $(".slide_cont video");
+
+            // main control
+            $("#main .pause").on("click", function() {
+                if($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+
+                    video.get(0).play();
+                } else {
+                    $(this).addClass("on");
+
+                    video.get(0).pause();
+                }
+            });
+            $("#main .sound").on("click", function() {
+                if($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+                    video.prop("muted", true);
+                } else {
+                    $(this).addClass("on");
+                    video.prop("muted", false);
+                }
+            });
+
+            // popup
+            $("#main .play_btn").on("click", function() {
+                $("#main_pop").show();
+
+                $("#main .sound").removeClass("on");
+                video.prop("muted", true);
+
+                var video_total = $("#main_pop .slide_cont").length;
+            
+                $("#main_pop .slide_pagination .total").text(video_total);
+
+            });
+            
+            $("#main_pop .close_btn").on("click", function() {
+                $(this).parent().hide();
+
+                for(var j=0; j<slide_video.length; j++) {
+                    slide_video.get(j).pause();
+                    slide_video.get(j).currentTime = 0;
+                }
+
+            });
+
+            
+            $("#m_nav .gnb > li").removeClass("on");
+        });
+        </script>
+
+        <div id="main">
+            <div class="wrap">
+                <div class="video">
+                    <video src="/img/main/obenef.mp4" muted loop="loop" autoplay playsinline></video>
+                </div>
+
+                <h2><img src="/img/main/main_title.svg" alt="share benefit with you"></h2>
+                
+                <p><button class="play_btn">play</button>Watch Our Latest Project</p>
+            </div>
+        
+            <ul class="btn_group">
+                <li><button class="sound">sound</button></li>
+                <li><button class="pause">pause</button></li>
+            </ul>
+        </div>
+
+        <div id="main_pop">
+            <button class="close_btn">close</button>
+
+            <div class="video_wrap">
+                <div class="slide_btn">
+                    <div class="prev"><a onclick="plusSlides(-1)"><img src="/img/main/prev_arrow.svg"></a></div>
+                    <div class="next"><a onclick="plusSlides(1)"><img src="/img/main/next_arrow.svg"></a></div>
+                </div>
+
+                <h5></h5>
+
+                <div class="video_cont">
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_1.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_2.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_3.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_4.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_5.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_6.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_7.mp4" controls></video> 
+                    </div>
+                    <div class="slide_cont">
+                        <video src="/img/main/pop_video_8.mp4" controls></video> 
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+                <div class="slide_pagination">
+                    <span class="current"></span> / <span class="total"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var slides = $(".slide_cont");
+            var slide_video = $(".slide_cont video");
+            var slide_total = $("#main_pop .slide_cont").length;
+            var slide_current = n % slide_total;
+            var video_title = '';
+
+            if((slide_current % slide_total) == 0) {
+                slide_current = slide_total;
+            }
+
+            $("#main_pop .slide_pagination .current").text(slide_current);
+            
+            
+            switch(slide_current) {
+                case 1:
+                    video_title = 'AI’s Coexistence and AI Ethics'; break;
+                case 2:
+                    video_title = 'AI Programming: Easier Than You Think'; break;
+                case 3:
+                    video_title = 'Artificial Intelligence in the Life Sciences'; break;
+                case 4:
+                    video_title = 'Basics of AI Programming'; break;
+                case 5:
+                    video_title = 'Basic Concepts of Vector'; break;
+                case 6:
+                    video_title = 'Education for Democratic Citizenship'; break;
+                case 7:
+                    video_title = 'Artificial Intelligence and Statistics'; break;
+                case 8:
+                    video_title = 'Human Biology'; break;
+            }
+
+            $("#main_pop .video_wrap h5").html(video_title);
+
+
+            if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                        
+                        for(var j=0; j<slide_video.length; j++) {
+                            slide_video.get(j).pause();
+                            slide_video.get(j).currentTime = 0;
+                        }
+                    } 
+
+            slides[slideIndex-1].style.display = "block";
+        } 
+        </script>
+    </body>
+</html>

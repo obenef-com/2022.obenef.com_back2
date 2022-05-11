@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/aboutus.css">
+        <link rel="stylesheet" href="/css/en/style.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/aboutus.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/en/style.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/en/header.html", function() { 
+                    $("#gnb > li").eq(0).addClass("on").find("li").eq(3).addClass("on");
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/en/sub/about/opeople.html"><i>&nbsp;</i><span>O.People</span></a></div>
+            <div class="next"><a href="/en/sub/about/awards.html"><i>&nbsp;</i><span>Awards</span></a></div>
+        </div>
+
+
+        <script>
+        $(function() {
+            var second_top = $(".history_2").offset().top;
+            var first_top = $(".history_1").offset().top;
+
+            $(".history_3 .cont_wrap").addClass("on");
+
+
+            $(window).scroll(function() {
+                var scr_top = $(this).scrollTop();
+
+                if(scr_top > (second_top - 800)) {
+                    $(".history_2 .cont_wrap").addClass("on");
+                }
+
+                if(scr_top > (first_top - 800)) {
+                    $(".history_1 .cont_wrap").addClass("on");
+                }
+            });
+        });
+        </script>
+
+        <div class="subWrap history">
+            <div class="cWrap cWrap_1">
+                <div class="sub_title">
+                    <h3>HISTORY</h3>
+                    <div>
+                        We'll introduce the growth story of the future education environment leader company based on <i>NEXT 2023 VISION.</i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third -->
+            <div class="historyWrap history_3">
+                <div class="cont_wrap">
+                    <div class="title">
+                        <h5><span>Third</span>Generation</h5>
+                        <p>Based on Next 2023 Vision, Future education environment leader company</p>
+                        <span>Sales increased to 100 billion , Magnify until 300 people</span>
+                    </div>
+                    <div class="cont">
+                        <h4><span>Based on <i>NEXT 2023 Vision,</i></span> Future education environment leader company</h4>
+                        <div>
+                            <h6>2021</h6>
+
+                            <dl>
+                                <dt>Dec.</dt>
+                                <dd>
+                                    <p>Expansion and relocation to Gwangju</p>
+                                </dd>
+
+                                <dt>Nov.</dt>
+                                <dd>
+                                    <p>OBENEF was selected as a company  participating in major national tasks, "Development of Untact Realistic OpenXR Platform Technology" by the National Science and Technology Research Association.</p>
+                                    <p>Establishment of an online science and data education center specialized education site to foster national science and technology talents (Korea Institute of Science and Technology Information)</p>
+                                </dd>
+
+                                <dt>Sept.</dt>
+                                <dd>
+                                    <p>Korea University of Science and Technology LNC+ in addition to practical educational contents we develop educational contents in 11 universities</p>
+                                </dd>
+
+                                <dt>July.</dt>
+                                <dd>
+                                    <p>National Universities Remote Education Support Center evaluated us "Very Excellent"  out of 10 regions nationwide (Gwangju and Jeonnam Graduate Qualification Education Support Center)</i></p>
+                                </dd>
+
+                                <dt>June.</dt>
+                                <dd>
+                                    <p>In addition to the establishment of LMS for joint use of Gwangju Jeonnam Regional Center, we establish LMS for Gwangju National University of Education/Seoyoung University of Education.</p>
+                                </dd>
+
+                                <dt>Mar.</dt>
+                                <dd>
+                                    <p>Cloud-based total education platform, GESTURE launched</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+             </div> <!-- // third -->
+
+
+            <!-- second -->
+            <div class="historyWrap history_2">
+                <div class="cont_wrap">
+                    <div class="title">
+                        <h5><span>Second</span>Generation</h5>
+                        <p><span>Company specializing</span> educational contents and system.</p>
+                        <span>Securing exclusive sales of around 2 billion won per year</span>
+                    </div>
+                    <div class="cont">
+                        <div>
+                            <h6>2020</h6>
+
+                            <dl>
+                                <dt>Sept.</dt>
+                                <dd>
+                                    <p>Win the grand prize at the 5th e-learning Edutech business model contest (Minister of Trade, Industry and Energy Award)</p>
+                                </dd>
+
+                                <dt>Aug.</dt>
+                                <dd>
+                                    <p>Join the board of directors of the Korea Edu-Tech Industry Association</p>
+                                </dd>
+
+                                <dt>May.</dt>
+                                <dd>
+                                    <p>Large-scale online virtual experiment (computer) room AIGER productization (prototype)</p>
+                                </dd>
+
+                                <dt>Apr.</dt>
+                                <dd>
+                                    <p>Al PaaS Platform Opened for 7 major participants in Korea (National Institute of Science and Technology)</p>
+                                    <p>Cloud-based SaaS-type LMS (GESTURE Cloud.io) Open (National Science and Technology Research Network)</p>
+                                </dd>
+
+                                <dt>Feb.</dt>
+                                <dd>
+                                    <p>Establish a real-time video lecture system and smart lecture room (Jeonnam University)</p>
+                                </dd>
+
+                                <dt>Jan.</dt>
+                                <dd>
+                                    <p>Demand-tailored professional manpower training project-VR, AI (Jeonnam-do Information and Culture Industry Promotion Agency)</p>
+                                    <p>GESTURE Insight (LRS-Learning Record Store) New Product Development (Small and Medium Business Information Promotion Agency)</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2019</h6>
+
+                            <dl>
+                                <dt>Nov.</dt>
+                                <dd>
+                                    <p>In addition to K-COMICS ,online Education System of the Korea Cartoon and Video Promotion Agency We establish a next-generation learning management platform for three other institutions.</p>
+                                    <p>Selection of Employment Security Division for Youth-Friendly Small but strong enterprise(Minister of Employment and Labor)</p>
+                                </dd>
+
+                                <dt>Oct.</dt>
+                                <dd>
+                                    <p>Development of SW-centered MOOC contents that can be practiced. (Wonkwang University SW-centered Project Team)</p>
+                                    <p>Development of K-MOOC contents from Kwangwoon University and 4 other organizations.</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // second -->
+
+
+            <!-- first -->
+            <div class="historyWrap history_1">
+                <div class="cont_wrap">
+                    <div class="title">
+                        <h5><span>The first</span>Generation</h5>
+                        <p><span>To secure core skills and know-how,</span>Aggressive investment and R&D-oriented company.</p>
+                        <span>Securing 1.5 billion won and investing in technology and equipment development</span>
+                    </div>
+                    <div class="cont">
+                        <div>
+                            <h6>2018</h6>
+
+                            <dl>
+                                <dt>Oct.</dt>
+                                <dd>
+                                    <p>Development of a page builder-based store site authoring tool for IKEA Korea Store management nationwide.</p>
+                                </dd>
+
+                                <dt>Sept.</dt>
+                                <dd>
+                                    <p>EDISON Calculation Science Education Contents Development and Education Contents Development for  3 universities.</p>
+                                </dd>
+
+                                <dt>June.</dt>
+                                <dd>
+                                    <p>Development of KISTI KACADEMY education system and repository to foster national science and technology human resources.</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2017</h6>
+
+                            <dl>
+                                <dt>Nov.</dt>
+                                <dd>
+                                    <p>Local university MOU for export of MOOC platform in Vietnam (Hoa sen College)</p>
+                                    <p>Local education foundation MOU for export of MOOC platform in Indonesia (Yayasa Tazakkaal)</p>
+                                    <p>Participation in the 2017 University E-learning Conference (National University Learning Council, KERIS)</p>
+                                    <p>2018 'World Entrepreneurship week' Young Enterprise Award awarded (Minister of Small and Medium Venture Business)</i></p>
+                                </dd>
+
+                                <dt>June.</dt>
+                                <dd>
+                                    <p>Establishment and maintenance of MOOC platform (Dankook University, Daegu University, Daegu Oriental Medical University, Samyuk University, Pohang University of Science)</p>
+                                    <p>Maintenance and repair of LMS platform (Busan University of Foreign Studies, Chung-Ang University)</p>
+                                    <p>Development of its own LMS solution GESTURE LMS new product (Small and Medium Business Information Promotion Agency)</p>
+                                </dd>
+
+                                <dt>Jan.</dt>
+                                <dd>
+                                    <p>Development of a new product of GESTURE MOOC (Small and Medium Business Information Promotion Agency)</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2016</h6>
+
+                            <dl>
+                                <dt>July.</dt>
+                                <dd>
+                                    <p>Advanced K-Ecohub data platform (Korea Institute of Science and Information))</p>
+                                </dd>
+
+                                <dt>June.</dt>
+                                <dd>
+                                    <p>Establishment of an environment using web-based computational science data for supporting professional experiments (Korea Institute of Science and Technology Information)</p>
+                                    <p>An MOU was signed for mutual development of MOOC platforms and promotion of joint projects (Gainix Co., Ltd.)</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2015</h6>
+
+                            <dl>
+                                <dt>Nov.</dt>
+                                <dd>
+                                    <p>UNIST OpenedX (MOOC) Platform Development (Ulsan University of Science and Technology)</p>
+                                </dd>
+
+                                <dt>Oct.</dt>
+                                <dd>
+                                    <p>Start-up and establishment of a corporation.</p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div>
+                            <h6>2014</h6>
+
+                            <dl>
+                                <dt>Feb.</dt>
+                                <dd>
+                                    <p>Establishment of the E-Portal part of Colombia's ICT education competency enhancement project (Colombian Ministry of Education)</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // first -->
+
+
+        </div>
+
+
+    </body>
+</html>

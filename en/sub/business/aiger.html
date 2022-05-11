@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>미래교육기업 오베네프 OBENEF</title>
+        <meta name="keyword" content="에듀테크,이러닝,에듀테크,ICT,미래교육환경,lms,lrs,mooc,학습관리시스템">
+        <meta name="description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <!-- The Open Graph protocol -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OBENEF">
+        <meta property="og:description" content="에듀테크 ICT 기술을 발전시켜 미래교육환경을 설계하고 구현하는 미래교육기업 오베네프">
+        <meta property="og:url" content="www.obenef.com">
+        <meta property="og:image" content="/img/etc/og_image.png">
+
+        <link rel="icon" type="image/png" href="/img/common/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/img/common/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/common/favicon-64.png" sizes="64x64">
+    
+        <link rel="stylesheet" href="/css/jquery.fullpage.css">
+        <link rel="stylesheet" href="/css/business.css">
+        <link rel="stylesheet" href="/css/en/style.css">
+    
+        <script src="/js/jquery-1.12.4.min.js"></script>
+        <script src="/js/scrolloverflow.js"></script>
+        <script src="/js/jquery.fullpage.min.js"></script>
+        <script src="/js/common.js"></script>
+
+        <script>
+        $(function() {
+            $("head").append('<link rel="stylesheet" href="/css/business.css?v='+ times +'">');
+            $("head").append('<link rel="stylesheet" href="/css/en/style.css?v='+ times +'">');
+            $("head").append('<script src="/js/common.js?v='+ times +'">');
+        });
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <script>
+            $(function() {
+                $("header").load("/en/header.html", function() { 
+                    $("#gnb > li").eq(1).addClass("on").find("li").eq(1).addClass("on");
+                    $.getScript('/js/common.js?v='+ times);
+                });
+            });
+            </script>
+        </header>
+        <!-- // header -->
+
+        <div id="pageBtn">
+            <div class="prev"><a href="/en/sub/business/gesture.html"><i>&nbsp;</i><span>GESTURE</span></a></div>
+            <div class="next"><a href="/en/sub/business/education.html"><i>&nbsp;</i><span>Professional education Content development service</span></a></div>
+        </div>
+
+        <script>
+        $(function() {
+            $("#fullpage").fullpage({
+                anchors: ['Page1', 'Page2', 'Page3', 'Page4'],
+                scrollOverflow: true,
+                navigation: true,
+                navigationPosition: 'right',
+                'afterLoad': function(origin, destination, direction){
+                    if(destination==1) {
+                        $(".aiger_wrap #section_1 li, .aiger_wrap .footer_1").addClass("on");
+                    }
+                    if(destination==2) {
+                        $(".aiger_wrap #section_2 .cont, .aiger_wrap .footer_2").addClass("on");
+                    }
+                    if(destination==3) {
+                        $(".aiger_wrap #section_3 .cont").addClass("on");
+                    }
+                    if(destination==4) {
+                        $(".aiger_wrap table").addClass("on");
+                    }
+                }
+            });
+        });
+        </script>
+
+
+        <div id="fullpage" class="aiger_wrap">
+            <!-- page 1 -->
+            <div class="section" id="section_1">
+                <div class="cWrap cWrap_1">
+                    <div class="sub_title">
+                        <h3>AIGER<span>A large online virtual computer room</span></h3>
+                        <div>
+                            It can proceed with business-oriented hands-on training through the website, providing large-scale online virtual personal computer rooms with being based on AI platform computing management technology.
+                        </div>
+                    </div>
+
+                    <h4>business</h4>
+
+                    <ul>
+                        <li>
+                            <img src="/img/sub/business/aiger_1_1.jpg" alt="전통적인 컴퓨터실">
+                            <div>
+                                <h6>Traditional computer room</h6>
+                                <span>1980 -<br>2020</span>
+                            </div>
+                        </li>
+                        <li class="arrow">&nbsp;</li>
+                        <li>
+                            <img src="/img/sub/business/aiger_1_2.jpg" alt="온라인 가상 실습(컴퓨터)실">
+                            <div>
+                                <h6>Container-based cloud computing<br>"online virtual lab (computer) room"</h6>
+                                <span>2020-</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="footer_1">
+                        <h6>Realization of a traditional computer room through online</h6>
+                        <p>The offline computer room model, which was not realized due to the limitations of existing Virtual Machine (VM) technology, has finally been implemented online using container technology, the core technology of the AI platform.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 1 -->
+
+            <!-- page 2 -->
+            <div class="section" id="section_2">
+                <div class="cWrap cWrap_1">
+                    <div class="sub_title">
+                        <h3><i>Infrastructure Utilization &amp;</i>Virtual Computer Room Content Provision</h3>
+                        <div>
+                            It provides infrastructure utilization and virtual computer room contents to effectively foster 4th industrial human resources such as AI big data.
+                        </div>
+                    </div>
+
+                    <!-- cont 1 -->
+                    <div class="cont cont_1">
+                        <ul>
+                            <li>
+                                <h6>A Region</h6>
+                                <span>ex. The server room in the engine</span>
+                            </li>
+                            <li>
+                                <h4>Resource integration and redistribution</h4>
+                                <p>Integrated resources<img src="/img/sub/business/g_plus_icon.svg">Virtual computer room contents</p>
+                            </li>
+                            <li>
+                                <h6>B Region</h6>
+                                <span>ex. Cloud server or another engine server</span>
+                            </li>
+                        </ul>
+                    </div> <!-- // cont 1 -->
+
+                    <!-- cont 2 -->
+                    <div class="cont cont_2">
+                        <h6>Container repository</h6>
+                        <span>Contents &amp; individual resources</span>
+                    </div> <!-- // cont 2 -->
+
+                    <!-- cont 3 -->
+                    <div class="cont cont_3">
+                        <ul>
+                            <li><img src="/img/sub/business/en/aiger_2_2.svg" alt="온디멘드 서비스"></li>
+                            <li><img src="/img/sub/business/en/aiger_2_4.svg" alt="터미널 & IDE 실습실"></li>
+                            <li><img src="/img/sub/business/en/aiger_2_3.svg" alt="GUI 실습실"></li>
+                        </ul>
+                    </div> <!-- // cont 3 -->
+
+                    <div class="footer_2">
+                        <h6>Large-scale online virtual practice and laboratory - MOOL<span>product name: AIGER</span></h6>
+                        <div>
+                            <p><i>MOOL</i> <u>Massive Online Open Lab</u> Cloud-based online virtual experiment (computer) room for providing an individual educational practice environment</p>
+                            <p><span><i>Masdsive = Scalable</i> (Capable of adding  infinite computational resources, expanding single storage by a PB basis), <i>Open = Sharable</i> (  Capable of sharing and distributing images through the public registry)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 2 -->
+            
+            <!-- page 3 -->
+            <div class="section" id="section_3">
+                <div class="cWrap cWrap_1">
+                    <div class="tit">
+                        <h3>Transfer of major technologies and know-how from the EDISON Center of the National Science and Technology Research Foundation and the Korea Institute of Science and Technology Information</h3>
+                        <p>Major technologies have been transferred from the National Science and Technology Research Foundation (funded), We received training contents and research environment construction technology and know-how from EDISON Center of the Korea Institute of Science and ICT.</p>
+                    </div>
+
+                    <!-- cont 1 -->
+                    <div class="cont cont_1">
+                        <ul>
+                            <li><img src="/img/sub/business/aiger_3_1.jpg" alt="EDISON 센터"></li>
+                            <li>
+                                <dl>
+                                    <dt>Korea Institute of Science and Information. EDISON</dt>
+                                    <dd> A specialized science and engineering education system that combines EDISON SW + data +Supercomputer HW</dd>
+                                    <dd>Equipped with web-based authoring tools based on multiple learning elements (YouTube, HTML, PDF, Jupiter Notebook, e-book, etc.)</dd>
+                                    <dd>It can be linked to the existing Learning Management System (MOOCLMS)</dd>
+                                    <dd>Provision of Learning Tool Interface (LTI) for coding practice</dd>
+                                </dl>
+                            </li>
+                            <li><img src="/img/sub/business/aiger_3_2.jpg" alt="R&E투게더 대시보드"></li>
+                            <li>
+                                <dl>
+                                    <dt>National Science and Technology Research Network</dt>
+                                    <dd>Based on a high-speed big data sharing system using the National Science DMZ, we developed R&E Together, an AI real-time analysis and education platform, using machine learning tools such as Jupyter Notebook, Kuberflow, and Horovord</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div> <!-- cont 1 -->
+
+                    <!-- cont 2 -->
+                    <div class="cont cont_2">
+                        <h4>Establishing a next-generation online education environment  capable of practicing</h4>
+                        <ul class="top">
+                            <li>Focusing on the video-Online education. MOOC</li>
+                            <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                            <li>Theory and Practice</li>
+                            <li class="icon"><img src="/img/sub/title_x.svg"></li>
+                            <li>Virtual lab simulation education. MOOL</li>
+                        </ul>
+                         <ul class="bot">
+                             <li>
+                                 <p>Sharing high H/W such as GPU</p>
+                                 <p>It can be operated in connection to  the existing LMS</p>
+                             </li>
+                             <li>
+                                 <p>Machine Learning Research OneStop environment Retention</p>
+                                 <p>Python, C#, R etc. MOOL repository</p>
+                             </li>
+                             <li>
+                                 <p>Repository of subjects that can be practiced</p>
+                             </li>
+                         </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- // page 3 -->
+            
+            <!-- page 4 -->
+            <div class="section" id="section_4">
+                <div class="cWrap cWrap_1">
+                    <div class="tit">
+                        <h3>Establishment of an untact educational environment</h3>
+                        <ul>
+                            <li>Change from a video-oriented theory class to a practical class</li>
+                            <li>Provide a professional software provision environment to cultivate human resources in the 4th industry just with one click</li>
+                            <li>Be able to rent and use expensive computer equipment without purchasing it</li>
+                        </ul>
+                    </div>
+
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Traditional Online education service</th>
+                                    <th>Offline computer lab</th>
+                                    <th>Our product</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Video-oriented education</td>
+                                    <td><img src="/img/sub/business/aiger_4_check.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_minus.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_check.svg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Field-oriented practical training</td>
+                                    <td><img src="/img/sub/business/aiger_4_x.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_triangle.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_check.svg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Ease of providing various hands-on programs</td>
+                                    <td><img src="/img/sub/business/aiger_4_x.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_triangle.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_check.svg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Hardware upgrade</td>
+                                    <td><img src="/img/sub/business/aiger_4_x.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_x.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_check.svg"></td>
+                                </tr>
+                                <tr>
+                                    <td>Support for the coursebuilder. <i>(Provide educational content itself and storage)</i></td>
+                                    <td><img src="/img/sub/business/aiger_4_x.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_x.svg"></td>
+                                    <td><img src="/img/sub/business/aiger_4_check.svg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // page 4 -->
+        </div>
+    </body>
+</html>
