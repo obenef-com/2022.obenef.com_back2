@@ -58,8 +58,6 @@
         </div>
 
 
-        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
         <script>
         $(function() {
             $(".location .tabMenu li").on("click", function() {
@@ -71,40 +69,7 @@
                 $(tabmenu).eq(idx).addClass("on");
                 $(tabcont).hide();
                 $(tabcont).eq(idx).show();
-
-                if(idx==1) { // 수내 사무실
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1650442444683",
-                        "key" : "29wic",
-                        "mapWidth" : "640",
-                        "mapHeight" : "360"
-                    }).render();
-                }
-                if(idx==2) { // 광주 스튜디오
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1650443853815",
-                        "key" : "29wis",
-                        "mapWidth" : "640",
-                        "mapHeight" : "360"
-                    }).render();
-                }
-                if(idx==3) { // 정자 스튜디오
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1650444336591",
-                        "key" : "29wj3",
-                        "mapWidth" : "640",
-                        "mapHeight" : "360"
-                    }).render();
-                }
             });
-
-            // 광주 사무실
-            new daum.roughmap.Lander({
-                "timestamp" : "1650443993446",
-                "key" : "29wit",
-                "mapWidth" : "640",
-                "mapHeight" : "360"
-            }).render();
 
 
             $(".location_pop button, .location_pop .pop_bg").on("click", function() {
@@ -150,7 +115,7 @@
 
                         <div class="map_wrap">
                             <div>
-                                <div id="daumRoughmapContainer1650443993446" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1153.1831954836423!2d126.91010154695618!3d35.164235808809515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c5f94872967%3A0x99235e8d2c6a7f63!2s239%20Mudeung-ro%2C%20Buk-gu%2C%20Kwangju!5e0!3m2!1sen!2skr!4v1652333587211!5m2!1sen!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div onclick="view_gallery(0);">
                                 <img src="/img/sub/about/location_1_main.jpg" alt="광주 사무실">
@@ -171,7 +136,7 @@
 
                         <div class="map_wrap">
                             <div>
-                                <div id="daumRoughmapContainer1650442444683" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.4626223056889!2d127.11626584729036!3d37.379061982074184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5818479c93f5%3A0x89ffc89cb174ba92!2s31%20Hwangsaeul-ro%20258(ibaegosippal%2C%20Bundang-gu%2C%20Seongnam-si%2C%20Gyeonggi-do!5e0!3m2!1sen!2skr!4v1652333652293!5m2!1sen!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div onclick="view_gallery(1);">
                                 <img src="/img/sub/about/location_2_main.jpg" alt="수내 사무실">
@@ -192,7 +157,7 @@
 
                         <div class="map_wrap">
                             <div>
-                                <div id="daumRoughmapContainer1650443853815" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.156442448194!2d126.91809491554082!3d35.152718966381755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c8e491bfde3%3A0xd3fce9551af0a51e!2s81%20Donggyecheon-ro%2C%20Dong-gu%2C%20Kwangju!5e0!3m2!1sen!2skr!4v1652333707929!5m2!1sen!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div onclick="view_gallery(2);">
                                 <img src="/img/sub/about/location_3_main.jpg" alt="광주 스튜디오">
@@ -213,7 +178,7 @@
                         
                         <div class="map_wrap">
                             <div>
-                                <div id="daumRoughmapContainer1650444336591" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.9174109255964!2d127.10411181558437!3d37.36813104322289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b58366f3212b1%3A0xb7695914fbf0390c!2s16%20Neuti-ro%2C%20Bundang-gu%2C%20Seongnam-si%2C%20Gyeonggi-do!5e0!3m2!1sen!2skr!4v1652333733874!5m2!1sen!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div onclick="view_gallery(3);">
                                 <img src="/img/sub/about/location_4_main.jpg" alt="정자 스튜디오">
