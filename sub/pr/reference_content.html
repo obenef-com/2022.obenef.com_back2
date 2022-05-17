@@ -54,16 +54,6 @@
 
         <script>
         $(function() {
-            $(window).scroll(function() {
-                var scr_top = $(this).scrollTop();
-
-                if(scr_top > 110) {
-                    $("#pageBtn").removeClass("on");
-                } else {
-                    $("#pageBtn").addClass("on");
-                }
-            });
-
             function fileView() {
                 var w = $(window).innerWidth() || window.innerWidth;
     
@@ -83,7 +73,7 @@
         });
         </script>
 
-        <div id="pageBtn" class="on">
+        <div id="pageBtn">
             <div class="prev"><a href="/sub/pr/report.html"><i>&nbsp;</i><span>보도자료</span></a></div>
             <div class="next"><a href="/sub/pr/client.html"><i>&nbsp;</i><span>주요고객</span></a></div>
         </div>

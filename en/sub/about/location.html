@@ -54,7 +54,7 @@
 
         <div id="pageBtn">
             <div class="prev"><a href="/en/sub/about/awards.html"><i>&nbsp;</i><span>Awards</span></a></div>
-            <div class="next"><a href="/en/sub/business/gesture.html"><i>&nbsp;</i><span>GETSTURE</span></a></div>
+            <div class="next"><a href="/en/sub/business/gesture.html"><i>&nbsp;</i><span>GESTURE</span></a></div>
         </div>
 
 
@@ -89,6 +89,46 @@
             cont.hide();
             cont.eq(num).show();
         }
+
+        function resize_img() { // 모바일 이미지 교체
+                var w = $(window).innerWidth() || window.innerWidth;
+    
+                if(w < 767) {
+                    $(".location_pop .cont_1 li").eq(2).find("img").attr("src", "/img/sub/about/location_1_3_m.jpg");
+                    $(".location_pop .cont_1 li").eq(11).find("img").attr("src", "/img/sub/about/location_1_12_m.jpg");
+
+                    $(".location_pop .cont_2 li").eq(1).find("img").attr("src", "/img/sub/about/location_2_2_m.jpg");
+                    $(".location_pop .cont_2 li").eq(3).find("img").attr("src", "/img/sub/about/location_2_4_m.jpg");
+                    $(".location_pop .cont_2 li").eq(7).find("img").attr("src", "/img/sub/about/location_2_8_m.jpg");
+                    $(".location_pop .cont_2 li").eq(9).find("img").attr("src", "/img/sub/about/location_2_10_m.jpg");
+
+                    $(".location_pop .cont_3 li").eq(5).find("img").attr("src", "/img/sub/about/location_3_6_m.jpg");
+                    $(".location_pop .cont_3 li").eq(8).find("img").attr("src", "/img/sub/about/location_3_9_m.jpg");
+
+                    $(".location_pop .cont_4 li").eq(2).find("img").attr("src", "/img/sub/about/location_4_3_m.jpg");
+                    $(".location_pop .cont_4 li").eq(8).find("img").attr("src", "/img/sub/about/location_4_9_m.jpg");
+                } else {
+                    $(".location_pop .cont_1 li").eq(2).find("img").attr("src", "/img/sub/about/location_1_3.jpg");
+                    $(".location_pop .cont_1 li").eq(11).find("img").attr("src", "/img/sub/about/location_1_12.jpg");
+
+                    $(".location_pop .cont_2 li").eq(1).find("img").attr("src", "/img/sub/about/location_2_2.jpg");
+                    $(".location_pop .cont_2 li").eq(3).find("img").attr("src", "/img/sub/about/location_2_4.jpg");
+                    $(".location_pop .cont_2 li").eq(7).find("img").attr("src", "/img/sub/about/location_2_8.jpg");
+                    $(".location_pop .cont_2 li").eq(9).find("img").attr("src", "/img/sub/about/location_2_10.jpg");
+
+                    $(".location_pop .cont_3 li").eq(5).find("img").attr("src", "/img/sub/about/location_3_6.jpg");
+                    $(".location_pop .cont_3 li").eq(8).find("img").attr("src", "/img/sub/about/location_3_9.jpg");
+
+                    $(".location_pop .cont_4 li").eq(2).find("img").attr("src", "/img/sub/about/location_4_3.jpg");
+                    $(".location_pop .cont_4 li").eq(8).find("img").attr("src", "/img/sub/about/location_4_9.jpg");
+                }
+            }
+
+            $(window).resize(function() {
+                resize_img();
+            });
+
+            resize_img();
 
         </script>
 
