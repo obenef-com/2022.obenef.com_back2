@@ -912,6 +912,9 @@ header.aw_head2 { background: url(../img/sub/about/awards_bg2.jpg) no-repeat cen
 
 @media (max-width: 424px) {
     /*### tab contents ###*/
+    .location .map_wrap > div:first-child { height: 170px; }
+    .location .root_daum_roughmap .wrap_map { height: 170px !important; }
+
     .location .info address { font-size: 14px; }
 
 

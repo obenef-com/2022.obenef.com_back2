@@ -125,6 +125,8 @@
 }
 
 @media (max-width: 424px) {
+    .location .map_wrap > div:first-child iframe { height: 170px; }
+
     .location .tabMenu li { font-size: 13px; }
 
     .location .info address { font-size: 12px; }
