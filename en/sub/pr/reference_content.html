@@ -54,6 +54,27 @@
         </header>
         <!-- // header -->
 
+        <script>
+        $(function() {
+            function fileView() {
+                var w = $(window).innerWidth() || window.innerWidth;
+    
+                if(w < 1100) {
+                    $(".pr_content .file a").removeAttr("download");
+                } else {
+                    $(".pr_content .file a").attr("download", "2022 Obenef Company Profile PDF");
+                }
+            }
+
+            $(window).resize(function() {
+                fileView();
+            });
+
+            fileView();
+
+        });
+        </script>
+
         <div id="pageBtn">
             <div class="prev"><a href="/en/sub/pr/report.html"><i>&nbsp;</i><span>Press Release</span></a></div>
             <div class="next"><a href="/en/sub/pr/client.html"><i>&nbsp;</i><span>Partners</span></a></div>
@@ -73,14 +94,14 @@
                         <h5>2022 Obenef Company Profile PDF</h5>
 
                         <div class="img">
-                            <img src="/img/sub/pr/pr_img.jpg" alt="오베네프 회사 소개서">
+                            <img src="/img/sub/pr/pr_img.jpg" alt="2022 Obenef Company Profile PDF">
                         </div>
                     </div>
 
                     <div class="link">&nbsp;</div>
                     
                     <div class="file">
-                        <a href="/img/sub/pr/오베네프 회사소개서.pdf" download>
+                        <a href="/img/sub/pr/오베네프 회사소개서.pdf" target="_blank">
                             2022 Obenef Company Profile PDF.pdf
                         </a>
                     </div>
